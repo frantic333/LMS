@@ -5,12 +5,12 @@ from .functions import get_timestamp_path_user
 
 class User(AbstractUser):
     email = models.EmailField(unique=True, verbose_name='Email')
-    birthday = models.DateField(verbose_name='Дата рождения', blank=False)
+    birthday = models.DateField(verbose_name='Дата рождения', null=True)
     description = models.TextField(verbose_name='Обо мне', null=True, default='', max_length=150)
     avatar = models.ImageField(verbose_name='Фото', blank=True, upload_to=get_timestamp_path_user)
 
     USERNAME_FIELD = 'email'
-    REQUIRED_FIELDS = []
+    REQUIRED_FIELDS = ['username']
 
     class Meta:
         verbose_name_plural = 'Участники'

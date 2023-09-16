@@ -30,6 +30,9 @@ class Lesson(models.Model):
         verbose_name = 'Урок'
         ordering = ['course']
 
+    def __str__(self):
+        return f'{self.course.title}:Урок{self.name}'
+
 
 class Tracking(models.Model):
     lesson = models.ForeignKey(Lesson, on_delete=models.PROTECT, verbose_name='Урок')
