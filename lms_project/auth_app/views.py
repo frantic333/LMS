@@ -4,7 +4,7 @@ from django.shortcuts import render, redirect
 from .models import User
 
 
-def login(request):
+def log_in(request):
     if request.method == 'POST':
         data = request.POST
         user = authenticate(email=data['email'], password=data['password'])
@@ -33,7 +33,7 @@ def register(request):
 
 def logout(request):
     logout(request)
-    return redirect('login')
+    return redirect('log_in')
 
 
 def change_password(request):
