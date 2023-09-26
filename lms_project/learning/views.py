@@ -38,7 +38,7 @@ def detail(request, course_id):
 
 def enroll(request, course_id):
     if request.user.is_anonymous:
-        return redirect('log_in')
+        return redirect('login')
     else:
         is_existed = Tracking.objects.filter(user=request.user).exists()
         if is_existed:
