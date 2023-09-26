@@ -1,3 +1,3 @@
 $('.auth_container').hover(() => {
-    $('.submenu_profile').slideDown();
+    $('.submenu_profile').slideToggle();
 })

@@ -4,6 +4,7 @@
         <div class="main_item">
             <h3>Создание курса</h3>
             <form id="form" method="post">
+                <h3>{% block form_name %}Создание курса {% endblock %}</h3>
                 {% csrf_token %}
                 <p><input type="text" maxlength="30" placeholder="Название курса" name="title"></p>
                 <p><textarea placeholder="Описание курса" name="description" maxlength="200" required></textarea></p>

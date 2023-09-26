@@ -6,8 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Codeby - {% block title %}онлайн курсы{% endblock %}</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
-    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"
-            integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjghx/qtq/1itJ0C2ejDxltZVFg=="
+    <script defer src="https://code.jquery.com/jquery-3.7.1.min.js"
+            integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
             crossorigin="anonymous" ></script>
     <link rel="stylesheet" href="{% static 'styles.css' %}">
     <script defer src="{% static 'script.js' %}"></script>
@@ -31,8 +31,7 @@
                     <div><a href="#">{{ user.last_name }} {{user.first_name }}</a></div>
                     <div class="submenu_profile" style="display: none;">
                         <div>
-                            <p class="fa fa-sign-out"></p>
-                            <a style="color: rgba(238, 68, 68, 0.83)" href="{% url 'logout' %}">Выход</a>
+                            <p class="fa fa-sign-out"><a style="color: rgba(238, 68, 68, 0.83)" href="{% url 'logout' %}">Выход</a></p>
                         </div>
                     </div>
                 </div>
