@@ -1,18 +1,46 @@
 from django.http import HttpResponse
 from django.shortcuts import render, redirect
 from datetime import datetime
+from django.views.generic import ListView, DetailView, CreateView, UpdateView, DeleteView
+from .forms import CourseForm
+from django.urls import reverse
 from .models import *
 
 
-def index(request):
+class MainView(ListView):
+    template_name = 'index.html'
+    queryset = Course.objects.all()
+    context_object_name = 'courses'
+    paginate_by = 2
+
+    def get_context_data(self, *, object_list=None, **kwargs):
+        context = super(MainView, self).get_context_data(**kwargs)
+        context['current_year'] = datetime.now().year
+        return context
+
+"""def index(request):
     courses = Course.objects.all()
     current_year =datetime.now().year
     return render(request, context={'courses': courses,
                                     'current_year': current_year},
-                  template_name='index.html')
+                  template_name='index.html')"""
 
 
-def create(request):
+class CourseCreateView(CreateView):
+    template_name = 'create.html'
+    model =Course
+    form_class = CourseForm
+
+    def get_success_url(self):
+        return reverse('detail', kwargs={'course_id': self.object.id})
+
+    def form_valid(self, form):
+        course = form.save(commit=False)
+        course.author = self.request.user
+        course.save()
+        return super(CourseCreateView, self).form_valid(form)
+
+"""def create(request):
     if request.method == 'POST':
         data = request.POST
         Course.objects.create(title=data['title'], author=request.user,
@@ -21,19 +49,54 @@ def create(request):
                               count_lessons=data['count_lessons'])
         return redirect('index')
     else:
-        return render(request, 'create.html')
+        return render(request, 'create.html')"""
+
+class CourseUpdateView(UpdateView):
+    model = Course
+    form_class = CourseForm
+    template_name = 'create.html'
+    pk_url_kwarg = 'course_id'
+
+    def get_queryset(self):
+        return Course.objects.filter(id=self.kwargs.get('course_id'))
+
+    def get_success_url(self):
+        return reverse('detail', kwargs={'course_id': self.object.id})
 
 
-def delete(request, course_id):
+class CourseDeleteView(DeleteView):
+    model = Course
+    template_name = 'delete.html'
+    pk_url_kwarg = 'course_id'
+
+    def get_queryset(self):
+        return Course.objects.filter(id=self.kwargs.get('course_id'))
+
+    def get_success_url(self):
+        return reverse('index')
+"""def delete(request, course_id):
     Course.objects.get(id=course_id).delete()
-    return redirect('index')
+    return redirect('index')"""
 
 
-def detail(request, course_id):
+class CourseDetailView(DetailView):
+    template_name = 'detail.html'
+    context_object_name = 'course'
+    pk_url_kwarg = 'course_id'
+
+    def get_queryset(self):
+        return Course.objects.filter(id=self.kwargs.get('course_id'))
+
+    def get_context_data(self, **kwargs):
+        context =super(CourseDetailView, self).get_context_data(**kwargs)
+        context['lessons'] = Lesson.objects.filter(course=self.kwargs.get('course_id'))
+        return context
+
+"""def detail(request, course_id):
     course = Course.objects.get(id=course_id)
     lessons = Lesson.objects.filter(course=course_id)
     context = {'course': course, 'lessons': lessons}
-    return render(request, 'detail.html', context)
+    return render(request, 'detail.html', context)"""
 
 
 def enroll(request, course_id):
