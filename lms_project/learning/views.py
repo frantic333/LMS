@@ -103,7 +103,7 @@ def enroll(request, course_id):
     if request.user.is_anonymous:
         return redirect('login')
     else:
-        is_existed = Tracking.objects.filter(user=request.user).exists()
+        is_existed = Tracking.objects.filter(user=request.user, lesson_course=course_id).exists()
         if is_existed:
             return HttpResponse('Вы уже записаны на данный курс')
         else:
