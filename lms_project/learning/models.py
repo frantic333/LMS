@@ -1,5 +1,6 @@
 from django.db import models
 from django.conf import settings
+from django.shortcuts import reverse
 
 
 class Course(models.Model):
@@ -15,6 +16,10 @@ class Course(models.Model):
         verbose_name_plural = 'Курсы'
         verbose_name = 'Курс'
         ordering = ['title']
+
+
+    def get_absolute_url(self):
+        return reverse('detail', kwargs={'course_id': self.pk})
 
     def __str__(self):
         return f'{self.title}: Старт{self.start_date}'
