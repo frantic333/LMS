@@ -1,6 +1,7 @@
 from django.contrib.auth import authenticate, login, logout
 from django.http import HttpResponse
 from django.shortcuts import render, redirect
+from django.contrib.auth.models import Group
 from .models import User
 
 
@@ -24,16 +25,12 @@ def register(request):
                     birthday=data['birthday'], description=data['description'], avatar=data['avatar'])
         user.set_password(data['password'])
         user.save()
+        pupil = Group.objects.filter(name='Ученик')
+        user.groups.set(pupil)
         login(request, user)
         return redirect('index')
     else:
         return render(request, 'register.html')
-
-
-
-def log_out(request):
-    logout(request)
-    return redirect('login')
 
 
 def change_password(request):

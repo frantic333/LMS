@@ -1,3 +1,5 @@
+from django.contrib.auth.decorators import login_required, permission_required
+from django.contrib.auth.mixins import LoginRequiredMixin, PermissionRequiredMixin
 from django.http import HttpResponse
 from django.shortcuts import render, redirect
 from datetime import datetime
@@ -26,11 +28,12 @@ class MainView(ListView):
                   template_name='index.html')"""
 
 
-class CourseCreateView(CreateView):
+class CourseCreateView(LoginRequiredMixin, PermissionRequiredMixin, CreateView):
     template_name = 'create.html'
     model =Course
     form_class = CourseForm
 
+    permission_required = ('learning.add_curse', )
     def get_success_url(self):
         return reverse('detail', kwargs={'course_id': self.object.id})
 
@@ -51,11 +54,13 @@ class CourseCreateView(CreateView):
     else:
         return render(request, 'create.html')"""
 
-class CourseUpdateView(UpdateView):
+class CourseUpdateView(LoginRequiredMixin, PermissionRequiredMixin, UpdateView):
     model = Course
     form_class = CourseForm
     template_name = 'create.html'
     pk_url_kwarg = 'course_id'
+
+    permission_required = ('learning.change_course', )
 
     def get_queryset(self):
         return Course.objects.filter(id=self.kwargs.get('course_id'))
@@ -64,10 +69,12 @@ class CourseUpdateView(UpdateView):
         return reverse('detail', kwargs={'course_id': self.object.id})
 
 
-class CourseDeleteView(DeleteView):
+class CourseDeleteView(LoginRequiredMixin, PermissionRequiredMixin, DeleteView):
     model = Course
     template_name = 'delete.html'
     pk_url_kwarg = 'course_id'
+
+    permission_required = ('learning.delete_course', )
 
     def get_queryset(self):
         return Course.objects.filter(id=self.kwargs.get('course_id'))
@@ -99,15 +106,14 @@ class CourseDetailView(DetailView):
     return render(request, 'detail.html', context)"""
 
 
+@login_required
+@permission_required('learning.add_tracking', raise_exception=True)
 def enroll(request, course_id):
-    if request.user.is_anonymous:
-        return redirect('login')
+    is_existed = Tracking.objects.filter(user=request.user, lesson__course=course_id).exists()
+    if is_existed:
+        return HttpResponse('Вы уже записаны на данный курс')
     else:
-        is_existed = Tracking.objects.filter(user=request.user, lesson_course=course_id).exists()
-        if is_existed:
-            return HttpResponse('Вы уже записаны на данный курс')
-        else:
-            lessons = Lesson.objects.filter(course=course_id)
-            records = [Tracking(lesson=lesson, user=request.user, passed=False) for lesson in lessons]
-            Tracking.objects.bulk_create(records)
-            return HttpResponse('Вы записаны на данный курс')
+        lessons = Lesson.objects.filter(course=course_id)
+        records = [Tracking(lesson=lesson, user=request.user, passed=False) for lesson in lessons]
+        Tracking.objects.bulk_create(records)
+        return HttpResponse('Вы записаны на данный курс')

@@ -16,6 +16,9 @@ class Course(models.Model):
         verbose_name_plural = 'Курсы'
         verbose_name = 'Курс'
         ordering = ['title']
+        permissions = (
+            ('modify_course', 'Can modify course content'),
+        )
 
 
     def get_absolute_url(self):
@@ -34,6 +37,9 @@ class Lesson(models.Model):
         verbose_name_plural = 'Уроки'
         verbose_name = 'Урок'
         ordering = ['course']
+        permissions = (
+            ('modify_lesson', 'Can modify lesson content'),
+        )
 
     def __str__(self):
         return f'{self.course.title}:Урок{self.name}'

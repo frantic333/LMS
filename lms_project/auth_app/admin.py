@@ -5,4 +5,3 @@ from django.contrib.auth.models import Group
 
 admin.site.site_header='Learning Management System'
 admin.site.register(User)
-admin.site.unregister(Group)

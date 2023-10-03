@@ -30,13 +30,13 @@
             {% if user.is_authenticated %}
                 <div class="profile">
                     <div><a href="#">{{ user.last_name }} {{user.first_name }}</a></div>
-                    {% comment 'Опции профиля' %}
                     <div class="submenu_profile" style="display: none;">
                         <div>
-                            <p class="fa fa-sign-out"><a style="color: rgba(238, 68, 68, 0.83)" href="{% url 'logout' %}">Выход</a></p>
+                            <p class="fa fa-sign-out">
+                                <a href="{% url 'password_change' %}">Сменить пароль</a>
+                                <a style="color: rgba(238, 68, 68, 0.83)" href="{% url 'logout' %}">Выход</a></p>
                         </div>
                     </div>
-                    {% endcomment %}
                 </div>
                 <div><a href="{% url 'create' %}">Создать курс</a></div>
             {% else %}
