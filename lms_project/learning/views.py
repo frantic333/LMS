@@ -33,7 +33,7 @@ class CourseCreateView(LoginRequiredMixin, PermissionRequiredMixin, CreateView):
     model =Course
     form_class = CourseForm
 
-    permission_required = ('learning.add_curse', )
+    permission_required = ('learning.add_course', )
     def get_success_url(self):
         return reverse('detail', kwargs={'course_id': self.object.id})
 
