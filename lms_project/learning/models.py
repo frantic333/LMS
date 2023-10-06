@@ -52,3 +52,16 @@ class Tracking(models.Model):
 
     class Meta:
         ordering = ['-user']
+
+
+class Review(models.Model):
+    user = models.ForeignKey(settings.AUTH_USER_MODEL, on_delete=models.CASCADE, verbose_name='Ученик')
+    course = models.ForeignKey(Course, on_delete=models.CASCADE, verbose_name='Курс')
+    content = models.TextField(verbose_name='Текст отзыва', max_length=250, unique_for_year='sent_date')
+    sent_date = models.DateTimeField(auto_now_add=True, verbose_name='Дата отправки отзыва')
+
+    class Meta:
+        verbose_name_plural = 'Отзывы'
+        verbose_name = 'Отзыв'
+        ordering = ('-sent_date', )
+        unique_together = ('user', 'course', )
