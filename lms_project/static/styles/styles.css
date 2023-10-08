@@ -259,7 +259,7 @@ input, textarea {
 .courses_container, .reviews_container {
     display: grid;
     width: 85%;
-    margin: 4% 10% ;
+    margin: 10% 10% ;
     justify-content: center;
     grid-template-columns: repeat(4, 25%);
     grid-gap: 30px;

@@ -1,8 +1,8 @@
 {% extends 'base.html' %}
 {% load static %}
 {% block content %}
-    <div class="courses_container">
-        <div class="course_preview" style="transform: none, box-shadow: none, border: none">
+    <div class="course_container">
+        <div class="course_preview" style="transform: none; box-shadow: none; border: none">
             <p><a style="color:red" href="{% url 'delete' course.pk %}">Удалить</a></p>
             <p><a style="color:blue" href="{% url 'update' course.pk %}">Редактировать</a></p>
             <p>{{ course.title }}</p>
