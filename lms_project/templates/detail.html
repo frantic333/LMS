@@ -2,16 +2,29 @@
 {% load static %}
 {% block content %}
     <div class="course_container">
+        {% with course_var=lessons.first %}
         <div class="course_preview" style="transform: none; box-shadow: none; border: none">
-            <p><a style="color:red" href="{% url 'delete' course.pk %}">Удалить</a></p>
-            <p><a style="color:blue" href="{% url 'update' course.pk %}">Редактировать</a></p>
-            <p>{{ course.title }}</p>
-            <p>Автор: {{course.author.last_name }} {{ course.author.first_name }}</p>
-            <p>Старт: {{ course.start_date }}</p>
-            <p>Продолжительность: {{ course.duration }} месяцев/ -а</p>
-            <p>Кол-во уроков: {{ course.count_lessons }}</p>
-            <p>{{ course.description }}</p>
-            <p><span class="price">{{ course.price }} ₽</span></p>
+            <p><a style="color:red" href="{% url 'delete' course_var.pk %}">Удалить</a></p>
+            <p><a style="color:blue" href="{% url 'update' course_var.pk %}">Редактировать</a></p>
+            <p>{{ course_var.title }}</p>
+
+            {% with authors=course_var.course.authors.all %}
+                {% if authors|length == 1 %}
+                <p>Автор: {{ authors.0.last_name }} {{ authors.0.first_name }}</p>
+                {% else %}
+                    <p>Авторы:
+                        {% for author in authors %}
+                            {{ author.last_name }} {{ author.first_name }}
+                        {% endfor %}
+                    </p>
+                {% endif %}
+            {% endwith %}
+
+            <p>Старт: {{ course_var.course.start_date }}</p>
+            <p>Продолжительность: {{ course_var.course.duration }} месяцев/ -а</p>
+            <p>Кол-во уроков: {{ course_var.course.count_lessons }}</p>
+            <p>{{ course_var.course.description }}</p>
+            <p><span class="price">{{ course_var.course.price }} ₽</span></p>
         </div>
         <div class="course_preview" style="margin-top: 1%; transform: none; box-shadow: none; border: none">
             {% with count_lessons=lessons.count %}
@@ -23,7 +36,7 @@
             {% empty %}
                 <p>Уроки пока не добавлены</p>
             {% endfor %}
-            <form method="post" action="{% url 'enroll' course.pk %}">
+            <form method="post" action="{% url 'enroll' course_var.pk %}">
                 {% csrf_token %}
                 <input type="submit" value="Записаться">
             </form>
@@ -32,7 +45,7 @@
         <p style="font-weight: bold; margin-left: 5.5%">
             Отзывы
             <span style="font-weight: initial; font-size: .85em">{{ reviews.count }}</span>
-            <a style="font-size: .8em" href="{% url 'review' course.pk %}">Оставить отзыв</a>
+            <a style="font-size: .8em" href="{% url 'review' course_var.pk %}">Оставить отзыв</a>
         </p>
 
         <div class="reviews_container">
@@ -47,8 +60,9 @@
                 <p>{{ review.content }}</p>
             </div>
             {% empty %}
-            <p>Отзывов пока нет. Ваша <a href="{% url 'review' course.pk %}">оценка</a> важна</p>
+            <p>Отзывов пока нет. Ваша <a href="{% url 'review' course_var.pk %}">оценка</a> важна</p>
             {% endfor %}
+        {% endwith %}
         </div>
     </div>
 {% endblock %}

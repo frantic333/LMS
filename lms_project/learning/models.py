@@ -5,7 +5,8 @@ from django.shortcuts import reverse
 
 class Course(models.Model):
     title = models.CharField(verbose_name='Описание курса', max_length=30, unique=True)
-    author = models.ForeignKey(settings.AUTH_USER_MODEL, on_delete=models.PROTECT, verbose_name='Автор курса')
+    authors = models.ManyToManyField(settings.AUTH_USER_MODEL, db_table='course_authors',
+                                    related_name='authors', verbose_name='Автор курса')
     description = models.TextField(verbose_name='Описание курса', max_length=200)
     start_date = models.DateField(verbose_name='Старт курса')
     duration = models.PositiveIntegerField(verbose_name='Продолжительность')
@@ -29,7 +30,8 @@ class Course(models.Model):
 
 
 class Lesson(models.Model):
-    course = models.ForeignKey(Course, on_delete=models.CASCADE, verbose_name='Курс')
+    course = models.ForeignKey(Course, on_delete=models.CASCADE, verbose_name='Курс',
+                               related_name='lessons')
     name = models.CharField(verbose_name='Название курса', max_length=25, unique=True)
     preview = models.TextField(verbose_name='Описание курса', max_length=100)
 

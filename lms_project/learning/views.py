@@ -1,6 +1,8 @@
 from django.contrib.auth.decorators import login_required, permission_required
 from django.contrib.auth.mixins import LoginRequiredMixin, PermissionRequiredMixin
 from django.core.exceptions import NON_FIELD_ERRORS
+from django.db.models import Q
+from django.db import transaction
 from django.http import HttpResponse
 from django.shortcuts import render, redirect
 from datetime import datetime
@@ -39,10 +41,11 @@ class CourseCreateView(LoginRequiredMixin, PermissionRequiredMixin, CreateView):
         return reverse('detail', kwargs={'course_id': self.object.id})
 
     def form_valid(self, form):
-        course = form.save(commit=False)
-        course.author = self.request.user
-        course.save()
-        return super(CourseCreateView, self).form_valid(form)
+        with transaction.atomic():
+            course = form.save(commit=False)
+            course.author = self.request.user
+            course.save()
+            return super(CourseCreateView, self).form_valid(form)
 
 """def create(request):
     if request.method == 'POST':
@@ -87,18 +90,18 @@ class CourseDeleteView(LoginRequiredMixin, PermissionRequiredMixin, DeleteView):
     return redirect('index')"""
 
 
-class CourseDetailView(DetailView):
+class CourseDetailView(ListView):
     template_name = 'detail.html'
-    context_object_name = 'course'
+    context_object_name = 'lessons'
     pk_url_kwarg = 'course_id'
 
     def get_queryset(self):
-        return Course.objects.filter(id=self.kwargs.get('course_id'))
+        return Course.objects.select_related('course').filter(id=self.kwargs.get('course_id'))
 
     def get_context_data(self, **kwargs):
         context =super(CourseDetailView, self).get_context_data(**kwargs)
         context['lessons'] = Lesson.objects.filter(course=self.kwargs.get('course_id'))
-        context['reviews'] = Review.objects.filter(course=self.kwargs.get('course_id'))
+        context['reviews'] = Review.objects.select_related('user').filter(course=self.kwargs.get('course_id'))
         return context
 
 """def detail(request, course_id):
@@ -108,6 +111,7 @@ class CourseDetailView(DetailView):
     return render(request, 'detail.html', context)"""
 
 
+@transaction.atomic
 @login_required
 @permission_required('learning.add_tracking', raise_exception=True)
 def enroll(request, course_id):
@@ -121,6 +125,7 @@ def enroll(request, course_id):
         return HttpResponse('Вы записаны на данный курс')
 
 
+@transaction.non_atomic_requests
 @login_required
 @permission_required('learning.add_review', raise_exception=True)
 def review(request, course_id):
