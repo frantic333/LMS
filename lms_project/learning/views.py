@@ -99,8 +99,7 @@ class CourseDetailView(ListView):
         return Course.objects.select_related('course').filter(id=self.kwargs.get('course_id'))
 
     def get_context_data(self, **kwargs):
-        context =super(CourseDetailView, self).get_context_data(**kwargs)
-        context['lessons'] = Lesson.objects.filter(course=self.kwargs.get('course_id'))
+        context = super(CourseDetailView, self).get_context_data(**kwargs)
         context['reviews'] = Review.objects.select_related('user').filter(course=self.kwargs.get('course_id'))
         return context
 
