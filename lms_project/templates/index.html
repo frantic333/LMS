@@ -1,6 +1,26 @@
 {% extends 'base.html' %}
 {% load static %}
 {% block content %}
+    <div align="left">
+        <form method="get">
+                <h3>Поиск</h3>
+                {% csrf_token %}
+                <input type="search" name="search" placeholder="Слово для поиска" maxlength="250" size="32">
+                <input type="submit" value="Поиск">
+        </form>
+    </div>
+    <div align="left">
+        <form method="get">
+            <h3>Сортировка</h3>
+            <select name="title" size="courses.count" autofocus>
+                {% for course in courses %}
+                    <option value="{{ course.title }}">{{ course.title }}</option>
+                {% endfor %}
+            </select>
+                <!--<p><input name="title" type="radio" value="{{ course.title }}">{{ course.title }}</p>
+                <p><input type="submit" value="Выбрать"></p>-->
+        </form>
+    </div>
     <div class="courses_container">
         {% now 'SHORT_DATETIME_FORMAT' %}
         {% for course in courses %}

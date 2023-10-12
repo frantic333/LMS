@@ -16,7 +16,16 @@ class MainView(ListView):
     template_name = 'index.html'
     queryset = Course.objects.all()
     context_object_name = 'courses'
-    paginate_by = 2
+
+    def get_queryset(self):
+        search_word = self.request.GET.get('search')
+        if search_word:
+            queryset = Course.objects.filter(Q(title__icontains='search_word') | Q(description__icontains='search_word'))
+        else:
+            queryset = MainView.queryset
+        sorting = self.request.Get.get('title')
+        queryset = queryset.order_by(sorting)
+        return queryset
 
     def get_context_data(self, *, object_list=None, **kwargs):
         context = super(MainView, self).get_context_data(**kwargs)
