@@ -20,11 +20,13 @@ class MainView(ListView):
     def get_queryset(self):
         search_word = self.request.GET.get('search')
         if search_word:
-            queryset = Course.objects.filter(Q(title__icontains='search_word') | Q(description__icontains='search_word'))
+            queryset = Course.objects.filter(Q(title__icontains=search_word) | Q(description__icontains=search_word))
         else:
             queryset = MainView.queryset
-        sorting = self.request.Get.get('title')
-        queryset = queryset.order_by(sorting)
+        signs = ['price', 'start_date']
+        for sign in signs:
+            if self.request.GET.get('sort') == sign:
+                queryset = queryset.order_by(sign)
         return queryset
 
     def get_context_data(self, *, object_list=None, **kwargs):

@@ -7,20 +7,13 @@
                 {% csrf_token %}
                 <input type="search" name="search" placeholder="Слово для поиска" maxlength="250" size="32">
                 <input type="submit" value="Поиск">
+                <select name="sort" size="courses.count" autofocus>
+                        <option value="{{ courses.price }}">Сначала дешевые</option>
+                        <option value="{{ courses.start_date }}">Сначала новые</option>
+                </select>
         </form>
     </div>
-    <div align="left">
-        <form method="get">
-            <h3>Сортировка</h3>
-            <select name="title" size="courses.count" autofocus>
-                {% for course in courses %}
-                    <option value="{{ course.title }}">{{ course.title }}</option>
-                {% endfor %}
-            </select>
-                <!--<p><input name="title" type="radio" value="{{ course.title }}">{{ course.title }}</p>
-                <p><input type="submit" value="Выбрать"></p>-->
-        </form>
-    </div>
+
     <div class="courses_container">
         {% now 'SHORT_DATETIME_FORMAT' %}
         {% for course in courses %}
