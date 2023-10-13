@@ -23,7 +23,7 @@ class MainView(ListView):
             queryset = Course.objects.filter(Q(title__icontains=search_word) | Q(description__icontains=search_word))
         else:
             queryset = MainView.queryset
-        signs = ['price', 'start_date']
+        signs = ['price', '-price', 'start_date']
         for sign in signs:
             if self.request.GET.get('sort') == sign:
                 queryset = queryset.order_by(sign)
