@@ -1,4 +1,4 @@
-from .models import Course, Review
+from .models import Course, Review, Lesson
 from django import forms
 
 
@@ -14,3 +14,10 @@ class ReviewForm(forms.ModelForm):
     class Meta:
         model = Review
         fields = ('content', )
+
+
+class LessonForm(forms.ModelForm):
+
+    class Meta:
+        model = Lesson
+        fields = '__all__'

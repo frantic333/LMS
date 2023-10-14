@@ -7,7 +7,7 @@ from django.http import HttpResponse
 from django.shortcuts import render, redirect
 from datetime import datetime
 from django.views.generic import ListView, DetailView, CreateView, UpdateView, DeleteView
-from .forms import CourseForm, ReviewForm
+from .forms import CourseForm, ReviewForm, LessonForm
 from django.urls import reverse
 from .models import *
 
@@ -19,6 +19,19 @@ class MainView(ListView):
     paginate_by = 2
 
     def get_queryset(self):
+        keys = self.request.GET.keys()
+        if 'search' in keys:
+            search_word = self.request.GET.get('search')
+            queryset = Course.objects.filter(Q(title__icontains=search_word) | Q(description__icontains=search_word))
+            if 'sort' in keys:
+                sorting = self.request.GET.get('sort')
+                queryset = queryset.order_by(sorting)
+                return queryset
+            else:
+                return queryset
+        else:
+            return MainView.queryset
+'''  
         search_word = self.request.GET.get('search')
         if search_word:
             queryset = Course.objects.filter(Q(title__icontains=search_word) | Q(description__icontains=search_word))
@@ -27,6 +40,8 @@ class MainView(ListView):
         sorting = self.request.GET.get('sort')
         queryset = queryset.order_by(sorting)
         return queryset
+'''
+
 
     def get_context_data(self, *, object_list=None, **kwargs):
         context = super(MainView, self).get_context_data(**kwargs)
@@ -118,6 +133,19 @@ class CourseDetailView(ListView):
     lessons = Lesson.objects.filter(course=course_id)
     context = {'course': course, 'lessons': lessons}
     return render(request, 'detail.html', context)"""
+
+
+class LessonCreateView(CreateView, LoginRequiredMixin, PermissionRequiredMixin):
+    model = Lesson
+    form_class = LessonForm
+    template_name = 'create_lesson.html'
+    pk_url_kwarg = 'course_id'
+
+    permission_required = ('learning.add_lesson', )
+
+    def get_success_url(self):
+        return reverse('detail', kwargs={'course_id': self.kwargs.get('course_id')})
+
 
 
 @transaction.atomic
