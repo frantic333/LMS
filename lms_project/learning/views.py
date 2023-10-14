@@ -16,6 +16,7 @@ class MainView(ListView):
     template_name = 'index.html'
     queryset = Course.objects.all()
     context_object_name = 'courses'
+    paginate_by = 2
 
     def get_queryset(self):
         search_word = self.request.GET.get('search')
@@ -23,10 +24,8 @@ class MainView(ListView):
             queryset = Course.objects.filter(Q(title__icontains=search_word) | Q(description__icontains=search_word))
         else:
             queryset = MainView.queryset
-        signs = ['price', '-price', 'start_date']
-        for sign in signs:
-            if self.request.GET.get('sort') == sign:
-                queryset = queryset.order_by(sign)
+        sorting = self.request.GET.get('sort')
+        queryset = queryset.order_by(sorting)
         return queryset
 
     def get_context_data(self, *, object_list=None, **kwargs):
@@ -107,7 +106,7 @@ class CourseDetailView(ListView):
     pk_url_kwarg = 'course_id'
 
     def get_queryset(self):
-        return Course.objects.select_related('course').filter(id=self.kwargs.get('course_id'))
+        return Lesson.objects.select_related('course').filter(id=self.kwargs.get('course_id'))
 
     def get_context_data(self, **kwargs):
         context = super(CourseDetailView, self).get_context_data(**kwargs)
