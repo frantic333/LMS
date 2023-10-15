@@ -19,34 +19,22 @@ class MainView(ListView):
     paginate_by = 2
 
     def get_queryset(self):
-        keys = self.request.GET.keys()
-        if 'search' in keys:
+        queryset = MainView.queryset
+        if {'search', 'sort'} != self.request.GET.keys():
+            return queryset
+        else:
             search_word = self.request.GET.get('search')
-            queryset = Course.objects.filter(Q(title__icontains=search_word) | Q(description__icontains=search_word))
-            if 'sort' in keys:
-                sorting = self.request.GET.get('sort')
-                queryset = queryset.order_by(sorting)
-                return queryset
-            else:
-                return queryset
-        else:
-            return MainView.queryset
-'''  
-        search_word = self.request.GET.get('search')
-        if search_word:
-            queryset = Course.objects.filter(Q(title__icontains=search_word) | Q(description__icontains=search_word))
-        else:
-            queryset = MainView.queryset
-        sorting = self.request.GET.get('sort')
-        queryset = queryset.order_by(sorting)
+            sorting = self.request.GET.get('sort')
+            filter = Q(title__icontains=search_word) | Q(description__icontains=search_word)
+            queryset = queryset.filter(filter).order_by(sorting)
         return queryset
-'''
 
 
     def get_context_data(self, *, object_list=None, **kwargs):
         context = super(MainView, self).get_context_data(**kwargs)
         context['current_year'] = datetime.now().year
         return context
+
 
 """def index(request):
     courses = Course.objects.all()
