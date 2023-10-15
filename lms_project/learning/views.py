@@ -6,27 +6,29 @@ from django.db import transaction
 from django.http import HttpResponse
 from django.shortcuts import render, redirect
 from datetime import datetime
-from django.views.generic import ListView, DetailView, CreateView, UpdateView, DeleteView
-from .forms import CourseForm, ReviewForm, LessonForm
+from django.views.generic import ListView, DetailView, CreateView, UpdateView, DeleteView, FormView
+from .forms import CourseForm, ReviewForm, LessonForm, OrderByAndSearchForm
 from django.urls import reverse
 from .models import *
 
 
-class MainView(ListView):
+class MainView(ListView, FormView):
     template_name = 'index.html'
     queryset = Course.objects.all()
     context_object_name = 'courses'
     paginate_by = 2
 
+    form_class = OrderByAndSearchForm
+
     def get_queryset(self):
         queryset = MainView.queryset
-        if {'search', 'sort'} != self.request.GET.keys():
+        if {'search', 'price_order'} != self.request.GET.keys():
             return queryset
         else:
-            search_word = self.request.GET.get('search')
-            sorting = self.request.GET.get('sort')
-            filter = Q(title__icontains=search_word) | Q(description__icontains=search_word)
-            queryset = queryset.filter(filter).order_by(sorting)
+            search_query = self.request.GET.get('search')
+            price_order_by = self.request.GET.get('price_order')
+            filter = Q(title__icontains=search_query) | Q(description__icontains=search_query)
+            queryset = queryset.filter(filter).order_by(price_order_by)
         return queryset
 
 
@@ -34,6 +36,12 @@ class MainView(ListView):
         context = super(MainView, self).get_context_data(**kwargs)
         context['current_year'] = datetime.now().year
         return context
+
+    def get_initial(self):
+        initial = super(MainView, self).get_initial()
+        initial['search'] = self.request.GET.get('search', '')
+        initial['price_order'] = self.request.GET.get('price_order', 'title')
+        return initial
 
 
 """def index(request):
@@ -133,6 +141,11 @@ class LessonCreateView(CreateView, LoginRequiredMixin, PermissionRequiredMixin):
 
     def get_success_url(self):
         return reverse('detail', kwargs={'course_id': self.kwargs.get('course_id')})
+
+    def get_form(self, form_class=None):
+        form = super(LessonCreateView, self).get_form()
+        form.fields['course'].queryset = Course.objects.filter(authors=self.request.user)
+        return form
 
 
 

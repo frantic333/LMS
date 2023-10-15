@@ -2,35 +2,28 @@ from django.contrib.auth import authenticate, login, logout
 from django.http import HttpResponse
 from django.shortcuts import render, redirect
 from django.contrib.auth.models import Group
+from django.contrib.auth.views import LoginView
+from django.views.generic.edit import CreateView
+from .forms import LoginForm, RegisterForm
 from .models import User
 
 
-def log_in(request):
-    if request.method == 'POST':
-        data = request.POST
-        user = authenticate(email=data['email'], password=data['password'])
-        if user and user.is_active:
-            login(request, user)
-            return redirect('index')
-        else:
-            return HttpResponse('Ваш аккаунт заблокирован')
-    else:
-        return render(request, 'login.html')
+class UserLoginView(LoginView):
+    authentication_form = LoginForm
+    template_name = 'login.html'
+    next_page = 'index'
 
 
-def register(request):
-    if request.method == 'POST':
-        data = request.POST
-        user = User(email=data['email'], first_name=data['first_name'], last_name=data['last_name'],
-                    birthday=data['birthday'], description=data['description'], avatar=data['avatar'])
-        user.set_password(data['password'])
-        user.save()
+class RegisterView(CreateView):
+    form_class = RegisterForm
+    template_name = 'register.html'
+
+    def form_valid(self, form):
+        user = form.save()
         pupil = Group.objects.filter(name='Ученик')
         user.groups.set(pupil)
-        login(request, user)
+        login(self.request, user)
         return redirect('index')
-    else:
-        return render(request, 'register.html')
 
 
 def change_password(request):

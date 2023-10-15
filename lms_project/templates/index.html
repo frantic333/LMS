@@ -1,19 +1,11 @@
 {% extends 'base.html' %}
 {% load static %}
 {% block content %}
-    <div align="left">
-        <form method="get">
-                <h3>Поиск</h3>
-                {% csrf_token %}
-                <input type="search" name="search" placeholder="Слово для поиска" maxlength="250" size="32">
-                <input type="submit" value="Поиск">
-                <select name="sort" autofocus>
-                        <option value="-price">Сначала дорогие</option>
-                        <option value="price">Сначала дешевые</option>
-                        <option value="-start_date" selected>Сначала новые</option>
-                </select>
-        </form>
-    </div>
+
+    <form id="form" method="get">
+        {{ form }}
+        <button type="submit">Получить</button>
+    </form>
 
     <div class="courses_container">
         {% now 'SHORT_DATETIME_FORMAT' %}
