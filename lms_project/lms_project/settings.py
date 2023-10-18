@@ -65,6 +65,18 @@ MIDDLEWARE = [
     'debug_toolbar.middleware.DebugToolbarMiddleware',
 ]
 
+# Session settings
+SESSION_ENGINE = 'django.contrib.sessions.backends.db'
+SESSION_EXPIRE_AT_BROWSER_CLOSE = True
+SESSION_COOKIE_AGE = 30
+SESSION_SAVE_EVERY_REQUEST = False
+SESSION_COOKIE_SECURE = False
+SESSION_COOKIE_SAMESITE = 'Lax'
+
+#Custom setting for remember user after logged
+REMEMBER_KEY = 'is_remember'
+REMEMBER_AGE = 60 * 60 * 24 * 365
+
 ROOT_URLCONF = 'lms_project.urls'
 
 TEMPLATES = [
