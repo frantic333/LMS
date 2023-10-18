@@ -32,6 +32,8 @@
                     <div><a href="#">{{ user.last_name }} {{user.first_name }}</a></div>
                     <div class="submenu_profile" style="display: none;">
                         <div>
+                            <p><a class="fa fa-heart" href="{% url 'favourites' %}">Избранное</a></p>
+                            <p><a href="{% url 'settings' %}">Настройки</a></p>
                             <p class="fa fa-sign-out">
                                 <a href="{% url 'password_change' %}">Сменить пароль</a>
                                 <a style="color: rgba(238, 68, 68, 0.83)" href="{% url 'logout' %}">Выход</a></p>
