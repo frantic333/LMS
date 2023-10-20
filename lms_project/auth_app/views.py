@@ -32,8 +32,6 @@ class RegisterView(CreateView):
 
     def form_valid(self, form):
         user = form.save()
-        pupil = Group.objects.filter(name='Ученик')
-        user.groups.set(pupil)
         login(self.request, user)
         return redirect('index')
 

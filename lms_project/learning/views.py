@@ -12,6 +12,9 @@ from django.views.generic import ListView, DetailView, CreateView, UpdateView, D
 from .forms import CourseForm, ReviewForm, LessonForm, OrderByAndSearchForm, SettingsForm
 from django.urls import reverse
 from .models import *
+from .signals import set_views
+
+from django.db.models.signals import pre_save
 
 
 class MainView(ListView, FormView):
@@ -122,11 +125,10 @@ class CourseDetailView(ListView):
     pk_url_kwarg = 'course_id'
 
     def get(self, request, *args, **kwargs):
-        views = request.session.setdefault('views', {})
-        course_id = str(kwargs[CourseDetailView.pk_url_kwarg])
-        count = views.get(course_id, 0)
-        views[course_id] = count + 1
-        request.session['views'] = views
+        set_views.send(sender=self.__class__,
+                       session=request.session,
+                       pk_url_kwarg=CourseDetailView.pk_url_kwarg,
+                       id=kwargs[CourseDetailView.pk_url_kwarg])
         return super(CourseDetailView, self).get(request, *args, **kwargs)
 
     def get_queryset(self):
@@ -151,6 +153,14 @@ class LessonCreateView(CreateView, LoginRequiredMixin, PermissionRequiredMixin):
     pk_url_kwarg = 'course_id'
 
     permission_required = ('learning.add_lesson', )
+
+    def form_valid(self, form):
+        error = pre_save.send(sender=Lesson.Create.View.model, instance=form.save(commit=False))
+        if error[0][1]:
+            form.errors[NON_FIELD_ERRORS] = [error[0][1]]
+            return super(LessonCreateView, self).form_invalid(form)
+        else:
+            return super(LessonCreateView, self).form_valid(form)
 
     def get_success_url(self):
         return reverse('detail', kwargs={'course_id': self.kwargs.get('course_id')})
