@@ -155,7 +155,7 @@ class LessonCreateView(CreateView, LoginRequiredMixin, PermissionRequiredMixin):
     permission_required = ('learning.add_lesson', )
 
     def form_valid(self, form):
-        error = pre_save.send(sender=Lesson.Create.View.model, instance=form.save(commit=False))
+        error = pre_save.send(sender=LessonCreateView.model, instance=form.save(commit=False))
         if error[0][1]:
             form.errors[NON_FIELD_ERRORS] = [error[0][1]]
             return super(LessonCreateView, self).form_invalid(form)
