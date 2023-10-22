@@ -132,7 +132,7 @@ class CourseDetailView(ListView):
         return super(CourseDetailView, self).get(request, *args, **kwargs)
 
     def get_queryset(self):
-        return Lesson.objects.select_related('course').filter(id=self.kwargs.get('course_id'))
+        return Lesson.objects.select_related('course').filter(course=self.kwargs.get('course_id'))
 
     def get_context_data(self, **kwargs):
         context = super(CourseDetailView, self).get_context_data(**kwargs)

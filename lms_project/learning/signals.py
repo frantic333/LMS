@@ -10,7 +10,7 @@ def check_quantity(sender, instance, **kwargs):
     error = None
     optimal_query = sender.objects.select_related('course').filter(course=instance.course)
     actual_count = optimal_query.count()
-    set_count = optimal_query.first.course.count_lessoms
+    set_count = optimal_query.first.course.count_lessons
 #    actual_count = sender.objects.filter(course=instance.course).count()
 #    set_count = Course.objects.filter(id=instance.course.id).values('count_lessons')[0]['count_lessons']
 
