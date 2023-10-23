@@ -11,7 +11,7 @@ def check_quantity(sender, instance, **kwargs):
     error = None
     course_data = Course.objects.filter(id=instance.course.id).annotate(lessons_count=Count('lessons')).values('count_lessons', 'lessons_count')
 
-    if course_data.lessons_count >= course_data.count_lessons:
+    if course_data[0]['lessons_count'] >= course_data[0]['count_lessons']:
         error = f'Количество уроков ограничено!' \
                 f'Ранее вы установили, что курс будет содержать {course_data.count_lessons} уроков'
     return error
