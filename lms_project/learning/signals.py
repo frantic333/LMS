@@ -13,7 +13,7 @@ def check_quantity(sender, instance, **kwargs):
 
     if course_data[0]['lessons_count'] >= course_data[0]['count_lessons']:
         error = f'Количество уроков ограничено!' \
-                f'Ранее вы установили, что курс будет содержать {course_data.count_lessons} уроков'
+                f'Ранее вы установили, что курс будет содержать {course_data[0]["count_lessons"]} уроков'
     return error
 
 
