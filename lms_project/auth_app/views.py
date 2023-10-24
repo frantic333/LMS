@@ -8,6 +8,7 @@ from .forms import LoginForm, RegisterForm
 from django.conf import settings
 from datetime import datetime
 from .models import User
+from .signals import account_access
 
 
 class UserLoginView(LoginView):
@@ -22,6 +23,10 @@ class UserLoginView(LoginView):
             self.request.session.set_expiry(settings.REMEMBER_AGE)
         elif is_remember == 'off':
             self.request.session.set_expiry(0)
+
+        # отправка email  с сообщением о входе в аккаунт
+        account_access.send(sender=self.__class__, request=self.request)
+
         return super(UserLoginView, self).form_valid(form)
 
 

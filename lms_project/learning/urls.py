@@ -14,5 +14,6 @@ urlpatterns = [
     path('add_booking/<int:course_id>/', add_booking, name='add_booking'),
     path('remove_booking/<int:course_id>/', remove_booking, name='remove_booking'),
     path('favourites/', FavouriteView.as_view(), name='favourites'),
-    path('settings/', SettingFormView.as_view(), name='settings')
+    path('settings/', SettingFormView.as_view(), name='settings'),
+    path('get_certificate/', get_certificate_view, name='get_certificate')
 ]
