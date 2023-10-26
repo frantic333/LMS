@@ -15,9 +15,9 @@ get_certificate = Signal()
 
 def check_quantity(sender, instance, **kwargs):
     error = None
-    course_data = Course.objects.filter(id=instance.course.id).annotate(lessons_count=Count('lessons')).values('count_lessons', 'lessons_count')
+    course_data = Course.objects.filter(id=instance.course.id).annotate(lessons_count=Count('lessons')).values('count_lessons', 'lessons_count')[0]
 
-    if course_data[0]['lessons_count'] >= course_data[0]['count_lessons']:
+    if course_data['lessons_count'] >= course_data['count_lessons']:
         error = f'Количество уроков ограничено!' \
                 f'Ранее вы установили, что курс будет содержать {course_data[0]["count_lessons"]} уроков'
     return error
@@ -65,9 +65,9 @@ def send_user_certificate(**kwargs):
 @receiver(post_save, sender=Lesson)
 def send_info_email(sender, instance, **kwargs):
     if kwargs['created']:
-        actual_count = sender.objects.filter(course=instance.course).count()
-        set_count = Course.objects.filter(id=instance.course.id).values('count_lessons')[0]['count_lessons']
-        if actual_count == set_count:
+        course_data = Course.objects.filter(id=instance.course.id).annotate(lessons_count=Count('lessons')).values('count_lessons', 'lessons_count')[0]
+
+        if course_data['lessons_count'] >= course_data['count_lessons']:
             template_name = 'emails/course_info_email.html'
             course = Course.objects.get(id=instance.course.id)
             context = {
@@ -85,7 +85,7 @@ def send_info_email(sender, instance, **kwargs):
             emails = [
                 EmailMessage(subject='Время обучиться новому скиллу | Платформа Codeby',
                              body=render_to_string(template_name, context),
-                             to=[email], connection=connection)
+                             to=[email])
                 for email in recipients
             ]
 

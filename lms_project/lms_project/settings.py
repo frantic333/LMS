@@ -161,11 +161,12 @@ EMAIL_HOST_PASSWORD = os.environ.get('EMAIL_HOST_PASSWORD')
 DEFAULT_FROM_EMAIL = SERVER_EMAIL = EMAIL_HOST_USER
 
 ADMINS = [
-    ('admin', os.environ.get('MY_EMAIL'))
+    ('admin', 'test@example.com')
 ]
+#('admin', os.environ.get('MY_EMAIL'))
 
 MANAGERS = [
-    ('test', 'test@gmail.com')
+    ('test1', 'test1@gmail.com')
 ]
 
 # Static files (CSS, JavaScript, Images)
