@@ -1,7 +1,7 @@
-import re
-
 from django.contrib.auth.decorators import login_required, permission_required
 from django.contrib.auth.mixins import LoginRequiredMixin, PermissionRequiredMixin
+from django.core.cache import cache, caches
+from django.core.cache.backends.redis import RedisCache
 from django.core.exceptions import NON_FIELD_ERRORS
 from django.db.models import Q
 from django.db import transaction
@@ -26,7 +26,12 @@ class MainView(ListView, FormView):
     form_class = OrderByAndSearchForm
 
     def get_queryset(self):
-        queryset = MainView.queryset
+        if 'courses' in cache:
+            queryset = cache.get('courses')
+        else:
+            queryset = MainView.queryset
+            cache.set('courses', queryset, timeout=30)
+
         if {'search', 'price_order'} != self.request.GET.keys():
             return queryset
         else:
@@ -66,15 +71,14 @@ class CourseCreateView(LoginRequiredMixin, PermissionRequiredMixin, CreateView):
     form_class = CourseForm
 
     permission_required = ('learning.add_course', )
-    def get_success_url(self):
-        return reverse('detail', kwargs={'course_id': self.object.id})
 
     def form_valid(self, form):
         with transaction.atomic():
             course = form.save(commit=False)
             course.author = self.request.user
             course.save()
-            return super(CourseCreateView, self).form_valid(form)
+            cache.delete('courses')
+            return redirect(reverse('create_lesson', kwargs={'course_id': course.id}))
 
 """def create(request):
     if request.method == 'POST':
@@ -132,7 +136,11 @@ class CourseDetailView(ListView):
         return super(CourseDetailView, self).get(request, *args, **kwargs)
 
     def get_queryset(self):
-        return Lesson.objects.select_related('course').filter(course=self.kwargs.get('course_id'))
+        course_id = self.kwargs.get('course_id')
+        queryset = cache.get_or_set(f'course_{course_id}_lessons',
+                                    Lesson.objects.select_related('course').filter(course=course_id),
+                                    timeout=30)
+        return queryset
 
     def get_context_data(self, **kwargs):
         context = super(CourseDetailView, self).get_context_data(**kwargs)
