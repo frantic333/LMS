@@ -1,7 +1,6 @@
-import re
-
 from django.contrib.auth.decorators import login_required, permission_required
 from django.contrib.auth.mixins import LoginRequiredMixin, PermissionRequiredMixin
+from django.core.cache import cache, caches
 from django.core.exceptions import NON_FIELD_ERRORS
 from django.db.models import Q
 from django.db import transaction
@@ -26,7 +25,12 @@ class MainView(ListView, FormView):
     form_class = OrderByAndSearchForm
 
     def get_queryset(self):
-        queryset = MainView.queryset
+        if 'courses' in cache:
+            queryset = cache.get('courses')
+        else:
+            queryset = MainView.queryset
+            cache.set('courses', queryset, timeout=30)
+
         if {'search', 'price_order'} != self.request.GET.keys():
             return queryset
         else:
