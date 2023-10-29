@@ -1,5 +1,6 @@
 {% extends 'base.html' %}
 {% load static %}
+{% load cache %}
 {% block content %}
 
     <form id="form" method="get">
@@ -8,6 +9,7 @@
     </form>
 
     <div class="courses_container">
+        {% cache 300 course_short_info %}
         {% now 'SHORT_DATETIME_FORMAT' %}
         {% for course in courses %}
             <div class="course_preview">
@@ -37,6 +39,7 @@
         {% empty %}
             <p>На данный момент не найдено ни одного курса. Проверьте страницу позже.</p>
         {% endfor %}
+        {% endcache %}
     </div>
     <div>
         <span>

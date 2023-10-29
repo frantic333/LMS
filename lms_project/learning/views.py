@@ -75,8 +75,8 @@ class CourseCreateView(LoginRequiredMixin, PermissionRequiredMixin, CreateView):
     def form_valid(self, form):
         with transaction.atomic():
             course = form.save(commit=False)
-            course.author = self.request.user
             course.save()
+            course.authors.add(self.request.user)
             cache.delete('courses')
             return redirect(reverse('create_lesson', kwargs={'course_id': course.id}))
 
@@ -112,6 +112,11 @@ class CourseDeleteView(LoginRequiredMixin, PermissionRequiredMixin, DeleteView):
     pk_url_kwarg = 'course_id'
 
     permission_required = ('learning.delete_course', )
+
+    def form_valid(self, form):
+        course_id = self.kwargs.get('course_id')
+        cache.delete_many(['courses', f'course_{course_id}_lessons'])
+        return super(CourseDeleteView, self).form_valid(form)
 
     def get_queryset(self):
         return Course.objects.filter(id=self.kwargs.get('course_id'))
