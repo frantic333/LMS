@@ -30,7 +30,7 @@ class MainView(ListView, FormView):
             queryset = cache.get('courses')
         else:
             queryset = MainView.queryset
-            cache.set('courses', queryset, timeout=30)
+            cache.set('courses', queryset, timeout=0)
 
         if {'search', 'price_order'} != self.request.GET.keys():
             return queryset
@@ -159,7 +159,7 @@ class CourseDetailView(ListView):
     return render(request, 'detail.html', context)"""
 
 
-class LessonCreateView(CreateView, LoginRequiredMixin, PermissionRequiredMixin):
+class LessonCreateView(LoginRequiredMixin, PermissionRequiredMixin, CreateView):
     model = Lesson
     form_class = LessonForm
     template_name = 'create_lesson.html'
