@@ -3,7 +3,7 @@ from django.contrib.auth.mixins import LoginRequiredMixin, PermissionRequiredMix
 from django.core.cache import cache, caches
 from django.core.cache.backends.redis import RedisCache
 from django.core.exceptions import NON_FIELD_ERRORS
-from django.db.models import Q
+from django.db.models import Q, F , Count, Sum
 from django.db import transaction
 from django.http import HttpResponse, HttpResponseRedirect
 from django.shortcuts import render, redirect
@@ -208,6 +208,19 @@ class SettingFormView(FormView):
         return initial
 
 
+class TrackingView(LoginRequiredMixin, ListView):
+    model = Tracking
+    template_name = 'tracking.html'
+    context_object_name = 'tracks'
+
+    def get_queryset(self):
+        queryset = Tracking.objects\
+            .select_related('lesson')\
+            .filter(user=self.request.user)\
+            .annotate(header=F('lesson__course__title'))
+        return queryset
+
+
 @transaction.atomic
 @login_required
 @permission_required('learning.add_tracking', raise_exception=True)
@@ -222,7 +235,7 @@ def enroll(request, course_id):
         # Отправка письма об успешной записи на курс
         course_enroll.send(sender=Tracking, request=request, course_id=course_id)
 
-        return HttpResponse('Вы записаны на данный курс')
+        return redirect('tracking')
 
 
 @transaction.non_atomic_requests
@@ -261,6 +274,12 @@ def remove_booking(request, course_id):
 
 
 @login_required
-def get_certificate_view(request):
-    get_certificate.send(sender=request.user)
-    return HttpResponse('Сертификат отправлен на Ваш email')
+def get_certificate_view(request, course_id):
+    count_passed = Tracking.objects.filter(lesson__course=course_id, user=request.user)\
+        .aggregate(total_passed=Count('lesson__course'), fact_passed=Sum('passed'))
+
+    if count_passed['total_passed'] == count_passed['fact_passed']:
+        get_certificate.send(sender=request.user)
+        return HttpResponse('Сертификат отправлен на Ваш email')
+    else:
+        return HttpResponse('Вы не прошли полностью курс')
