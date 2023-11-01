@@ -30,7 +30,7 @@ class MainView(ListView, FormView):
             queryset = cache.get('courses')
         else:
             queryset = MainView.queryset
-            cache.set('courses', queryset, timeout=0)
+            cache.set('courses', queryset, timeout=30)
 
         if {'search', 'price_order'} != self.request.GET.keys():
             return queryset
