@@ -55,9 +55,7 @@ INSTALLED_APPS = [
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
-#    'django.middleware.cache.UpdateCacheMiddleware',
     'django.middleware.common.CommonMiddleware',
-#    'django.middleware.cache.FetchFromCacheMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
@@ -124,9 +122,7 @@ CACHES = {
         'LOCATION': 'redis://127.0.0.1:6379/1',
                       }
 }
-#CACHE_MIDDLEWARE_ALIAS = 'default'
-#CACHE_MIDDLEWARE_SECONDS = 60 * 10
-#CACHE_MIDDLEWARE_KEY_PREFIX = 'codeby'
+
 
 # Password validation
 # https://docs.djangoproject.com/en/4.0/ref/settings/#auth-password-validators
@@ -175,9 +171,8 @@ EMAIL_HOST_PASSWORD = os.environ.get('EMAIL_HOST_PASSWORD')
 DEFAULT_FROM_EMAIL = SERVER_EMAIL = EMAIL_HOST_USER
 
 ADMINS = [
-    ('admin', 'test@example.com')
+    ('admin', os.environ.get('MY_EMAIL'))
 ]
-#('admin', os.environ.get('MY_EMAIL'))
 
 MANAGERS = [
     ('test1', 'test1@gmail.com')

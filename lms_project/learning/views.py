@@ -57,13 +57,6 @@ class MainView(ListView, FormView):
     def get_paginate_by(self, queryset):
         return self.request.COOKIES.get('paginate_by', 5)
 
-"""def index(request):
-    courses = Course.objects.all()
-    current_year =datetime.now().year
-    return render(request, context={'courses': courses,
-                                    'current_year': current_year},
-                  template_name='index.html')"""
-
 
 class CourseCreateView(LoginRequiredMixin, PermissionRequiredMixin, CreateView):
     template_name = 'create.html'
@@ -80,16 +73,6 @@ class CourseCreateView(LoginRequiredMixin, PermissionRequiredMixin, CreateView):
             cache.delete('courses')
             return redirect(reverse('create_lesson', kwargs={'course_id': course.id}))
 
-"""def create(request):
-    if request.method == 'POST':
-        data = request.POST
-        Course.objects.create(title=data['title'], author=request.user,
-                              description=data['description'], start_date=data['start_date'],
-                              duration=data['duration'], price=data['price'],
-                              count_lessons=data['count_lessons'])
-        return redirect('index')
-    else:
-        return render(request, 'create.html')"""
 
 class CourseUpdateView(LoginRequiredMixin, PermissionRequiredMixin, UpdateView):
     model = Course
@@ -123,9 +106,6 @@ class CourseDeleteView(LoginRequiredMixin, PermissionRequiredMixin, DeleteView):
 
     def get_success_url(self):
         return reverse('index')
-"""def delete(request, course_id):
-    Course.objects.get(id=course_id).delete()
-    return redirect('index')"""
 
 
 class CourseDetailView(ListView):
@@ -151,12 +131,6 @@ class CourseDetailView(ListView):
         context = super(CourseDetailView, self).get_context_data(**kwargs)
         context['reviews'] = Review.objects.select_related('user').filter(course=self.kwargs.get('course_id'))
         return context
-
-"""def detail(request, course_id):
-    course = Course.objects.get(id=course_id)
-    lessons = Lesson.objects.filter(course=course_id)
-    context = {'course': course, 'lessons': lessons}
-    return render(request, 'detail.html', context)"""
 
 
 class LessonCreateView(LoginRequiredMixin, PermissionRequiredMixin, CreateView):
