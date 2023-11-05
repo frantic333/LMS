@@ -1,5 +1,5 @@
 from django.contrib import admin
-from .models import Course, Lesson, Review
+from .models import Course, Lesson, Tracking, Review
 
 
 @admin.register(Course)
@@ -18,6 +18,15 @@ class CourseAdmin(admin.ModelAdmin):
 class LessonAdmin(admin.ModelAdmin):
     list_display = ('course', 'name', 'preview')
     search_fields = ('name',)
+    list_per_page = 5
+    actions_on_top = True
+    actions_selection_counter = True
+
+
+@admin.register(Tracking)
+class TrackingAdmin(admin.ModelAdmin):
+    list_display = ('lesson', 'user', 'passed')
+    search_fields = ('lesson',)
     list_per_page = 5
     actions_on_top = True
     actions_selection_counter = True

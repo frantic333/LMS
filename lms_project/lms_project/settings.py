@@ -31,11 +31,7 @@ SECRET_KEY = 'django-insecure-op624$qbun18dr_su_%&hf3e0jaa6zx0hl+k%fce9hd2=&4x8i
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['127.0.0.1']
-
-INTERNAL_IPS = [
-    "127.0.0.1",
-]
+ALLOWED_HOSTS = []
 
 
 # Application definition
@@ -50,8 +46,6 @@ INSTALLED_APPS = [
     # Custom apps
     'learning.apps.LearningConfig',
     'auth_app.apps.AuthAppConfig',
-    # django-debug toolbar
-    'debug_toolbar',
 ]
 
 MIDDLEWARE = [
@@ -62,7 +56,6 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
-    'debug_toolbar.middleware.DebugToolbarMiddleware',
 ]
 
 # Session settings
@@ -199,6 +192,3 @@ MEDIA_URL = '/media/'
 # https://docs.djangoproject.com/en/4.0/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
-# Prodaction settings
-#SECURE_SSL_REDIRECT = True
-#CSRF_COOKIE_SECURE = True
