@@ -29,9 +29,9 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-op624$qbun18dr_su_%&hf3e0jaa6zx0hl+k%fce9hd2=&4x8i'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
-ALLOWED_HOSTS = ['127.0.0.1']
+ALLOWED_HOSTS = []
 
 INTERNAL_IPS = [
     "127.0.0.1",
@@ -110,6 +110,9 @@ DATABASES = {
         'PASSWORD': os.environ.get('PASSWORD_DB'),
         'NAME': 'lms_project',
         'ATOMIC_REQUEST': True,
+        'TEST': {
+            'NAME': 'lms_project_test',
+        },
     }
 }
 
