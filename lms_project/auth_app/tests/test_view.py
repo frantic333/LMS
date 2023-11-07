@@ -1,3 +1,4 @@
+from django.conf import settings
 from django.contrib.auth import get_user_model
 from django.contrib.auth.models import Group, Permission
 from django.shortcuts import reverse
@@ -20,8 +21,7 @@ class AuthAppTestCase(TestCase):
             'username': 'student',
             'email': 'student@example.com',
             'birthday': timezone.now().date(),
-            'password1': 'student1234',
-            'password2': 'student1234'
+            'password': 'student1234'
         }
         self.user_invalid_register_data = {
             'username': 'student@example.com',
@@ -70,3 +70,30 @@ class AuthAppTestCase(TestCase):
         get_user_model().objects.create_user(**self.user_valid_register_data)
         response = self.client.post(path=self.register, data=self.user_valid_register_data)
         self.assertFormError(response, 'form', 'email', 'Участник с таким Email уже существует.')
+
+    def test_get_login_view(self):
+        response = self.client.get(path=self.login)
+        self.assertEqual(response.status_code, 200)
+        self.assertTemplateUsed(response, 'login.html')
+
+    def test_post_login_view_with_remember(self):
+        get_user_model().objects.create_user(**self.user_valid_register_data)
+        response = self.client.post(path=self.login, data=self.user_login_data_with_remember)
+        self.assertEqual(response.status_code, 302)
+        self.assertEqual(self.client.session.get_expiry_age(), settings.REMEMBER_AGE)
+
+        response_index = self.client.get(self.index)
+        self.assertTrue(response_index.context['user'].is_authenticated)
+
+    def test_post_login_view_without_remember(self):
+        get_user_model().objects.create_user(**self.user_valid_register_data)
+        response = self.client.post(path=self.login, data=self.user_login_data_without_remember)
+        self.assertEqual(response.status_code, 302)
+        self.assertEqual(self.client.session.get_expiry_age(), settings.SESSION_COOKIE_AGE)
+
+        response_index = self.client.get(self.index)
+        self.assertTrue(response_index.context['user'].is_authenticated)
+
+    def test_logout_view(self):
+        response = self.client.post(self.logout)
+        self.assertEqual(response.status_code, 302)
