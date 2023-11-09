@@ -1,7 +1,7 @@
 from django.db.models import Q
 from django.shortcuts import reverse
-from django.test import TestCase, Client
-from learning.models import Course, Lesson
+from django.test import TestCase, Client, tag
+from learning.models import Course, Lesson, Review, Tracking
 
 
 class LearningViewTestCase(TestCase):
@@ -125,3 +125,60 @@ class LearningViewTestCase(TestCase):
         self.assertEqual(response.status_code, 200)
         self.assertTemplateUsed(response, 'index.html')
         self.assertEqual(len(response.context['courses']), len(session['favourites']))
+
+    def test_enroll_view(self):
+        login = self.client.login(username='test_student@gmail.com', password='1')
+        course = Course.objects.last()
+        response = self.client.post(reverse('enroll', kwargs={'course_id': course.id}))
+        self.assertRedirects(response, self.tracking, status_code=302)
+        self.assertEqual(Tracking.objects.filter(user=response.context['user'], lesson__course=course.id).count(),
+                         Lesson.objects.filter(course=course).count())
+
+        response = self.client.post(reverse('enroll', kwargs={'course_id': course.id}))
+        self.assertEqual(str(response.content, 'utf-8'), 'Вы уже записаны на данный курс')
+
+    def test_course_delete_view(self):
+        login = self.client.login(username='test@gmail.com', password='1')
+        course = Course.objects.get(id=24)
+        response = self.client.post(reverse('delete', kwargs={'course_id': course.id}))
+        self.assertEqual(response.status_code, 302)
+        self.assertRedirects(response, self.index)
+
+    def test_course_update_view(self):
+        login = self.client.login(username='test@gmail.com', password='1')
+        course = Course.objects.last()
+        response = self.client.post(reverse('update', kwargs={'course_id': course.id}), data={
+            'title': course.title,
+            'description': course.description,
+            'start_date': course.start_date,
+            'duration': course.duration,
+            'price': course.price + 1000,
+            'count_lessons': course.count_lessons + 1,
+        })
+        self.assertEqual(response.status_code, 302)
+        self.assertNotEqual(course.count_lessons, Course.objects.get(id=course.id).count_lessons)
+
+    def test_lesson_create_view(self):
+        self.client.login(username='test@gmail.com', password='1')
+        course = Course.objects.get(title='Django&Django Rest Framework')
+        response_1 = self.client.post(reverse('create_lesson', kwargs={'course_id': course.id}), data={
+            'course': course.id,
+            'name': 'Последний урок курса',
+            'preview': 'Описание урока',
+        })
+        self.assertEqual(response_1.status_code, 200)
+        self.assertFormError(response_1, 'form', field=None,
+                             errors=f'Количество уроков ограничено! Ранее вы установили, '
+                             f'что курс будет содержать {course.count_lessons} уроков')
+
+    @tag('get_certificate_view')
+    def test_get_certificate_view(self):
+        login = self.client.login(username='test_student@gmail.com', password='1')
+        course = Course.objects.first()
+        response_1 = self.client.post(reverse('enroll', kwargs={'course_id': course.id}))
+        response_2 = self.client.post(reverse('get_certificate', kwargs={'course_id': course.id}))
+        self.assertEqual(str(response_2.content, 'utf-8'), 'Вы не прошли курс полностью')
+
+        Tracking.objects.filter(user=response_1.context['user'], lesson__course=course.id).update(passed=True)
+        response_3 = self.client.post(reverse('get_certificate', kwargs={'course_id': course.id}))
+        self.assertEqual(str(response_3.content, 'utf-8'), 'Сертификат отправлен на Ваш email')

@@ -13,7 +13,7 @@
 
                 {% for field in form.visible_fields %}
                     {% if field.errors %}
-                        <p>{{ error }}</p>
+                        <p>{{ field.error }}</p>
                     {% endif %}
                     <p>{{ field.label_tag}} {{ field }} {{field.help_text }}</p>
                 {% endfor %}

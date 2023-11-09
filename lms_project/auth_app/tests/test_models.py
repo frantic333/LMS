@@ -20,6 +20,6 @@ class UserModelTestCase(TestCase):
         user = get_user_model().objects.first()
         self.assertEqual(str(user), f'Участник {user.first_name} {user.last_name}: {user.email}')
 
-#    def test_path_from_avatar(self):
-#        user = get_user_model().objects.first()
-#        self.assertEqual(get_timestamp_path_user(user, self.user_data['avatar']), 'users/avatar.jpg')
+    def test_path_from_avatar(self):
+        user = get_user_model().objects.first()
+        self.assertEqual(get_timestamp_path_user(user, self.user_data['avatar']), 'users/avatar.jpg')
