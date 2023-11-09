@@ -2,19 +2,69 @@ from django.contrib.auth.decorators import login_required, permission_required
 from django.contrib.auth.mixins import LoginRequiredMixin, PermissionRequiredMixin
 from django.core.cache import cache, caches
 from django.core.cache.backends.redis import RedisCache
+from django.core.serializers import serialize
 from django.core.exceptions import NON_FIELD_ERRORS
 from django.db.models import Q, F , Count, Sum
 from django.db import transaction
-from django.http import HttpResponse, HttpResponseRedirect
+from django.http import HttpResponse, HttpResponseRedirect, JsonResponse
 from django.shortcuts import render, redirect
 from datetime import datetime
 from django.views.generic import ListView, DetailView, CreateView, UpdateView, DeleteView, FormView
 from .forms import CourseForm, ReviewForm, LessonForm, OrderByAndSearchForm, SettingsForm
 from django.urls import reverse
 from .models import *
+from .serializers import CourseSerializer
 from .signals import set_views, course_enroll, get_certificate
-
 from django.db.models.signals import pre_save
+import json
+
+
+# API
+def api_courses(request):
+    courses = Course.objects.all()
+    serialized_courses = CourseSerializer().serialize(queryset=courses,
+                                        use_natural_foreign_keys=True)
+    return JsonResponse(data=dict(courses=json.loads(serialized_courses)),
+                        safe=False,
+                        json_dumps_params={'ensure_ascii': False, 'indent': 4})
+
+
+def api_lessons(request):
+    lessons = Lesson.objects.all()
+    serialized_lessons = CourseSerializer().serialize(queryset=lessons,
+                                        use_natural_foreign_keys=True)
+    return JsonResponse(data=dict(lessons=json.loads(serialized_lessons)),
+                        safe=False,
+                        json_dumps_params={'ensure_ascii': False, 'indent': 4})
+
+
+def api_trackings(request):
+    trackings = Tracking.objects.all()
+    serialized_trackings = CourseSerializer().serialize(queryset=trackings,
+                                        use_natural_foreign_keys=True)
+    return JsonResponse(data=dict(trackings=json.loads(serialized_trackings)),
+                        safe=False,
+                        json_dumps_params={'ensure_ascii': False, 'indent': 4})
+
+
+def api_reviews(request):
+    reviews = Review.objects.all()
+    serialized_reviews = CourseSerializer().serialize(queryset=reviews,
+                                        use_natural_foreign_keys=True)
+    return JsonResponse(data=dict(reviews=json.loads(serialized_reviews)),
+                        safe=False,
+                        json_dumps_params={'ensure_ascii': False, 'indent': 4})
+
+
+def api_course(request, course_id):
+    course = Course.objects.filter(id=course_id)
+    serialized_course = CourseSerializer().serialize(queryset=course,
+                                        use_natural_foreign_keys=True)
+    return JsonResponse(data=dict(course=json.loads(serialized_course)),
+                        safe=False,
+                        json_dumps_params={'ensure_ascii': False, 'indent': 4})
+
+
 
 
 class MainView(ListView, FormView):
