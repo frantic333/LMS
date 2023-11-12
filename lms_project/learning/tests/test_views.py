@@ -1,7 +1,7 @@
 from django.db.models import Q
 from django.shortcuts import reverse
 from django.test import TestCase, Client, tag
-from learning.models import Course, Lesson, Review, Tracking
+from learning.models import *
 
 
 class LearningViewTestCase(TestCase):
@@ -13,8 +13,10 @@ class LearningViewTestCase(TestCase):
         self.create = reverse('create')
         self.tracking = reverse('tracking')
 
+
+
     def test_get_index_view(self):
-        response = self.client.get(self.index)
+        response = self.client.get(path=self.index)
         self.assertEqual(response.status_code, 200)
         self.assertTemplateUsed(response, 'index.html')
         self.assertEqual(len(response.context['courses']), 5)

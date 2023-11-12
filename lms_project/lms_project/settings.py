@@ -49,8 +49,11 @@ INSTALLED_APPS = [
     # Custom apps
     'learning.apps.LearningConfig',
     'auth_app.apps.AuthAppConfig',
-    # django-debug toolbar
+    'api',
+    # packages
     'debug_toolbar',
+    'rest_framework',
+
 ]
 
 MIDDLEWARE = [
