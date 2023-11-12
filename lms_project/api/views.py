@@ -39,7 +39,7 @@ def trackings(request, user_id):
         tracking_serializer = TrackingSerializer(instance=tracking, many=True)
         return Response(data=tracking_serializer.data, status=status.HTTP_200_OK)
     except ObjectDoesNotExist as exception:
-        return Response(data={'error': 'Запрашиваемый курс отсутствует в системе'},
+        return Response(data={'error': 'Запрашиваемый пользователь не зарегистрирован на сайте'},
                         status=status.HTTP_404_NOT_FOUND)
 
 @api_view(['GET'])
