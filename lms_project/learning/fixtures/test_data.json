@@ -1,0 +1,4050 @@
+[
+{
+    "model": "admin.logentry",
+    "pk": 1,
+    "fields": {
+        "action_time": "2023-09-16T13:38:11.796Z",
+        "user": 1,
+        "content_type": 6,
+        "object_id": "1",
+        "object_repr": "Django Framework: Старт2023-12-12",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 2,
+    "fields": {
+        "action_time": "2023-09-16T13:39:44.187Z",
+        "user": 1,
+        "content_type": 7,
+        "object_id": "1",
+        "object_repr": "Lesson object (1)",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 3,
+    "fields": {
+        "action_time": "2023-09-16T13:40:02.424Z",
+        "user": 1,
+        "content_type": 7,
+        "object_id": "2",
+        "object_repr": "Lesson object (2)",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 4,
+    "fields": {
+        "action_time": "2023-09-16T13:40:18.409Z",
+        "user": 1,
+        "content_type": 7,
+        "object_id": "3",
+        "object_repr": "Lesson object (3)",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 5,
+    "fields": {
+        "action_time": "2023-09-16T13:40:29.228Z",
+        "user": 1,
+        "content_type": 7,
+        "object_id": "4",
+        "object_repr": "Lesson object (4)",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 6,
+    "fields": {
+        "action_time": "2023-09-16T13:40:40.059Z",
+        "user": 1,
+        "content_type": 7,
+        "object_id": "5",
+        "object_repr": "Lesson object (5)",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 7,
+    "fields": {
+        "action_time": "2023-09-16T13:40:49.963Z",
+        "user": 1,
+        "content_type": 7,
+        "object_id": "6",
+        "object_repr": "Lesson object (6)",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 8,
+    "fields": {
+        "action_time": "2023-09-16T13:41:06.695Z",
+        "user": 1,
+        "content_type": 7,
+        "object_id": "7",
+        "object_repr": "Lesson object (7)",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 9,
+    "fields": {
+        "action_time": "2023-09-16T13:41:16.264Z",
+        "user": 1,
+        "content_type": 7,
+        "object_id": "8",
+        "object_repr": "Lesson object (8)",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 10,
+    "fields": {
+        "action_time": "2023-09-16T13:41:28.182Z",
+        "user": 1,
+        "content_type": 7,
+        "object_id": "9",
+        "object_repr": "Lesson object (9)",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 11,
+    "fields": {
+        "action_time": "2023-09-16T13:41:36.701Z",
+        "user": 1,
+        "content_type": 7,
+        "object_id": "10",
+        "object_repr": "Lesson object (10)",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 12,
+    "fields": {
+        "action_time": "2023-09-16T13:42:02.336Z",
+        "user": 1,
+        "content_type": 7,
+        "object_id": "11",
+        "object_repr": "Lesson object (11)",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 13,
+    "fields": {
+        "action_time": "2023-09-16T13:42:13.794Z",
+        "user": 1,
+        "content_type": 7,
+        "object_id": "12",
+        "object_repr": "Lesson object (12)",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 14,
+    "fields": {
+        "action_time": "2023-09-16T13:42:24.069Z",
+        "user": 1,
+        "content_type": 7,
+        "object_id": "13",
+        "object_repr": "Lesson object (13)",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 15,
+    "fields": {
+        "action_time": "2023-09-16T13:42:32.463Z",
+        "user": 1,
+        "content_type": 7,
+        "object_id": "14",
+        "object_repr": "Lesson object (14)",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 16,
+    "fields": {
+        "action_time": "2023-09-16T13:42:41.077Z",
+        "user": 1,
+        "content_type": 7,
+        "object_id": "15",
+        "object_repr": "Lesson object (15)",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 17,
+    "fields": {
+        "action_time": "2023-09-16T13:42:48.707Z",
+        "user": 1,
+        "content_type": 7,
+        "object_id": "16",
+        "object_repr": "Lesson object (16)",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 18,
+    "fields": {
+        "action_time": "2023-09-16T13:42:58.729Z",
+        "user": 1,
+        "content_type": 7,
+        "object_id": "17",
+        "object_repr": "Lesson object (17)",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 19,
+    "fields": {
+        "action_time": "2023-09-16T13:43:08.231Z",
+        "user": 1,
+        "content_type": 7,
+        "object_id": "18",
+        "object_repr": "Lesson object (18)",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 20,
+    "fields": {
+        "action_time": "2023-09-16T13:43:16.610Z",
+        "user": 1,
+        "content_type": 7,
+        "object_id": "19",
+        "object_repr": "Lesson object (19)",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 21,
+    "fields": {
+        "action_time": "2023-09-16T13:43:24.457Z",
+        "user": 1,
+        "content_type": 7,
+        "object_id": "20",
+        "object_repr": "Lesson object (20)",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 22,
+    "fields": {
+        "action_time": "2023-09-16T13:43:34.594Z",
+        "user": 1,
+        "content_type": 7,
+        "object_id": "21",
+        "object_repr": "Lesson object (21)",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 23,
+    "fields": {
+        "action_time": "2023-09-16T13:43:43.684Z",
+        "user": 1,
+        "content_type": 7,
+        "object_id": "22",
+        "object_repr": "Lesson object (22)",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 24,
+    "fields": {
+        "action_time": "2023-09-16T13:43:55.596Z",
+        "user": 1,
+        "content_type": 7,
+        "object_id": "23",
+        "object_repr": "Lesson object (23)",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 25,
+    "fields": {
+        "action_time": "2023-09-16T13:44:06.330Z",
+        "user": 1,
+        "content_type": 7,
+        "object_id": "24",
+        "object_repr": "Lesson object (24)",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 26,
+    "fields": {
+        "action_time": "2023-09-16T13:44:27.430Z",
+        "user": 1,
+        "content_type": 7,
+        "object_id": "25",
+        "object_repr": "Lesson object (25)",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 27,
+    "fields": {
+        "action_time": "2023-09-16T13:45:10.851Z",
+        "user": 1,
+        "content_type": 6,
+        "object_id": "1",
+        "object_repr": "Django Framework: Старт2023-12-12",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u041a\\u043e\\u043b\\u0438\\u0447\\u0435\\u0441\\u0442\\u0432\\u043e \\u0443\\u0440\\u043e\\u043a\\u043e\\u0432\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 28,
+    "fields": {
+        "action_time": "2023-09-16T14:08:21.746Z",
+        "user": 1,
+        "content_type": 6,
+        "object_id": "2",
+        "object_repr": "HTML верстка: Старт2023-09-16",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 29,
+    "fields": {
+        "action_time": "2023-09-23T22:57:34.519Z",
+        "user": 1,
+        "content_type": 9,
+        "object_id": "1",
+        "object_repr": "Участник Admin Admin: admin@example.com",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"First name\", \"Last name\", \"\\u0414\\u0430\\u0442\\u0430 \\u0440\\u043e\\u0436\\u0434\\u0435\\u043d\\u0438\\u044f\", \"\\u041e\\u0431\\u043e \\u043c\\u043d\\u0435\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 30,
+    "fields": {
+        "action_time": "2023-09-23T23:54:32.952Z",
+        "user": 1,
+        "content_type": 9,
+        "object_id": "2",
+        "object_repr": "Участник Иван Иванов: test@gmail.com",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Username\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 31,
+    "fields": {
+        "action_time": "2023-09-24T17:27:04.414Z",
+        "user": 1,
+        "content_type": 7,
+        "object_id": "26",
+        "object_repr": "Python language:УрокВведение",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 32,
+    "fields": {
+        "action_time": "2023-09-24T17:27:43.901Z",
+        "user": 1,
+        "content_type": 7,
+        "object_id": "27",
+        "object_repr": "Python language:УрокТипы данных",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 33,
+    "fields": {
+        "action_time": "2023-09-24T17:28:00.303Z",
+        "user": 1,
+        "content_type": 7,
+        "object_id": "28",
+        "object_repr": "Python language:УрокПеременные",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 34,
+    "fields": {
+        "action_time": "2023-09-24T17:28:20.531Z",
+        "user": 1,
+        "content_type": 7,
+        "object_id": "29",
+        "object_repr": "Python language:УрокУсловия",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 35,
+    "fields": {
+        "action_time": "2023-09-24T17:28:35.113Z",
+        "user": 1,
+        "content_type": 7,
+        "object_id": "30",
+        "object_repr": "Python language:УрокСтроки",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 36,
+    "fields": {
+        "action_time": "2023-09-24T17:29:00.445Z",
+        "user": 1,
+        "content_type": 7,
+        "object_id": "31",
+        "object_repr": "Python language:УрокЦиклы",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 37,
+    "fields": {
+        "action_time": "2023-09-24T17:29:15.126Z",
+        "user": 1,
+        "content_type": 7,
+        "object_id": "32",
+        "object_repr": "Python language:УрокОператоры break, continue",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 38,
+    "fields": {
+        "action_time": "2023-09-24T17:29:44.817Z",
+        "user": 1,
+        "content_type": 7,
+        "object_id": "33",
+        "object_repr": "Python language:УрокФункции",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 39,
+    "fields": {
+        "action_time": "2023-09-24T17:30:01.490Z",
+        "user": 1,
+        "content_type": 7,
+        "object_id": "34",
+        "object_repr": "Python language:УрокИнтерпретатор",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 40,
+    "fields": {
+        "action_time": "2023-09-24T17:30:25.410Z",
+        "user": 1,
+        "content_type": 7,
+        "object_id": "35",
+        "object_repr": "Python language:УрокМодули",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 41,
+    "fields": {
+        "action_time": "2023-09-24T17:32:56.583Z",
+        "user": 1,
+        "content_type": 7,
+        "object_id": "36",
+        "object_repr": "HTML верстка:УрокСтруктура HTML-документа",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 42,
+    "fields": {
+        "action_time": "2023-09-24T17:33:26.346Z",
+        "user": 1,
+        "content_type": 7,
+        "object_id": "37",
+        "object_repr": "HTML верстка:УрокРазметка текста",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 43,
+    "fields": {
+        "action_time": "2023-09-24T17:33:52.461Z",
+        "user": 1,
+        "content_type": 7,
+        "object_id": "38",
+        "object_repr": "HTML верстка:УрокСсылки и изображения",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 44,
+    "fields": {
+        "action_time": "2023-09-24T17:34:14.579Z",
+        "user": 1,
+        "content_type": 7,
+        "object_id": "39",
+        "object_repr": "HTML верстка:УрокОсновы CSS",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 45,
+    "fields": {
+        "action_time": "2023-09-24T17:34:37.011Z",
+        "user": 1,
+        "content_type": 7,
+        "object_id": "39",
+        "object_repr": "HTML верстка:УрокОсновы CSS",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u041e\\u043f\\u0438\\u0441\\u0430\\u043d\\u0438\\u0435 \\u043a\\u0443\\u0440\\u0441\\u0430\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 46,
+    "fields": {
+        "action_time": "2023-09-24T17:35:00.616Z",
+        "user": 1,
+        "content_type": 7,
+        "object_id": "40",
+        "object_repr": "HTML верстка:УрокОформление текста",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 47,
+    "fields": {
+        "action_time": "2023-09-24T17:35:35.591Z",
+        "user": 1,
+        "content_type": 6,
+        "object_id": "2",
+        "object_repr": "HTML верстка: Старт2023-09-16",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u041e\\u043f\\u0438\\u0441\\u0430\\u043d\\u0438\\u0435 \\u043a\\u0443\\u0440\\u0441\\u0430\", \"\\u041a\\u043e\\u043b\\u0438\\u0447\\u0435\\u0441\\u0442\\u0432\\u043e \\u0443\\u0440\\u043e\\u043a\\u043e\\u0432\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 48,
+    "fields": {
+        "action_time": "2023-09-24T17:36:05.903Z",
+        "user": 1,
+        "content_type": 6,
+        "object_id": "1",
+        "object_repr": "Django 0: Старт2023-12-12",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u041e\\u043f\\u0438\\u0441\\u0430\\u043d\\u0438\\u0435 \\u043a\\u0443\\u0440\\u0441\\u0430\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 49,
+    "fields": {
+        "action_time": "2023-09-24T17:38:03.907Z",
+        "user": 1,
+        "content_type": 6,
+        "object_id": "4",
+        "object_repr": "Django Framework: Старт2023-09-24",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 50,
+    "fields": {
+        "action_time": "2023-09-24T17:38:32.139Z",
+        "user": 1,
+        "content_type": 7,
+        "object_id": "25",
+        "object_repr": "Django Framework:УрокТестирование API с Postma",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u041a\\u0443\\u0440\\u0441\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 51,
+    "fields": {
+        "action_time": "2023-09-24T17:38:38.398Z",
+        "user": 1,
+        "content_type": 7,
+        "object_id": "24",
+        "object_repr": "Django Framework:УрокViewset & Routers",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u041a\\u0443\\u0440\\u0441\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 52,
+    "fields": {
+        "action_time": "2023-09-24T17:38:42.535Z",
+        "user": 1,
+        "content_type": 7,
+        "object_id": "23",
+        "object_repr": "Django Framework:УрокАутентификация и уровни д",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u041a\\u0443\\u0440\\u0441\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 53,
+    "fields": {
+        "action_time": "2023-09-24T17:38:47.079Z",
+        "user": 1,
+        "content_type": 7,
+        "object_id": "22",
+        "object_repr": "Django Framework:УрокВывод данных / JSON",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u041a\\u0443\\u0440\\u0441\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 54,
+    "fields": {
+        "action_time": "2023-09-24T17:38:51.972Z",
+        "user": 1,
+        "content_type": 7,
+        "object_id": "21",
+        "object_repr": "Django Framework:УрокSerializers (сериализатор",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u041a\\u0443\\u0440\\u0441\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 55,
+    "fields": {
+        "action_time": "2023-09-24T17:38:56.045Z",
+        "user": 1,
+        "content_type": 7,
+        "object_id": "20",
+        "object_repr": "Django Framework:УрокВведение: установка и нас",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u041a\\u0443\\u0440\\u0441\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 56,
+    "fields": {
+        "action_time": "2023-09-24T17:38:59.564Z",
+        "user": 1,
+        "content_type": 7,
+        "object_id": "19",
+        "object_repr": "Django Framework:УрокАрхитектура REST",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u041a\\u0443\\u0440\\u0441\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 57,
+    "fields": {
+        "action_time": "2023-09-24T17:39:03.574Z",
+        "user": 1,
+        "content_type": 7,
+        "object_id": "18",
+        "object_repr": "Django Framework:УрокТестирование (django test",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u041a\\u0443\\u0440\\u0441\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 58,
+    "fields": {
+        "action_time": "2023-09-24T17:39:07.264Z",
+        "user": 1,
+        "content_type": 7,
+        "object_id": "17",
+        "object_repr": "Django Framework:УрокНастройка безопасности",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u041a\\u0443\\u0440\\u0441\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 59,
+    "fields": {
+        "action_time": "2023-09-24T17:39:10.752Z",
+        "user": 1,
+        "content_type": 7,
+        "object_id": "16",
+        "object_repr": "Django Framework:УрокКеширование",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u041a\\u0443\\u0440\\u0441\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 60,
+    "fields": {
+        "action_time": "2023-09-24T17:39:13.908Z",
+        "user": 1,
+        "content_type": 7,
+        "object_id": "15",
+        "object_repr": "Django Framework:УрокEmail-рассылка",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u041a\\u0443\\u0440\\u0441\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 61,
+    "fields": {
+        "action_time": "2023-09-24T17:39:17.551Z",
+        "user": 1,
+        "content_type": 7,
+        "object_id": "14",
+        "object_repr": "Django Framework:УрокСигналы модели",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u041a\\u0443\\u0440\\u0441\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 62,
+    "fields": {
+        "action_time": "2023-09-24T17:39:20.800Z",
+        "user": 1,
+        "content_type": 7,
+        "object_id": "13",
+        "object_repr": "Django Framework:УрокРабота с cookies, session",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u041a\\u0443\\u0440\\u0441\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 63,
+    "fields": {
+        "action_time": "2023-09-24T17:39:24.267Z",
+        "user": 1,
+        "content_type": 7,
+        "object_id": "12",
+        "object_repr": "Django Framework:УрокФормы",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u041a\\u0443\\u0440\\u0441\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 64,
+    "fields": {
+        "action_time": "2023-09-24T17:39:27.638Z",
+        "user": 1,
+        "content_type": 7,
+        "object_id": "11",
+        "object_repr": "Django Framework:УрокDjango ORM: связи",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u041a\\u0443\\u0440\\u0441\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 65,
+    "fields": {
+        "action_time": "2023-09-24T17:39:30.950Z",
+        "user": 1,
+        "content_type": 7,
+        "object_id": "10",
+        "object_repr": "Django Framework:УрокОбработка форм",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u041a\\u0443\\u0440\\u0441\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 66,
+    "fields": {
+        "action_time": "2023-09-24T17:39:33.952Z",
+        "user": 1,
+        "content_type": 7,
+        "object_id": "9",
+        "object_repr": "Django Framework:УрокРазграничение прав доступ",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u041a\\u0443\\u0440\\u0441\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 67,
+    "fields": {
+        "action_time": "2023-09-24T17:39:37.404Z",
+        "user": 1,
+        "content_type": 7,
+        "object_id": "8",
+        "object_repr": "Django Framework:УрокШаблоны",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u041a\\u0443\\u0440\\u0441\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 68,
+    "fields": {
+        "action_time": "2023-09-24T17:39:43.101Z",
+        "user": 1,
+        "content_type": 7,
+        "object_id": "7",
+        "object_repr": "Django Framework:УрокКонтроллеры-классы",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u041a\\u0443\\u0440\\u0441\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 69,
+    "fields": {
+        "action_time": "2023-09-24T17:39:47.395Z",
+        "user": 1,
+        "content_type": 7,
+        "object_id": "6",
+        "object_repr": "Django Framework:УрокКонтроллеры-функции",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u041a\\u0443\\u0440\\u0441\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 70,
+    "fields": {
+        "action_time": "2023-09-24T17:39:50.881Z",
+        "user": 1,
+        "content_type": 7,
+        "object_id": "5",
+        "object_repr": "Django Framework:УрокМаршрутизация",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u041a\\u0443\\u0440\\u0441\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 71,
+    "fields": {
+        "action_time": "2023-09-24T17:39:54.204Z",
+        "user": 1,
+        "content_type": 7,
+        "object_id": "4",
+        "object_repr": "Django Framework:УрокАдминистративная панель",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u041a\\u0443\\u0440\\u0441\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 72,
+    "fields": {
+        "action_time": "2023-09-24T17:39:58.058Z",
+        "user": 1,
+        "content_type": 7,
+        "object_id": "3",
+        "object_repr": "Django Framework:УрокDjango ORM",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u041a\\u0443\\u0440\\u0441\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 73,
+    "fields": {
+        "action_time": "2023-09-24T17:40:01.240Z",
+        "user": 1,
+        "content_type": 7,
+        "object_id": "2",
+        "object_repr": "Django Framework:УрокСтруктура и настройка",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u041a\\u0443\\u0440\\u0441\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 74,
+    "fields": {
+        "action_time": "2023-09-24T17:40:04.559Z",
+        "user": 1,
+        "content_type": 7,
+        "object_id": "1",
+        "object_repr": "Django Framework:УрокОсновные понятия",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u041a\\u0443\\u0440\\u0441\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 75,
+    "fields": {
+        "action_time": "2023-09-24T17:41:39.225Z",
+        "user": 1,
+        "content_type": 6,
+        "object_id": "1",
+        "object_repr": "Django 0: Старт2023-12-12",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 76,
+    "fields": {
+        "action_time": "2023-10-03T14:57:21.570Z",
+        "user": 1,
+        "content_type": 9,
+        "object_id": "9",
+        "object_repr": "Участник Иван Сидоров: test2@example.com",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 77,
+    "fields": {
+        "action_time": "2023-10-03T14:57:27.606Z",
+        "user": 1,
+        "content_type": 9,
+        "object_id": "7",
+        "object_repr": "Участник Петр Петров: user@example.com",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 78,
+    "fields": {
+        "action_time": "2023-10-03T15:01:46.516Z",
+        "user": 1,
+        "content_type": 9,
+        "object_id": "2",
+        "object_repr": "Участник Иван Иванов: test@gmail.com",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Username\", \"\\u041e\\u0431\\u043e \\u043c\\u043d\\u0435\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 79,
+    "fields": {
+        "action_time": "2023-10-03T15:06:10.223Z",
+        "user": 1,
+        "content_type": 9,
+        "object_id": "11",
+        "object_repr": "Участник Петр Петров: test_student@gmail.com",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 80,
+    "fields": {
+        "action_time": "2023-10-03T15:13:51.172Z",
+        "user": 1,
+        "content_type": 9,
+        "object_id": "11",
+        "object_repr": "Участник Петр Петров: test_student@gmail.com",
+        "action_flag": 2,
+        "change_message": "[]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 81,
+    "fields": {
+        "action_time": "2023-10-03T15:21:03.221Z",
+        "user": 1,
+        "content_type": 3,
+        "object_id": "1",
+        "object_repr": "Администратор",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 82,
+    "fields": {
+        "action_time": "2023-10-03T15:22:24.585Z",
+        "user": 1,
+        "content_type": 3,
+        "object_id": "2",
+        "object_repr": "Автор",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 83,
+    "fields": {
+        "action_time": "2023-10-03T15:25:34.667Z",
+        "user": 1,
+        "content_type": 3,
+        "object_id": "3",
+        "object_repr": "Ученик",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 84,
+    "fields": {
+        "action_time": "2023-10-03T15:32:26.731Z",
+        "user": 1,
+        "content_type": 9,
+        "object_id": "1",
+        "object_repr": "Участник Admin Admin: admin@example.com",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Groups\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 85,
+    "fields": {
+        "action_time": "2023-10-03T15:34:26.355Z",
+        "user": 1,
+        "content_type": 9,
+        "object_id": "2",
+        "object_repr": "Участник Иван Иванов: test@gmail.com",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Groups\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 86,
+    "fields": {
+        "action_time": "2023-10-03T15:36:35.192Z",
+        "user": 1,
+        "content_type": 9,
+        "object_id": "11",
+        "object_repr": "Участник Петр Петров: test_student@gmail.com",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Groups\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 87,
+    "fields": {
+        "action_time": "2023-10-03T17:28:26.736Z",
+        "user": 1,
+        "content_type": 9,
+        "object_id": "12",
+        "object_repr": "Участник Просто ученик Багров: test1@gmail.com",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 88,
+    "fields": {
+        "action_time": "2023-10-03T17:30:22.149Z",
+        "user": 1,
+        "content_type": 9,
+        "object_id": "13",
+        "object_repr": "Участник Просто модератор Добров: test2@gmail.com",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 89,
+    "fields": {
+        "action_time": "2023-10-03T17:43:17.102Z",
+        "user": 1,
+        "content_type": 9,
+        "object_id": "14",
+        "object_repr": "Участник ААА ААА: test3@gmail.com",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Groups\", \"Username\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 90,
+    "fields": {
+        "action_time": "2023-10-03T17:49:10.560Z",
+        "user": 1,
+        "content_type": 9,
+        "object_id": "2",
+        "object_repr": "Участник Иван Иванов: test@gmail.com",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 91,
+    "fields": {
+        "action_time": "2023-10-03T17:50:27.175Z",
+        "user": 1,
+        "content_type": 9,
+        "object_id": "15",
+        "object_repr": "Участник Иван Иванов: test@gmail.com",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Groups\", \"Username\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 92,
+    "fields": {
+        "action_time": "2023-10-03T17:51:02.959Z",
+        "user": 1,
+        "content_type": 9,
+        "object_id": "11",
+        "object_repr": "Участник Петр Петров: test_student@gmail.com",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 93,
+    "fields": {
+        "action_time": "2023-10-03T17:52:34.085Z",
+        "user": 1,
+        "content_type": 9,
+        "object_id": "16",
+        "object_repr": "Участник Петр Петров: test_student@gmail.com",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Groups\", \"Username\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 94,
+    "fields": {
+        "action_time": "2023-10-03T17:52:44.862Z",
+        "user": 1,
+        "content_type": 9,
+        "object_id": "13",
+        "object_repr": "Участник Просто модератор Добров: test2@gmail.com",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 95,
+    "fields": {
+        "action_time": "2023-10-03T17:52:50.191Z",
+        "user": 1,
+        "content_type": 9,
+        "object_id": "12",
+        "object_repr": "Участник Просто ученик Багров: test1@gmail.com",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 96,
+    "fields": {
+        "action_time": "2023-10-03T17:52:54.222Z",
+        "user": 1,
+        "content_type": 9,
+        "object_id": "14",
+        "object_repr": "Участник ААА ААА: test3@gmail.com",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 97,
+    "fields": {
+        "action_time": "2023-10-03T17:54:39.014Z",
+        "user": 1,
+        "content_type": 9,
+        "object_id": "17",
+        "object_repr": "Участник Иван Крылов: test1@gmail.com",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Groups\", \"Username\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 98,
+    "fields": {
+        "action_time": "2023-10-03T17:55:48.478Z",
+        "user": 1,
+        "content_type": 9,
+        "object_id": "18",
+        "object_repr": "Участник Иван Бунин: test2@gmail.com",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Groups\", \"Username\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 99,
+    "fields": {
+        "action_time": "2023-10-03T18:27:19.542Z",
+        "user": 1,
+        "content_type": 9,
+        "object_id": "19",
+        "object_repr": "Участник A A: test3@gmail.com",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 100,
+    "fields": {
+        "action_time": "2023-10-03T23:00:34.330Z",
+        "user": 1,
+        "content_type": 9,
+        "object_id": "17",
+        "object_repr": "Участник Иван Крылов: test1@gmail.com",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Password\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 101,
+    "fields": {
+        "action_time": "2023-10-04T22:05:49.459Z",
+        "user": 1,
+        "content_type": 9,
+        "object_id": "21",
+        "object_repr": "Участник A A: test3@gmail.com",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 102,
+    "fields": {
+        "action_time": "2023-10-04T22:07:19.963Z",
+        "user": 1,
+        "content_type": 9,
+        "object_id": "22",
+        "object_repr": "Участник a a: a@example.com",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 103,
+    "fields": {
+        "action_time": "2023-10-04T22:08:17.093Z",
+        "user": 1,
+        "content_type": 9,
+        "object_id": "22",
+        "object_repr": "Участник a a: a@example.com",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 104,
+    "fields": {
+        "action_time": "2023-10-04T22:08:54.933Z",
+        "user": 1,
+        "content_type": 9,
+        "object_id": "23",
+        "object_repr": "Участник a a: a@example.com",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 105,
+    "fields": {
+        "action_time": "2023-10-04T22:09:42.106Z",
+        "user": 1,
+        "content_type": 9,
+        "object_id": "23",
+        "object_repr": "Участник a a: a@example.com",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Groups\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 106,
+    "fields": {
+        "action_time": "2023-10-04T22:10:03.058Z",
+        "user": 1,
+        "content_type": 9,
+        "object_id": "23",
+        "object_repr": "Участник a a: a@example.com",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 107,
+    "fields": {
+        "action_time": "2023-10-04T22:12:43.461Z",
+        "user": 1,
+        "content_type": 9,
+        "object_id": "24",
+        "object_repr": "Участник a a: a@example.com",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 108,
+    "fields": {
+        "action_time": "2023-10-04T22:14:53.467Z",
+        "user": 1,
+        "content_type": 9,
+        "object_id": "24",
+        "object_repr": "Участник a a: a@example.com",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 109,
+    "fields": {
+        "action_time": "2023-10-04T22:16:19.576Z",
+        "user": 1,
+        "content_type": 9,
+        "object_id": "25",
+        "object_repr": "Участник a a: a@example.com",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 110,
+    "fields": {
+        "action_time": "2023-10-04T22:16:50.470Z",
+        "user": 1,
+        "content_type": 9,
+        "object_id": "25",
+        "object_repr": "Участник a a: a@example.com",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 111,
+    "fields": {
+        "action_time": "2023-10-04T22:17:51.404Z",
+        "user": 1,
+        "content_type": 9,
+        "object_id": "26",
+        "object_repr": "Участник a a: a@example.com",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 112,
+    "fields": {
+        "action_time": "2023-10-06T14:52:34.727Z",
+        "user": 1,
+        "content_type": 10,
+        "object_id": "1",
+        "object_repr": "Review object (1)",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 113,
+    "fields": {
+        "action_time": "2023-10-06T14:53:59.982Z",
+        "user": 1,
+        "content_type": 10,
+        "object_id": "2",
+        "object_repr": "Review object (2)",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 114,
+    "fields": {
+        "action_time": "2023-10-06T14:55:35.496Z",
+        "user": 1,
+        "content_type": 10,
+        "object_id": "3",
+        "object_repr": "Review object (3)",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 115,
+    "fields": {
+        "action_time": "2023-10-06T14:57:59.145Z",
+        "user": 1,
+        "content_type": 3,
+        "object_id": "3",
+        "object_repr": "Ученик",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Permissions\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 116,
+    "fields": {
+        "action_time": "2023-10-06T20:27:29.219Z",
+        "user": 1,
+        "content_type": 9,
+        "object_id": "15",
+        "object_repr": "Участник Иван Иванов: test@gmail.com",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u0424\\u043e\\u0442\\u043e\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 117,
+    "fields": {
+        "action_time": "2023-10-06T22:59:40.065Z",
+        "user": 1,
+        "content_type": 9,
+        "object_id": "17",
+        "object_repr": "Участник Иван Крылов: test1@gmail.com",
+        "action_flag": 2,
+        "change_message": "[]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 118,
+    "fields": {
+        "action_time": "2023-10-06T23:01:53.732Z",
+        "user": 1,
+        "content_type": 9,
+        "object_id": "17",
+        "object_repr": "Участник Иван Крылов: test1@gmail.com",
+        "action_flag": 2,
+        "change_message": "[]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 119,
+    "fields": {
+        "action_time": "2023-10-06T23:02:58.220Z",
+        "user": 1,
+        "content_type": 9,
+        "object_id": "17",
+        "object_repr": "Участник Иван Крылов: test1@gmail.com",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 120,
+    "fields": {
+        "action_time": "2023-10-06T23:11:37.046Z",
+        "user": 1,
+        "content_type": 10,
+        "object_id": "4",
+        "object_repr": "Review object (4)",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 121,
+    "fields": {
+        "action_time": "2023-10-07T00:03:50.217Z",
+        "user": 1,
+        "content_type": 9,
+        "object_id": "28",
+        "object_repr": "Участник A A: test4@gmail.com",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 122,
+    "fields": {
+        "action_time": "2023-10-07T01:05:32.825Z",
+        "user": 1,
+        "content_type": 9,
+        "object_id": "29",
+        "object_repr": "Участник A A: test4@gmail.com",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 123,
+    "fields": {
+        "action_time": "2023-10-10T00:44:41.887Z",
+        "user": 1,
+        "content_type": 6,
+        "object_id": "7",
+        "object_repr": "Javascript: Старт2023-12-01",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 124,
+    "fields": {
+        "action_time": "2023-10-10T00:49:18.226Z",
+        "user": 1,
+        "content_type": 6,
+        "object_id": "8",
+        "object_repr": "Веб дизайн: Старт2023-09-10",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 125,
+    "fields": {
+        "action_time": "2023-10-10T00:50:08.703Z",
+        "user": 1,
+        "content_type": 6,
+        "object_id": "3",
+        "object_repr": "Python language: Старт2023-10-10",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u0426\\u0435\\u043d\\u0430\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 126,
+    "fields": {
+        "action_time": "2023-10-10T00:53:17.881Z",
+        "user": 1,
+        "content_type": 9,
+        "object_id": "30",
+        "object_repr": "Участник A A: test4@gmail.com",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 127,
+    "fields": {
+        "action_time": "2023-10-10T01:04:30.253Z",
+        "user": 1,
+        "content_type": 9,
+        "object_id": "26",
+        "object_repr": "Участник a a: a@example.com",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 128,
+    "fields": {
+        "action_time": "2023-10-10T01:06:08.466Z",
+        "user": 1,
+        "content_type": 9,
+        "object_id": "31",
+        "object_repr": "Участник Анна Ахматова: author_2@gmail.com",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Groups\", \"Username\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 129,
+    "fields": {
+        "action_time": "2023-10-10T01:06:28.970Z",
+        "user": 1,
+        "content_type": 9,
+        "object_id": "32",
+        "object_repr": "Участник Марина Цветаева: author_3@gmail.com",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Groups\", \"Username\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 130,
+    "fields": {
+        "action_time": "2023-10-10T01:07:08.843Z",
+        "user": 1,
+        "content_type": 6,
+        "object_id": "7",
+        "object_repr": "Javascript: Старт2023-12-01",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u0410\\u0432\\u0442\\u043e\\u0440 \\u043a\\u0443\\u0440\\u0441\\u0430\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 131,
+    "fields": {
+        "action_time": "2023-10-11T21:20:53.784Z",
+        "user": 1,
+        "content_type": 6,
+        "object_id": "3",
+        "object_repr": "Python language: Старт2023-10-10",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u0410\\u0432\\u0442\\u043e\\u0440 \\u043a\\u0443\\u0440\\u0441\\u0430\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 132,
+    "fields": {
+        "action_time": "2023-10-11T21:43:06.671Z",
+        "user": 1,
+        "content_type": 6,
+        "object_id": "2",
+        "object_repr": "HTML верстка: Старт2023-09-16",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u0410\\u0432\\u0442\\u043e\\u0440 \\u043a\\u0443\\u0440\\u0441\\u0430\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 133,
+    "fields": {
+        "action_time": "2023-10-21T23:48:03.538Z",
+        "user": 1,
+        "content_type": 6,
+        "object_id": "8",
+        "object_repr": "Веб дизайн: Старт2023-09-10",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u0410\\u0432\\u0442\\u043e\\u0440 \\u043a\\u0443\\u0440\\u0441\\u0430\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 134,
+    "fields": {
+        "action_time": "2023-10-21T23:48:13.318Z",
+        "user": 1,
+        "content_type": 6,
+        "object_id": "7",
+        "object_repr": "Javascript: Старт2023-12-01",
+        "action_flag": 2,
+        "change_message": "[]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 135,
+    "fields": {
+        "action_time": "2023-10-21T23:58:27.766Z",
+        "user": 1,
+        "content_type": 6,
+        "object_id": "7",
+        "object_repr": "Javascript: Старт2023-12-01",
+        "action_flag": 2,
+        "change_message": "[]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 136,
+    "fields": {
+        "action_time": "2023-10-23T22:52:31.131Z",
+        "user": 1,
+        "content_type": 7,
+        "object_id": "43",
+        "object_repr": "test:Урок1",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 137,
+    "fields": {
+        "action_time": "2023-10-23T22:54:54.113Z",
+        "user": 1,
+        "content_type": 6,
+        "object_id": "9",
+        "object_repr": "test: Старт2023-12-01",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u0410\\u0432\\u0442\\u043e\\u0440 \\u043a\\u0443\\u0440\\u0441\\u0430\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 138,
+    "fields": {
+        "action_time": "2023-10-23T23:02:15.333Z",
+        "user": 1,
+        "content_type": 6,
+        "object_id": "9",
+        "object_repr": "test: Старт2023-12-01",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u041a\\u043e\\u043b\\u0438\\u0447\\u0435\\u0441\\u0442\\u0432\\u043e \\u0443\\u0440\\u043e\\u043a\\u043e\\u0432\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 139,
+    "fields": {
+        "action_time": "2023-10-24T13:41:10.059Z",
+        "user": 1,
+        "content_type": 9,
+        "object_id": "27",
+        "object_repr": "Участник Иван Крылов: shaturnyimax@gmail.com",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Email\", \"Username\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 140,
+    "fields": {
+        "action_time": "2023-10-24T13:41:22.976Z",
+        "user": 1,
+        "content_type": 9,
+        "object_id": "27",
+        "object_repr": "Участник Иван Крылов: shaturnyimax@gmail.com",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Username\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 141,
+    "fields": {
+        "action_time": "2023-10-24T21:11:33.647Z",
+        "user": 1,
+        "content_type": 7,
+        "object_id": "44",
+        "object_repr": "test:Урок2",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 142,
+    "fields": {
+        "action_time": "2023-10-24T21:13:35.170Z",
+        "user": 1,
+        "content_type": 9,
+        "object_id": "33",
+        "object_repr": "Участник a a: karina.petraytite@gmail.com",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Email\", \"Username\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 143,
+    "fields": {
+        "action_time": "2023-10-24T21:17:44.150Z",
+        "user": 1,
+        "content_type": 7,
+        "object_id": "45",
+        "object_repr": "test:Урок2",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 144,
+    "fields": {
+        "action_time": "2023-10-24T21:19:11.985Z",
+        "user": 1,
+        "content_type": 7,
+        "object_id": "46",
+        "object_repr": "test:Урок2",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 145,
+    "fields": {
+        "action_time": "2023-10-24T21:26:55.467Z",
+        "user": 1,
+        "content_type": 7,
+        "object_id": "47",
+        "object_repr": "test:Урок2",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 146,
+    "fields": {
+        "action_time": "2023-10-24T21:34:44.152Z",
+        "user": 1,
+        "content_type": 7,
+        "object_id": "48",
+        "object_repr": "test:Урок2",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 147,
+    "fields": {
+        "action_time": "2023-10-24T22:11:30.224Z",
+        "user": 1,
+        "content_type": 9,
+        "object_id": "27",
+        "object_repr": "Участник Иван Крылов: test1@gmail.com",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Email\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 148,
+    "fields": {
+        "action_time": "2023-10-24T22:12:01.293Z",
+        "user": 1,
+        "content_type": 9,
+        "object_id": "1",
+        "object_repr": "Участник Max Max: shaturnyimax@gmail.com",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"First name\", \"Last name\", \"Email\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 149,
+    "fields": {
+        "action_time": "2023-10-26T11:29:19.388Z",
+        "user": 1,
+        "content_type": 9,
+        "object_id": "1",
+        "object_repr": "Участник admin admin: admin@example.com",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"First name\", \"Last name\", \"Email\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 150,
+    "fields": {
+        "action_time": "2023-10-26T11:29:52.401Z",
+        "user": 1,
+        "content_type": 9,
+        "object_id": "27",
+        "object_repr": "Участник Иван Крылов: shaturnyimax@gmail.com",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Email\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 151,
+    "fields": {
+        "action_time": "2023-10-26T11:30:23.606Z",
+        "user": 1,
+        "content_type": 7,
+        "object_id": "49",
+        "object_repr": "test:Урок2",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 152,
+    "fields": {
+        "action_time": "2023-10-27T19:16:24.622Z",
+        "user": 1,
+        "content_type": 6,
+        "object_id": "10",
+        "object_repr": "test0: Старт2023-12-10",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 153,
+    "fields": {
+        "action_time": "2023-10-27T19:36:54.221Z",
+        "user": 1,
+        "content_type": 6,
+        "object_id": "11",
+        "object_repr": "te: Старт2023-12-01",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 154,
+    "fields": {
+        "action_time": "2023-10-27T19:46:57.000Z",
+        "user": 1,
+        "content_type": 6,
+        "object_id": "12",
+        "object_repr": "te: Старт2023-12-01",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 155,
+    "fields": {
+        "action_time": "2023-10-27T19:47:42.699Z",
+        "user": 1,
+        "content_type": 7,
+        "object_id": "51",
+        "object_repr": "te:Урок01",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 156,
+    "fields": {
+        "action_time": "2023-10-27T19:59:58.698Z",
+        "user": 1,
+        "content_type": 6,
+        "object_id": "13",
+        "object_repr": "te: Старт2023-12-01",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 157,
+    "fields": {
+        "action_time": "2023-10-27T20:00:27.040Z",
+        "user": 1,
+        "content_type": 7,
+        "object_id": "52",
+        "object_repr": "te:Урокte",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 158,
+    "fields": {
+        "action_time": "2023-10-29T21:32:03.021Z",
+        "user": 1,
+        "content_type": 6,
+        "object_id": "13",
+        "object_repr": "te: Старт2023-12-01",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 159,
+    "fields": {
+        "action_time": "2023-10-29T21:41:37.780Z",
+        "user": 1,
+        "content_type": 6,
+        "object_id": "14",
+        "object_repr": "te: Старт2023-12-01",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 160,
+    "fields": {
+        "action_time": "2023-10-30T21:00:34.749Z",
+        "user": 1,
+        "content_type": 6,
+        "object_id": "16",
+        "object_repr": "te: Старт2023-12-01",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 161,
+    "fields": {
+        "action_time": "2023-10-30T21:03:46.750Z",
+        "user": 1,
+        "content_type": 6,
+        "object_id": "17",
+        "object_repr": "test: Старт2023-12-01",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 162,
+    "fields": {
+        "action_time": "2023-10-30T21:06:39.115Z",
+        "user": 1,
+        "content_type": 6,
+        "object_id": "18",
+        "object_repr": "test: Старт2023-12-01",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 163,
+    "fields": {
+        "action_time": "2023-10-30T21:47:04.654Z",
+        "user": 1,
+        "content_type": 6,
+        "object_id": "19",
+        "object_repr": "test: Старт2023-12-01",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 164,
+    "fields": {
+        "action_time": "2023-10-30T21:51:13.543Z",
+        "user": 1,
+        "content_type": 6,
+        "object_id": "20",
+        "object_repr": "test0: Старт2023-12-01",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 165,
+    "fields": {
+        "action_time": "2023-10-31T12:42:06.822Z",
+        "user": 1,
+        "content_type": 6,
+        "object_id": "21",
+        "object_repr": "test: Старт2023-12-01",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 166,
+    "fields": {
+        "action_time": "2023-10-31T12:56:54.703Z",
+        "user": 1,
+        "content_type": 6,
+        "object_id": "22",
+        "object_repr": "test: Старт2023-12-01",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 167,
+    "fields": {
+        "action_time": "2023-10-31T13:01:58.226Z",
+        "user": 1,
+        "content_type": 6,
+        "object_id": "23",
+        "object_repr": "test: Старт2023-12-01",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u041a\\u043e\\u043b\\u0438\\u0447\\u0435\\u0441\\u0442\\u0432\\u043e \\u0443\\u0440\\u043e\\u043a\\u043e\\u0432\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 168,
+    "fields": {
+        "action_time": "2023-10-31T15:44:18.403Z",
+        "user": 1,
+        "content_type": 6,
+        "object_id": "23",
+        "object_repr": "test: Старт2023-12-01",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 169,
+    "fields": {
+        "action_time": "2023-11-06T13:39:46.088Z",
+        "user": 1,
+        "content_type": 9,
+        "object_id": "36",
+        "object_repr": "Участник test test: student@example.com",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Username\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 170,
+    "fields": {
+        "action_time": "2023-11-06T19:38:26.437Z",
+        "user": 1,
+        "content_type": 9,
+        "object_id": "36",
+        "object_repr": "Участник test test: student@example.com",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 171,
+    "fields": {
+        "action_time": "2023-11-06T19:44:11.408Z",
+        "user": 1,
+        "content_type": 9,
+        "object_id": "37",
+        "object_repr": "Участник Test Test: student@example.com",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Username\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 172,
+    "fields": {
+        "action_time": "2023-11-06T19:47:58.730Z",
+        "user": 1,
+        "content_type": 9,
+        "object_id": "37",
+        "object_repr": "Участник Test Test: student@example.com",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 173,
+    "fields": {
+        "action_time": "2023-11-09T20:00:37.417Z",
+        "user": 1,
+        "content_type": 9,
+        "object_id": "15",
+        "object_repr": "Участник Иван Иванов: test@gmail.com",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Groups\"]}}]"
+    }
+},
+{
+    "model": "auth.group",
+    "pk": 1,
+    "fields": {
+        "name": "Администратор",
+        "permissions": [
+            1,
+            2,
+            3,
+            4,
+            9,
+            10,
+            11,
+            12,
+            5,
+            6,
+            7,
+            8,
+            33,
+            34,
+            35,
+            36,
+            13,
+            14,
+            15,
+            16,
+            21,
+            22,
+            23,
+            24,
+            25,
+            26,
+            27,
+            28,
+            29,
+            30,
+            31,
+            32,
+            17,
+            18,
+            19,
+            20
+        ]
+    }
+},
+{
+    "model": "auth.group",
+    "pk": 2,
+    "fields": {
+        "name": "Автор",
+        "permissions": [
+            21,
+            22,
+            23,
+            24,
+            25,
+            26,
+            27,
+            28,
+            29,
+            30,
+            31,
+            32
+        ]
+    }
+},
+{
+    "model": "auth.group",
+    "pk": 3,
+    "fields": {
+        "name": "Ученик",
+        "permissions": [
+            24,
+            28,
+            39,
+            42,
+            29,
+            32
+        ]
+    }
+},
+{
+    "model": "auth.group",
+    "pk": 4,
+    "fields": {
+        "name": "Модератор",
+        "permissions": [
+            22,
+            23,
+            26,
+            27
+        ]
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "0jh8evh1i6sdoz5pjneroyso8y16as1z",
+    "fields": {
+        "session_data": ".eJxVjDEOwjAMRe-SGUWOK5uGkZ0zRE7s0gJqpaadKu4OlTrA-t97f3NJ1qVPa7U5DeouLrjT75alPG3cgT5kvE--TOMyD9nvij9o9bdJ7XU93L-DXmr_rc8GGTlAFFBGJmMkykWiIhTqGKGhjgoLsikFDWCqHbQxhhCbFtz7A84jNzM:1qwT07:5wX7x3nDihu-EfQoSlexOeSOKtSWVTzQDjGwn_wUlHk",
+        "expire_date": "2023-10-27T20:00:41.369Z"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "0sl3blkdfaloariqwya16of9a8pdfpvk",
+    "fields": {
+        "session_data": ".eJxVjDEOwjAMRe-SGUWOK5uGkZ0zRE7s0gJqpaadKu4OlTrA-t97f3NJ1qVPa7U5DeouLrjT75alPG3cgT5kvE--TOMyD9nvij9o9bdJ7XU93L-DXmr_rc8GGTlAFFBGJmMkykWiIhTqGKGhjgoLsikFDWCqHbQxhhCbFtz7A84jNzM:1qwSmu:ZmYtV0cTyuKssx05eBUG3I_02hiTXvDOQmYBUj3zCX4",
+        "expire_date": "2023-10-27T19:47:02.221Z"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "0u57parxbrsyl1xb4zcsad3y7qklly69",
+    "fields": {
+        "session_data": ".eJxVjDEOwjAMRe-SGUWOK5uGkZ0zRE7s0gJqpaadKu4OlTrA-t97f3NJ1qVPa7U5DeouLrjT75alPG3cgT5kvE--TOMyD9nvij9o9bdJ7XU93L-DXmr_rc8GGTlAFFBGJmMkykWiIhTqGKGhjgoLsikFDWCqHbQxhhCbFtz7A84jNzM:1qsqVf:aWHK3cVSczG1ZuqZiTm0ZpA0CSFqO5FKEA2XRKG4ufU",
+        "expire_date": "2023-10-31T20:17:47.809Z"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "138ska851v4zb4id8pk2t7cbmuo6c89w",
+    "fields": {
+        "session_data": ".eJxVjDEOwjAMRe-SGUWOK5uGkZ0zRE7s0gJqpaadKu4OlTrA-t97f3NJ1qVPa7U5DeouLrjT75alPG3cgT5kvE--TOMyD9nvij9o9bdJ7XU93L-DXmr_rc8GGTlAFFBGJmMkykWiIhTqGKGhjgoLsikFDWCqHbQxhhCbFtz7A84jNzM:1qwSnU:cSDVEhTT_VMzzIeS1ytvREdzG6UrIUEx4xnW476QzRw",
+        "expire_date": "2023-10-27T19:47:38.723Z"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "1u690qgl0edl0do3sik8imraof0n63t4",
+    "fields": {
+        "session_data": ".eJxVjDEOwjAMRe-SGUWOK5uGkZ0zRE7s0gJqpaadKu4OlTrA-t97f3NJ1qVPa7U5DeouLrjT75alPG3cgT5kvE--TOMyD9nvij9o9bdJ7XU93L-DXmr_rc8GGTlAFFBGJmMkykWiIhTqGKGhjgoLsikFDWCqHbQxhhCbFtz7A84jNzM:1quLrX:plieTc8r-0NCczmxZOBMZzprZ2dp_bdrmqszRQDUBYo",
+        "expire_date": "2023-10-21T23:59:05.369Z"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "1v7g4qjgwab9bt4oxq328cat2lk98b9t",
+    "fields": {
+        "session_data": ".eJxVjDEOwjAMRe-SGUWOK5uGkZ0zRE7s0gJqpaadKu4OlTrA-t97f3NJ1qVPa7U5DeouLrjT75alPG3cgT5kvE--TOMyD9nvij9o9bdJ7XU93L-DXmr_rc8GGTlAFFBGJmMkykWiIhTqGKGhjgoLsikFDWCqHbQxhhCbFtz7A84jNzM:1qudLp:S-6Bx7mVzKrE3taxQDe4iXXEvR2dy13wVxvHJYYDaCw",
+        "expire_date": "2023-10-22T18:39:31.758Z"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "2xvsg252k4pxgsuzhypyc73bywov01og",
+    "fields": {
+        "session_data": ".eJxVjDEOwjAMRe-SGUWOK5uGkZ0zRE7s0gJqpaadKu4OlTrA-t97f3NJ1qVPa7U5DeouLrjT75alPG3cgT5kvE--TOMyD9nvij9o9bdJ7XU93L-DXmr_rc8GGTlAFFBGJmMkykWiIhTqGKGhjgoLsikFDWCqHbQxhhCbFtz7A84jNzM:1quLue:ydG3VQUKScxJgwZ3uuaCL1ot-eglBC1AaQgVJOPW8Ww",
+        "expire_date": "2023-10-22T00:02:18.166Z"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "38mdfa1ioxo54rb7nczv8gh2og5k264o",
+    "fields": {
+        "session_data": ".eJxVjDEOgzAQBP9yNbLgbLiDMj1vQLbPDiQRSBiSAvH3gESRNFvszs4GnV2XvltTmLtBoAEkyH5LZ_0zjOciDzveJ-WncZkHp05EXWtS7SThdbvYP0FvU3-8TaljGYz33kmurRSujsxcGxGuImGImIeKpRKsESOJjkTETlgKIdSH9D2ET4JmA4SmyMAcue9fRWk-Tw:1quKF4:KXJX35wsIBgKIQ2MXHgUIUVyeDsMGc_K0alB19VXUBM",
+        "expire_date": "2023-10-21T22:15:16.852Z"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "39jt0rxcwrqijpz7q35y1kql8yc00al1",
+    "fields": {
+        "session_data": ".eJxVjDEOwjAMRe-SGUWOK5uGkZ0zRE7s0gJqpaadKu4OlTrA-t97f3NJ1qVPa7U5DeouLrjT75alPG3cgT5kvE--TOMyD9nvij9o9bdJ7XU93L-DXmr_rc8GGTlAFFBGJmMkykWiIhTqGKGhjgoLsikFDWCqHbQxhhCbFtz7A84jNzM:1quLp5:PJcyY13kuMipu_ZoQQED_jNrKpMujwZj-QX5lSDY8Lo",
+        "expire_date": "2023-10-21T23:56:33.823Z"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "3czgwbfi0n9yzh8lvn9sypb2v8mj3qdv",
+    "fields": {
+        "session_data": ".eJxVjDEOwjAMRe-SGUWOK5uGkZ0zRE7s0gJqpaadKu4OlTrA-t97f3NJ1qVPa7U5DeouLrjT75alPG3cgT5kvE--TOMyD9nvij9o9bdJ7XU93L-DXmr_rc8GGTlAFFBGJmMkykWiIhTqGKGhjgoLsikFDWCqHbQxhhCbFtz7A84jNzM:1qvPZm:vUf5avIES9V3celPnEVB52pfY-ez4WPw-8b7lEb2DPE",
+        "expire_date": "2023-10-24T22:09:08.523Z"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "4am07ibsab0yx5z33pig0iyztm4r7wnx",
+    "fields": {
+        "session_data": ".eJxVjEEOwiAQRe_C2pBBGASX7nsGMswUqZo2Ke3KeHfbpAvd_vf-e6tE61LT2vo5DaKuyqA6_Y6Z-NmPO5EHjfdJ8zQu85D1ruiDNt1N0r9uh_sXqNTq9o4CyMxFHGC5BCQits6FHIJh8IxcPEQfIJu4VcVYhrPF6DaI1or6fAEZujf5:1qudOW:nb--xaJSz-7o4-SyezcBhjx6IOML3Fys9pqqrRd5lh8",
+        "expire_date": "2023-10-22T18:42:18.434Z"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "4y4udlmbhleuof0726r0jfkqltottfub",
+    "fields": {
+        "session_data": ".eJxVjDEOwjAMRe-SGUWOK5uGkZ0zRE7s0gJqpaadKu4OlTrA-t97f3NJ1qVPa7U5DeouLrjT75alPG3cgT5kvE--TOMyD9nvij9o9bdJ7XU93L-DXmr_rc8GGTlAFFBGJmMkykWiIhTqGKGhjgoLsikFDWCqHbQxhhCbFtz7A84jNzM:1qvOgN:LOPGrdbzGUS-PW2X0mAWyd_6b6fb5vhsaOJejVspO7E",
+        "expire_date": "2023-10-24T21:11:53.352Z"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "58vi2dx3l2icgwxmj0o0i1onto4wdb0j",
+    "fields": {
+        "session_data": ".eJxVjDEOwjAMRe-SGUWOK5uGkZ0zRE7s0gJqpaadKu4OlTrA-t97f3NJ1qVPa7U5DeouLrjT75alPG3cgT5kvE--TOMyD9nvij9o9bdJ7XU93L-DXmr_rc8GGTlAFFBGJmMkykWiIhTqGKGhjgoLsikFDWCqHbQxhhCbFtz7A84jNzM:1qwSJZ:Fo-HbudeyGL80MfpZZx6S9aJ-bQYt6L-iu4SCubI9Ag",
+        "expire_date": "2023-10-27T19:16:43.653Z"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "5cqhhtb2kassuqzktysdqkvmlfbf63v1",
+    "fields": {
+        "session_data": ".eJxVjDEOwjAMRe-SGUWOK5uGkZ0zRE7s0gJqpaadKu4OlTrA-t97f3NJ1qVPa7U5DeouLrjT75alPG3cgT5kvE--TOMyD9nvij9o9bdJ7XU93L-DXmr_rc8GGTlAFFBGJmMkykWiIhTqGKGhjgoLsikFDWCqHbQxhhCbFtz7A84jNzM:1qvPch:tuq2BYBBa-Hp9Wci6cC_PpfKmSorhBM2f7mDOW5Kk4s",
+        "expire_date": "2023-10-24T22:12:09.226Z"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "5j28n844n89atufffr2c6qultz6batbm",
+    "fields": {
+        "session_data": ".eJxVjDEOwjAMRe-SGUWOK5uGkZ0zRE7s0gJqpaadKu4OlTrA-t97f3NJ1qVPa7U5DeouLrjT75alPG3cgT5kvE--TOMyD9nvij9o9bdJ7XU93L-DXmr_rc8GGTlAFFBGJmMkykWiIhTqGKGhjgoLsikFDWCqHbQxhhCbFtz7A84jNzM:1qwSm2:c_on45w7Yse5ggPQXeTL7E234xWdbcmCBZRX666OBLk",
+        "expire_date": "2023-10-27T19:46:08.943Z"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "6a7do6zaq55ifpt8pueacm7izmnga74u",
+    "fields": {
+        "session_data": ".eJxVjDEOwjAMRe-SGUWOK5uGkZ0zRE7s0gJqpaadKu4OlTrA-t97f3NJ1qVPa7U5DeouLrjT75alPG3cgT5kvE--TOMyD9nvij9o9bdJ7XU93L-DXmr_rc8GGTlAFFBGJmMkykWiIhTqGKGhjgoLsikFDWCqHbQxhhCbFtz7A84jNzM:1qvyYH:rmxVKHhHm531CdWkRfBBbnVSxpCeKht2-gOLEKHPt2k",
+        "expire_date": "2023-10-26T11:29:55.654Z"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "6pu3zmuskg1q700itro4rjufjv9jvw5d",
+    "fields": {
+        "session_data": ".eJxVjDEOwjAMRe-SGUWOK5uGkZ0zRE7s0gJqpaadKu4OlTrA-t97f3NJ1qVPa7U5DeouLrjT75alPG3cgT5kvE--TOMyD9nvij9o9bdJ7XU93L-DXmr_rc8GGTlAFFBGJmMkykWiIhTqGKGhjgoLsikFDWCqHbQxhhCbFtz7A84jNzM:1qvOhL:Bfp-YMjnMvb3ASgiS16DPOdWDkbIvIjTXxOL8RVhmDI",
+        "expire_date": "2023-10-24T21:12:53.248Z"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "6y0ziz1gn8sl4ck9g1hbncj2qs4ztuv9",
+    "fields": {
+        "session_data": ".eJxVjDEOwjAMRe-SGUWOK5uGkZ0zRE7s0gJqpaadKu4OlTrA-t97f3NJ1qVPa7U5DeouLrjT75alPG3cgT5kvE--TOMyD9nvij9o9bdJ7XU93L-DXmr_rc8GGTlAFFBGJmMkykWiIhTqGKGhjgoLsikFDWCqHbQxhhCbFtz7A84jNzM:1quLlT:Ro0ykpxFAYYRPa5jiBg1lVv4AQNrklChFftk4ofS090",
+        "expire_date": "2023-10-21T23:52:49.635Z"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "76jt3pntzzkfne4dhwkstd4o2asfcfnw",
+    "fields": {
+        "session_data": ".eJxVjDEOwjAMRe-SGUWOK5uGkZ0zRE7s0gJqpaadKu4OlTrA-t97f3NJ1qVPa7U5DeouLrjT75alPG3cgT5kvE--TOMyD9nvij9o9bdJ7XU93L-DXmr_rc8GGTlAFFBGJmMkykWiIhTqGKGhjgoLsikFDWCqHbQxhhCbFtz7A84jNzM:1qvPaL:UrEWyGZWie4q3IMlyBnuR7iWt-sMu4SsNbJDcRjsq5E",
+        "expire_date": "2023-10-24T22:09:43.922Z"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "81tuhtm9feq61qw7s3j6fkowjntamunr",
+    "fields": {
+        "session_data": ".eJxVjDEOwjAMRe-SGUWOK5uGkZ0zRE7s0gJqpaadKu4OlTrA-t97f3NJ1qVPa7U5DeouLrjT75alPG3cgT5kvE--TOMyD9nvij9o9bdJ7XU93L-DXmr_rc8GGTlAFFBGJmMkykWiIhTqGKGhjgoLsikFDWCqHbQxhhCbFtz7A84jNzM:1qvOiA:XLNlc5-JxKIOWXxy-o5-D55rUJNX940FuxJSbIC-Qzk",
+        "expire_date": "2023-10-24T21:13:44.171Z"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "8pphwj5iqfmq3oza6y8eu1lhkrnt8su9",
+    "fields": {
+        "session_data": ".eJxVjMEOgjAQRP9lz6TZLmmhPXr3G0jbXQQ1kFDQA-HfBcNBby_zZmaFJixz1yxZpqZn8KCh-M1iSA8ZDsH3MNxGlcZhnvqojoo6bVbXkeV5Obt_B13I3b6uBCNZjS4gW7JGLBkTU3BMmExrCUvTmmQDWWGjWaMwt1g7p7Ura9xPX728M_gVSvBUQA1eF1B9mXbetg-w3T8Z:1qtunS:TmPvS-5F9axy4wRf-PASfOe0G_4q281YMRvLC-HXjIY",
+        "expire_date": "2023-10-20T19:05:04.197Z"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "9aeyzrsyyjpho1ae5b9ihk3qjh0sbd94",
+    "fields": {
+        "session_data": ".eJxVjDEOwjAMRe-SGUWOK5uGkZ0zRE7s0gJqpaadKu4OlTrA-t97f3NJ1qVPa7U5DeouLrjT75alPG3cgT5kvE--TOMyD9nvij9o9bdJ7XU93L-DXmr_rc8GGTlAFFBGJmMkykWiIhTqGKGhjgoLsikFDWCqHbQxhhCbFtz7A84jNzM:1qvOjs:DdOZy5AW_Ciga3Q0_viBsiv4W6GWtQrgZCT3WUL_c9E",
+        "expire_date": "2023-10-24T21:15:30.312Z"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "9bqn3vjrdjbo059dgcghjfwyshul4qae",
+    "fields": {
+        "session_data": ".eJxVjDEOwjAMRe-SGUWOK5uGkZ0zRE7s0gJqpaadKu4OlTrA-t97f3NJ1qVPa7U5DeouLrjT75alPG3cgT5kvE--TOMyD9nvij9o9bdJ7XU93L-DXmr_rc8GGTlAFFBGJmMkykWiIhTqGKGhjgoLsikFDWCqHbQxhhCbFtz7A84jNzM:1qvOfY:BtkabY3BWH_QCDJwqXc1rVaJRDzZFf37k5lVFmT87DE",
+        "expire_date": "2023-10-24T21:11:02.872Z"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "as2y2cp7qxgsgjfj39zfbwul3rgorsb6",
+    "fields": {
+        "session_data": ".eJxVjDEOwjAMRe-SGUWOK5uGkZ0zRE7s0gJqpaadKu4OlTrA-t97f3NJ1qVPa7U5DeouLrjT75alPG3cgT5kvE--TOMyD9nvij9o9bdJ7XU93L-DXmr_rc8GGTlAFFBGJmMkykWiIhTqGKGhjgoLsikFDWCqHbQxhhCbFtz7A84jNzM:1qvyYs:ikgidFUAo4Ekohn--6NSPFcGyy5DrTcuwchWFEj91q8",
+        "expire_date": "2023-10-26T11:30:32.782Z"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "aw9vv4ok479cih87514ubgv2c4jpzg15",
+    "fields": {
+        "session_data": ".eJxVjDEOwjAMRe-SGUWOK5uGkZ0zRE7s0gJqpaadKu4OlTrA-t97f3NJ1qVPa7U5DeouLrjT75alPG3cgT5kvE--TOMyD9nvij9o9bdJ7XU93L-DXmr_rc8GGTlAFFBGJmMkykWiIhTqGKGhjgoLsikFDWCqHbQxhhCbFtz7A84jNzM:1qwSK7:n9_QWpg5RTMqJSQeKZD2Mc-hSaBn42FLHq0oetjfcOM",
+        "expire_date": "2023-10-27T19:17:17.046Z"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "bjjp7usna88e232emf5wnb16b0rsw17p",
+    "fields": {
+        "session_data": "eyJ2aWV3cyI6eyIzIjoxfX0:1quLil:6yoCu9d0-BNNHIvuEAh6DjmbLQqZLNJbpwOVWkiLQ74",
+        "expire_date": "2023-10-21T23:50:01.412Z"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "buvupcrzf0fmn3juyo75rod4ua40qkct",
+    "fields": {
+        "session_data": ".eJxVjDEOwjAMRe-SGUWOK5uGkZ0zRE7s0gJqpaadKu4OlTrA-t97f3NJ1qVPa7U5DeouLrjT75alPG3cgT5kvE--TOMyD9nvij9o9bdJ7XU93L-DXmr_rc8GGTlAFFBGJmMkykWiIhTqGKGhjgoLsikFDWCqHbQxhhCbFtz7A84jNzM:1qvPc7:2kd5YW4oLl7G1zIcmVFMyKls0CLDtlHodfPORe9aKqI",
+        "expire_date": "2023-10-24T22:11:33.200Z"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "bx9dmcrkul0we9bbtfv7grtenwhe6vwy",
+    "fields": {
+        "session_data": ".eJxVjDEOwjAMRe-SGUWOK5uGkZ0zRE7s0gJqpaadKu4OlTrA-t97f3NJ1qVPa7U5DeouLrjT75alPG3cgT5kvE--TOMyD9nvij9o9bdJ7XU93L-DXmr_rc8GGTlAFFBGJmMkykWiIhTqGKGhjgoLsikFDWCqHbQxhhCbFtz7A84jNzM:1quLfs:KT8r_ASnjCpf3judd9Wlr_1tsPHXvfdUNT0BLbP68Ro",
+        "expire_date": "2023-10-21T23:47:02.919Z"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "c99ixk4i1u17r5oheuqpkimfgo81rl1c",
+    "fields": {
+        "session_data": ".eJxVjDEOwjAMRe-SGUWOK5uGkZ0zRE7s0gJqpaadKu4OlTrA-t97f3NJ1qVPa7U5DeouLrjT75alPG3cgT5kvE--TOMyD9nvij9o9bdJ7XU93L-DXmr_rc8GGTlAFFBGJmMkykWiIhTqGKGhjgoLsikFDWCqHbQxhhCbFtz7A84jNzM:1qv3mF:sqCby1vsfHW3K-W2mvVgfkLuwNd89wicwfQpOatq74I",
+        "expire_date": "2023-10-23T22:52:33.505Z"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "ca087nkrn0vkimhxm9obrzxt36sxrrth",
+    "fields": {
+        "session_data": ".eJxVjDEOwjAMRe-SGUWOK5uGkZ0zRE7s0gJqpaadKu4OlTrA-t97f3NJ1qVPa7U5DeouLrjT75alPG3cgT5kvE--TOMyD9nvij9o9bdJ7XU93L-DXmr_rc8GGTlAFFBGJmMkykWiIhTqGKGhjgoLsikFDWCqHbQxhhCbFtz7A84jNzM:1qsqTB:_s48sOjAwhq3u6TVXfijktptl9jC06uIkFXqhEsJDeU",
+        "expire_date": "2023-10-31T20:15:13.933Z"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "car47w96thm0tg4ts0sho7sgv1wrjy1f",
+    "fields": {
+        "session_data": ".eJxVjDEOwjAMRe-SGUWOK5uGkZ0zRE7s0gJqpaadKu4OlTrA-t97f3NJ1qVPa7U5DeouLrjT75alPG3cgT5kvE--TOMyD9nvij9o9bdJ7XU93L-DXmr_rc8GGTlAFFBGJmMkykWiIhTqGKGhjgoLsikFDWCqHbQxhhCbFtz7A84jNzM:1qsh0l:gHPy8QFfV12iVkFkdcurdBMitVJSqIUmIYwqOxiRHlg",
+        "expire_date": "2023-10-31T10:09:15.355Z"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "cnnljdruecz3ysotomq7rvhuzihqxy0k",
+    "fields": {
+        "session_data": ".eJxVjDEOwjAMRe-SGUWOK5uGkZ0zRE7s0gJqpaadKu4OlTrA-t97f3NJ1qVPa7U5DeouLrjT75alPG3cgT5kvE--TOMyD9nvij9o9bdJ7XU93L-DXmr_rc8GGTlAFFBGJmMkykWiIhTqGKGhjgoLsikFDWCqHbQxhhCbFtz7A84jNzM:1qwSzX:yxcO0U2X2l2phzbw9_3mEAd0Ufs_dOh9VUnSAt1FErM",
+        "expire_date": "2023-10-27T20:00:05.970Z"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "dpimo0yk8h68uhjdtr0bhuwdlvuuwaux",
+    "fields": {
+        "session_data": ".eJxVjDEOwjAMRe-SGUWOK5uGkZ0zRE7s0gJqpaadKu4OlTrA-t97f3NJ1qVPa7U5DeouLrjT75alPG3cgT5kvE--TOMyD9nvij9o9bdJ7XU93L-DXmr_rc8GGTlAFFBGJmMkykWiIhTqGKGhjgoLsikFDWCqHbQxhhCbFtz7A84jNzM:1quLsA:CXwXCDRkUo4DgNGzgO8-6Lx7hWRFRW86ga53OH1s2Rw",
+        "expire_date": "2023-10-21T23:59:44.658Z"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "dur81axoei7iskcfijefwgrgn8ypb8js",
+    "fields": {
+        "session_data": "eyJ2aWV3cyI6eyIyIjoyfX0:1quKdQ:8rdlbPCWTTO1-mP1rbRgTF1443zCPicNRepsYMA6uqQ",
+        "expire_date": "2023-10-21T22:40:26.807Z"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "en7y795truf0myl6entlvah3c2ttympo",
+    "fields": {
+        "session_data": ".eJxVjDEOwjAMRe-SGUWOK5uGkZ0zRE7s0gJqpaadKu4OlTrA-t97f3NJ1qVPa7U5DeouLrjT75alPG3cgT5kvE--TOMyD9nvij9o9bdJ7XU93L-DXmr_rc8GGTlAFFBGJmMkykWiIhTqGKGhjgoLsikFDWCqHbQxhhCbFtz7A84jNzM:1qudNW:GugTKJ79Rpwb3OGOOaE7vCo-U_EUcoZWGc7Gicrg8J0",
+        "expire_date": "2023-10-22T18:41:16.192Z"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "eujatzs81tgq6v4tw5hjswh9w6towz3s",
+    "fields": {
+        "session_data": ".eJxVjDEOwjAMRe-SGUWOK5uGkZ0zRE7s0gJqpaadKu4OlTrA-t97f3NJ1qVPa7U5DeouLrjT75alPG3cgT5kvE--TOMyD9nvij9o9bdJ7XU93L-DXmr_rc8GGTlAFFBGJmMkykWiIhTqGKGhjgoLsikFDWCqHbQxhhCbFtz7A84jNzM:1qv3o3:QqqsB5KnLTqo70W1EbRaBRbkPRAxq0BXNL_v7ss_q5c",
+        "expire_date": "2023-10-23T22:54:25.400Z"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "ev7qnq4rffu8o6gbbgyagm33xzn4kclq",
+    "fields": {
+        "session_data": ".eJxVjDEOwjAMRe-SGUWOK5uGkZ0zRE7s0gJqpaadKu4OlTrA-t97f3NJ1qVPa7U5DeouLrjT75alPG3cgT5kvE--TOMyD9nvij9o9bdJ7XU93L-DXmr_rc8GGTlAFFBGJmMkykWiIhTqGKGhjgoLsikFDWCqHbQxhhCbFtz7A84jNzM:1qvHdq:US9-C2IgA8_SRQYBZxlR7hXztJzuGQi2S8s6zB2cZNA",
+        "expire_date": "2023-10-24T13:40:48.709Z"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "evzs2xmjirjq4a0ue4n6ahfxhn09i9eu",
+    "fields": {
+        "session_data": "eyJ2aWV3cyI6eyI5IjoxfX0:1qvyaW:NpDU5TuGtUeqSDwCGXtnjFaL7RnbxccAT0lSgPNlxbc",
+        "expire_date": "2023-10-26T11:32:14.442Z"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "fcunl2txklfxpy9cvpsmqx87ibgj8phz",
+    "fields": {
+        "session_data": "eyJ2aWV3cyI6eyIyIjoxLCI0IjoxfX0:1quLi6:n1yFlI373FqD5GIit9iw-hPYfCMjYfMNkgOfodRDN14",
+        "expire_date": "2023-10-21T23:49:20.619Z"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "fjathhj7jfwgwn4zr8png23zzui2ywr3",
+    "fields": {
+        "session_data": ".eJxVjDEOwjAMRe-SGUWOK5uGkZ0zRE7s0gJqpaadKu4OlTrA-t97f3NJ1qVPa7U5DeouLrjT75alPG3cgT5kvE--TOMyD9nvij9o9bdJ7XU93L-DXmr_rc8GGTlAFFBGJmMkykWiIhTqGKGhjgoLsikFDWCqHbQxhhCbFtz7A84jNzM:1qwSoq:HLsoyUZwcuXgfNBCobup8E0ktwk7aAYNgFnU5DO1DfU",
+        "expire_date": "2023-10-27T19:49:02.593Z"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "g6jw80f8a8cvvm3ur2at68ngtel8eaxx",
+    "fields": {
+        "session_data": ".eJxVjDEOwjAMRe-SGUWOK5uGkZ0zRE7s0gJqpaadKu4OlTrA-t97f3NJ1qVPa7U5DeouLrjT75alPG3cgT5kvE--TOMyD9nvij9o9bdJ7XU93L-DXmr_rc8GGTlAFFBGJmMkykWiIhTqGKGhjgoLsikFDWCqHbQxhhCbFtz7A84jNzM:1quLhA:B0asi0lc5YbxD3MKukR_vDejsEqR5pMo-duZWEUJskc",
+        "expire_date": "2023-10-21T23:48:22.350Z"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "ge2aodywsry6xqes1dkxwmy96djleudj",
+    "fields": {
+        "session_data": ".eJxVjDEOwjAMRe-SGUWOK5uGkZ0zRE7s0gJqpaadKu4OlTrA-t97f3NJ1qVPa7U5DeouLrjT75alPG3cgT5kvE--TOMyD9nvij9o9bdJ7XU93L-DXmr_rc8GGTlAFFBGJmMkykWiIhTqGKGhjgoLsikFDWCqHbQxhhCbFtz7A84jNzM:1quLq8:rBOuTv7-LR4nV7FJ4oTZSJXSAkIZjSnVLA-30ZqwlCQ",
+        "expire_date": "2023-10-21T23:57:38.411Z"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "gi55fjqr9a6x7s6x3y3l598b3z83cnb8",
+    "fields": {
+        "session_data": ".eJxVjDEOwjAMRe-SGUWOK5uGkZ0zRE7s0gJqpaadKu4OlTrA-t97f3NJ1qVPa7U5DeouLrjT75alPG3cgT5kvE--TOMyD9nvij9o9bdJ7XU93L-DXmr_rc8GGTlAFFBGJmMkykWiIhTqGKGhjgoLsikFDWCqHbQxhhCbFtz7A84jNzM:1qvHdE:YsfVkfOYIbqdM-ss7cj5f7Ii1TP405qjqIUYSyl0I5k",
+        "expire_date": "2023-10-24T13:40:10.768Z"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "guotafq7lru7p526boihxrwll2rjk1vk",
+    "fields": {
+        "session_data": ".eJxVjDEOwjAMRe-SGUWOK5uGkZ0zRE7s0gJqpaadKu4OlTrA-t97f3NJ1qVPa7U5DeouLrjT75alPG3cgT5kvE--TOMyD9nvij9o9bdJ7XU93L-DXmr_rc8GGTlAFFBGJmMkykWiIhTqGKGhjgoLsikFDWCqHbQxhhCbFtz7A84jNzM:1que7G:bNIvPNqcUj5l1I21ufio9XCXGo3gdYwYkym6Fxdfr04",
+        "expire_date": "2023-10-22T19:28:32.625Z"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "ic0epyrmqmoh4yfrz7rqlbo6swoobsxs",
+    "fields": {
+        "session_data": ".eJxVjDEOwjAMRe-SGUWOK5uGkZ0zRE7s0gJqpaadKu4OlTrA-t97f3NJ1qVPa7U5DeouLrjT75alPG3cgT5kvE--TOMyD9nvij9o9bdJ7XU93L-DXmr_rc8GGTlAFFBGJmMkykWiIhTqGKGhjgoLsikFDWCqHbQxhhCbFtz7A84jNzM:1que6f:9Atmnpi-ZT7DFgjktDTJ_12Ax1zfR4cEvvziDNVeJOw",
+        "expire_date": "2023-10-22T19:27:55.497Z"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "knsy6hf7l98nf3h0er5hk5gkhetlqi1v",
+    "fields": {
+        "session_data": ".eJxVjDEOwjAMRe-SGUWOK5uGkZ0zRE7s0gJqpaadKu4OlTrA-t97f3NJ1qVPa7U5DeouLrjT75alPG3cgT5kvE--TOMyD9nvij9o9bdJ7XU93L-DXmr_rc8GGTlAFFBGJmMkykWiIhTqGKGhjgoLsikFDWCqHbQxhhCbFtz7A84jNzM:1quLta:XS7qkaZLWAUBJ4Evd90dP7oIQ1dHhmPImYyZm7zyBD4",
+        "expire_date": "2023-10-22T00:01:12.038Z"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "labfjszih9gquug3vyoyeoafznltwl8a",
+    "fields": {
+        "session_data": "eyJ2aWV3cyI6eyIzIjoxfX0:1quLc5:ERasG7EZ_B6TKXbjfVPEpkHSEKVbPshRcEXl_ja39c0",
+        "expire_date": "2023-10-21T23:43:07.522Z"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "lahc1mo1ccudqrwn7yrxecn5rdj35qxu",
+    "fields": {
+        "session_data": "eyJ2aWV3cyI6eyI5IjoxfX0:1qvP41:lsLI28WYTaSqDGYhCz6yICUhaRvwkXfIOgYoSuq22-M",
+        "expire_date": "2023-10-24T21:36:19.591Z"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "lzeofb5yt45o47dv1bx7og4voxcbj2z5",
+    "fields": {
+        "session_data": ".eJxVjDEOwjAMRe-SGUWOK5uGkZ0zRE7s0gJqpaadKu4OlTrA-t97f3NJ1qVPa7U5DeouLrjT75alPG3cgT5kvE--TOMyD9nvij9o9bdJ7XU93L-DXmr_rc8GGTlAFFBGJmMkykWiIhTqGKGhjgoLsikFDWCqHbQxhhCbFtz7A84jNzM:1qvyX5:xaJG6huzLxv4t7kB-HrBSd4JJhlJW-FgaLa8gQAtDxw",
+        "expire_date": "2023-10-26T11:28:41.120Z"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "m3yg7qkxufl29lnlafnvqgb9aw80wn03",
+    "fields": {
+        "session_data": ".eJxVjDEOwjAMRe-SGUWOK5uGkZ0zRE7s0gJqpaadKu4OlTrA-t97f3NJ1qVPa7U5DeouLrjT75alPG3cgT5kvE--TOMyD9nvij9o9bdJ7XU93L-DXmr_rc8GGTlAFFBGJmMkykWiIhTqGKGhjgoLsikFDWCqHbQxhhCbFtz7A84jNzM:1quLgV:oxgfaHCYQBvfi6puJ76WxyWXZJtfvEdzxsh2GUqzkH8",
+        "expire_date": "2023-10-21T23:47:41.018Z"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "nhz154w1chvdf8ne1wtsh8s8kwewesc7",
+    "fields": {
+        "session_data": ".eJxVjEEOwiAQRe_C2hAGaAGX7j0DGZipVA0kpV0Z765NutDtf-_9l4i4rSVunZc4kzgLM4jT75gwP7juhO5Yb03mVtdlTnJX5EG7vDbi5-Vw_w4K9vKtneGRQIFCVDZpRTB5yhqGkBUZAMrBW-DktLEuTArCyD45BK0Jmbx4fwD2FDe8:1qtuGN:NUdqn5PJL180qFTsAgQdV_Ha4wrMXkqwbNbDXiHC_l8",
+        "expire_date": "2023-10-20T18:30:53.724Z"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "nk3rcsqvqrswiap4nrujzf6j7ivuy00a",
+    "fields": {
+        "session_data": ".eJxVjDEOwjAMRe-SGUWOK5uGkZ0zRE7s0gJqpaadKu4OlTrA-t97f3NJ1qVPa7U5DeouLrjT75alPG3cgT5kvE--TOMyD9nvij9o9bdJ7XU93L-DXmr_rc8GGTlAFFBGJmMkykWiIhTqGKGhjgoLsikFDWCqHbQxhhCbFtz7A84jNzM:1qv3le:eeocOh902NBq0GgyuaxRlF2EZsi9KpTi0oe5FX9R42E",
+        "expire_date": "2023-10-23T22:51:56.476Z"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "ntu8adofu72kgtlwn0s524lv8gafi244",
+    "fields": {
+        "session_data": "eyJ2aWV3cyI6eyI0IjoxLCIyIjoxfX0:1qtvfC:RUHHVYxtuDF_CwymOvOY93zi6J20SPnSvW-Mnki5hfM",
+        "expire_date": "2023-10-20T20:00:36.822Z"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "nue6hbo9ggytmyvf50echzyexdrgrj6w",
+    "fields": {
+        "session_data": ".eJxVjDEOwjAMRe-SGUWOK5uGkZ0zRE7s0gJqpaadKu4OlTrA-t97f3NJ1qVPa7U5DeouLrjT75alPG3cgT5kvE--TOMyD9nvij9o9bdJ7XU93L-DXmr_rc8GGTlAFFBGJmMkykWiIhTqGKGhjgoLsikFDWCqHbQxhhCbFtz7A84jNzM:1quLfJ:yqgvQkccTVZ9AP3lqFLGp0PvTBuiBYQ1xzUlnazlM8o",
+        "expire_date": "2023-10-21T23:46:27.291Z"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "o1hz2tww0yy6qxdur62xj5a84r00037h",
+    "fields": {
+        "session_data": ".eJxVjDEOwjAMRe-SGUWOK5uGkZ0zRE7s0gJqpaadKu4OlTrA-t97f3NJ1qVPa7U5DeouLrjT75alPG3cgT5kvE--TOMyD9nvij9o9bdJ7XU93L-DXmr_rc8GGTlAFFBGJmMkykWiIhTqGKGhjgoLsikFDWCqHbQxhhCbFtz7A84jNzM:1quLsl:_EY8B9xdkf4N6omCBBhdWWQKz1CtqYASs5Pnvx1t8I0",
+        "expire_date": "2023-10-22T00:00:21.127Z"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "ossjsztu0sin62rc8ln1ok5adw75ph4g",
+    "fields": {
+        "session_data": ".eJxVjDsOgzAQRO-yNbL8w8aU6TmDtfbagSQCCUNSIO4ekCiSZoqZN28Dj-vS-7Wk2Q8ELQgD1W8ZMD7TeC70wPE-sTiNyzwEdiLsWgvrJkqv28X-CXos_fG23MUss2yabJErQSEqchw1xmSy0ZYjNlLx2lmNCkOg5Iyg2gnLA6l4SN9D-hRoN9DQygrkkfv-BS1KPh4:1qsrGt:Yf2LFDmVERO8p3GQPFS9l6TLF9Z4G5_ibaIQlqHo2vY",
+        "expire_date": "2023-10-17T21:07:05.339Z"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "pjbiwx8i8j7qu1gan3e1ethv7i95kuid",
+    "fields": {
+        "session_data": ".eJxVjDEOwjAMRe-SGUWOK5uGkZ0zRE7s0gJqpaadKu4OlTrA-t97f3NJ1qVPa7U5DeouLrjT75alPG3cgT5kvE--TOMyD9nvij9o9bdJ7XU93L-DXmr_rc8GGTlAFFBGJmMkykWiIhTqGKGhjgoLsikFDWCqHbQxhhCbFtz7A84jNzM:1quLnh:cRrVSElXTXnJO-z4iNtMzkJHM8ijn0AfvRdQ-36Yyqc",
+        "expire_date": "2023-10-21T23:55:07.584Z"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "po7z8limhx9eh6grjxqkw8xlkkvsrpvj",
+    "fields": {
+        "session_data": ".eJxVjDEOwjAMRe-SGUWOK5uGkZ0zRE7s0gJqpaadKu4OlTrA-t97f3NJ1qVPa7U5DeouLrjT75alPG3cgT5kvE--TOMyD9nvij9o9bdJ7XU93L-DXmr_rc8GGTlAFFBGJmMkykWiIhTqGKGhjgoLsikFDWCqHbQxhhCbFtz7A84jNzM:1qvyXh:8Be8Oy-fn1Ay2zbiF7404pBqVqXSewNLqXQZ63uvNBA",
+        "expire_date": "2023-10-26T11:29:19.877Z"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "poenv1zhj3gyg92aquedr83bappzw1dq",
+    "fields": {
+        "session_data": ".eJxVjz1vxCAQRP_L1jm0gLGBMn269AiWdUySsyO4j0Sn--_B0jXXzpt50tygtFD5yMfEFTwoVPog8aCmd4Ue0RsUUk1OS3iB0Li1sq2Bf39K_QOvpdEjInYUz6clnBvXUHL3SANPYYr0xetO8mdcPzZB23qqJYm9Ih60ibct8_fro_skWGJb-tplNEQ05wHNPFkTYyQ9DDZZKwlHMjSP6EaLSbpuzVJTf2Tc0KHRepdeCl8b-Bs48PJ-_we6QVAH:1qwT12:0gE9m7BJc44miyCGda2MOm-fY85UZl73RiRrD0OatLk",
+        "expire_date": "2024-10-26T20:01:08.336Z"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "qklt376wj5h7orfku0v5tlku8p2sm910",
+    "fields": {
+        "session_data": ".eJxVjDEOwjAMRe-SGUWOK5uGkZ0zRE7s0gJqpaadKu4OlTrA-t97f3NJ1qVPa7U5DeouLrjT75alPG3cgT5kvE--TOMyD9nvij9o9bdJ7XU93L-DXmr_rc8GGTlAFFBGJmMkykWiIhTqGKGhjgoLsikFDWCqHbQxhhCbFtz7A84jNzM:1quLvD:uqfMyRPYk0oJcGObYHB1kt86wq7HFpzDjftZaW5qqdM",
+        "expire_date": "2023-10-22T00:02:53.381Z"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "r00afwz1fwck13lpp7qm7wo1lkyh3dpo",
+    "fields": {
+        "session_data": "eyJ2aWV3cyI6eyI0IjoxfX0:1quKY8:08yKx4iiivC8eHjedegOJXmT4VjxRsKacMOzYROBlRw",
+        "expire_date": "2023-10-21T22:34:58.503Z"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "rrr2dnnbklpjmgn5pxvq71kqo8nupj5s",
+    "fields": {
+        "session_data": ".eJxVjDEOwjAMRe-SGUWOK5uGkZ0zRE7s0gJqpaadKu4OlTrA-t97f3NJ1qVPa7U5DeouLrjT75alPG3cgT5kvE--TOMyD9nvij9o9bdJ7XU93L-DXmr_rc8GGTlAFFBGJmMkykWiIhTqGKGhjgoLsikFDWCqHbQxhhCbFtz7A84jNzM:1qsrEa:qloDd-zjevqu3A1WCY1PQ6HyuDC6rYHs6nUqfDZ7QRY",
+        "expire_date": "2023-10-17T21:04:42.722Z"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "tr6jdf1r9lidy0ymsxnsb5z2pcta0yxu",
+    "fields": {
+        "session_data": "eyJ2aWV3cyI6eyI0IjoxfX0:1qtupR:4tYGBRIy-nuY1GJLia0shA4jk1g7fC-KQWSNUEs3lGY",
+        "expire_date": "2023-10-20T19:07:07.220Z"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "v8dbn1mn3pn2rmcm6fljkusm2gihbnc9",
+    "fields": {
+        "session_data": ".eJxVjDEOwjAMRe-SGUWOK5uGkZ0zRE7s0gJqpaadKu4OlTrA-t97f3NJ1qVPa7U5DeouLrjT75alPG3cgT5kvE--TOMyD9nvij9o9bdJ7XU93L-DXmr_rc8GGTlAFFBGJmMkykWiIhTqGKGhjgoLsikFDWCqHbQxhhCbFtz7A84jNzM:1qwSwI:CH1SlfUawiFYrQj7BZL2lhwbLRXJRYcwka4oaopvMLo",
+        "expire_date": "2023-10-27T19:56:44.286Z"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "vcjg9b5wr3bh8zp1kl9c066v7sp2ykij",
+    "fields": {
+        "session_data": ".eJxVjDEOwjAMRe-SGUWOK5uGkZ0zRE7s0gJqpaadKu4OlTrA-t97f3NJ1qVPa7U5DeouLrjT75alPG3cgT5kvE--TOMyD9nvij9o9bdJ7XU93L-DXmr_rc8GGTlAFFBGJmMkykWiIhTqGKGhjgoLsikFDWCqHbQxhhCbFtz7A84jNzM:1quLqy:1qcJetb-8CHQptaJzeO2GvGmpQpjeaySfUcJOG22tHI",
+        "expire_date": "2023-10-21T23:58:30.174Z"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "wasgvfypgb91srkrg2eixvubayr3bj40",
+    "fields": {
+        "session_data": ".eJxVjDEOwjAMRe-SGUWOK5uGkZ0zRE7s0gJqpaadKu4OlTrA-t97f3NJ1qVPa7U5DeouLrjT75alPG3cgT5kvE--TOMyD9nvij9o9bdJ7XU93L-DXmr_rc8GGTlAFFBGJmMkykWiIhTqGKGhjgoLsikFDWCqHbQxhhCbFtz7A84jNzM:1qvyVk:KKi9vIra3hVjJ3d6vf2TAfGUtXSulxgOJ6F5TGsIK0E",
+        "expire_date": "2023-10-26T11:27:18.388Z"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "x9dop1s3331ibxvcey1obc06ls3ufmzq",
+    "fields": {
+        "session_data": "eyJ2aWV3cyI6eyIyIjoxLCI0IjoxfX0:1quKZD:bIKc1U507gVVfxbwgQviJPMgAPc4mx3ydb4H3QDKKX4",
+        "expire_date": "2023-10-21T22:36:05.891Z"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "xz1sjqq1bdsphvdlrl11bbz8tzwim3mc",
+    "fields": {
+        "session_data": ".eJxVjDEOwjAMRe-SGUWOK5uGkZ0zRE7s0gJqpaadKu4OlTrA-t97f3NJ1qVPa7U5DeouLrjT75alPG3cgT5kvE--TOMyD9nvij9o9bdJ7XU93L-DXmr_rc8GGTlAFFBGJmMkykWiIhTqGKGhjgoLsikFDWCqHbQxhhCbFtz7A84jNzM:1qvHeW:xheKGoF6eXqoPoawCeaX3Q_O-9gHCJiGzrmH85wcEZo",
+        "expire_date": "2023-10-24T13:41:30.604Z"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "yb8iqidcmwug2bvz7l7adqwjrfcoql7y",
+    "fields": {
+        "session_data": ".eJxVjDEOwjAMRe-SGUWOK5uGkZ0zRE7s0gJqpaadKu4OlTrA-t97f3NJ1qVPa7U5DeouLrjT75alPG3cgT5kvE--TOMyD9nvij9o9bdJ7XU93L-DXmr_rc8GGTlAFFBGJmMkykWiIhTqGKGhjgoLsikFDWCqHbQxhhCbFtz7A84jNzM:1qwSve:jaQmQfqPCxImyUjh3lrqkipuwoJmz9PvPJFHPPNhZzE",
+        "expire_date": "2023-10-27T19:56:04.190Z"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "yeesh8x2zh8uiwui0dkh3rsy2bqz5iq4",
+    "fields": {
+        "session_data": ".eJxVjDEOwjAMRe-SGUWOK5uGkZ0zRE7s0gJqpaadKu4OlTrA-t97f3NJ1qVPa7U5DeouLrjT75alPG3cgT5kvE--TOMyD9nvij9o9bdJ7XU93L-DXmr_rc8GGTlAFFBGJmMkykWiIhTqGKGhjgoLsikFDWCqHbQxhhCbFtz7A84jNzM:1qwSo6:oNi8S3JXG_RmM6RYIRszslt_IrexooTePdNSMc-HSWQ",
+        "expire_date": "2023-10-27T19:48:16.253Z"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "yeusgkwysxf56qk5jzatfwwizib0cv66",
+    "fields": {
+        "session_data": ".eJxVjDEOwjAMRe-SGUWOK5uGkZ0zRE7s0gJqpaadKu4OlTrA-t97f3NJ1qVPa7U5DeouLrjT75alPG3cgT5kvE--TOMyD9nvij9o9bdJ7XU93L-DXmr_rc8GGTlAFFBGJmMkykWiIhTqGKGhjgoLsikFDWCqHbQxhhCbFtz7A84jNzM:1qvPbT:0uzamjbUU_V8JZ7XfCb2XX5_pgU4KwfTFl0G9ERScE0",
+        "expire_date": "2023-10-24T22:10:53.760Z"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "zj41rxhlwj1vqn31qk09sjcldzxevlff",
+    "fields": {
+        "session_data": ".eJxVjDEOwjAMRe-SGUWOK5uGkZ0zRE7s0gJqpaadKu4OlTrA-t97f3NJ1qVPa7U5DeouLrjT75alPG3cgT5kvE--TOMyD9nvij9o9bdJ7XU93L-DXmr_rc8GGTlAFFBGJmMkykWiIhTqGKGhjgoLsikFDWCqHbQxhhCbFtz7A84jNzM:1qvHhJ:nq_Vr_TODfi3cYcXrr8epFpxxa10hGH2o3jTAXVvh4g",
+        "expire_date": "2023-10-24T13:44:23.367Z"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "zj5q0sd9dnd2ewcnuyou7d9u141tg2y5",
+    "fields": {
+        "session_data": ".eJxVjDEOwjAMRe-SGUWOK5uGkZ0zRE7s0gJqpaadKu4OlTrA-t97f3NJ1qVPa7U5DeouLrjT75alPG3cgT5kvE--TOMyD9nvij9o9bdJ7XU93L-DXmr_rc8GGTlAFFBGJmMkykWiIhTqGKGhjgoLsikFDWCqHbQxhhCbFtz7A84jNzM:1qsrj5:dbCLbygwEUNkVQ10-ZpbZW_tyHSHfPBE4Dr5BcAVWdg",
+        "expire_date": "2023-10-17T21:36:13.044Z"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "zkd44xehw92x3xvbu3rb5r7w0c11chp7",
+    "fields": {
+        "session_data": ".eJxVjDEOwjAMRe-SGUWOK5uGkZ0zRE7s0gJqpaadKu4OlTrA-t97f3NJ1qVPa7U5DeouLrjT75alPG3cgT5kvE--TOMyD9nvij9o9bdJ7XU93L-DXmr_rc8GGTlAFFBGJmMkykWiIhTqGKGhjgoLsikFDWCqHbQxhhCbFtz7A84jNzM:1qwSSk:jbALweQoZOQhzwL5imhxD7_oCczYoT2g_6cmoou4Dcs",
+        "expire_date": "2023-10-27T19:26:12.049Z"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "zrwjkqdynrdh81fkucagv27fkn52a3at",
+    "fields": {
+        "session_data": ".eJxVjDEOwjAMRe-SGUWOK5uGkZ0zRE7s0gJqpaadKu4OlTrA-t97f3NJ1qVPa7U5DeouLrjT75alPG3cgT5kvE--TOMyD9nvij9o9bdJ7XU93L-DXmr_rc8GGTlAFFBGJmMkykWiIhTqGKGhjgoLsikFDWCqHbQxhhCbFtz7A84jNzM:1qwSHK:b_en3tRSuhfbiBZxrUTRtoicjpOogPyapAPp8GSFQE4",
+        "expire_date": "2023-10-27T19:14:24.518Z"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "zxodp0lfm4v1dvjp9llzjmn45kybljnq",
+    "fields": {
+        "session_data": "eyJ2aWV3cyI6eyI0IjoxLCIyIjoxfX0:1quLYy:aJFD_raMblKISzI5Uc3tOZUJSzUERViM99CCVW6rC1I",
+        "expire_date": "2023-10-21T23:39:54.668Z"
+    }
+},
+{
+    "model": "learning.course",
+    "pk": 2,
+    "fields": {
+        "title": "HTML верстка",
+        "description": "Изучаем основы HTML и CSS. На практике разбираемся с семантической разметкой и базовыми механизмами стилизации на примере небольшого сайта",
+        "start_date": "2023-09-16",
+        "duration": 1,
+        "price": 0,
+        "count_lessons": 5,
+        "authors": [
+            31,
+            27,
+            32
+        ]
+    }
+},
+{
+    "model": "learning.course",
+    "pk": 3,
+    "fields": {
+        "title": "Python language",
+        "description": "Python language",
+        "start_date": "2023-10-10",
+        "duration": 2,
+        "price": 9600,
+        "count_lessons": 10,
+        "authors": [
+            27
+        ]
+    }
+},
+{
+    "model": "learning.course",
+    "pk": 7,
+    "fields": {
+        "title": "Javascript",
+        "description": "Изучение языка программирования для придания динамики Вашему сайту",
+        "start_date": "2023-12-01",
+        "duration": 2,
+        "price": 7008,
+        "count_lessons": 12,
+        "authors": [
+            31,
+            15,
+            32
+        ]
+    }
+},
+{
+    "model": "learning.course",
+    "pk": 8,
+    "fields": {
+        "title": "Веб дизайн",
+        "description": "Создание уникальных сайтов с эффектным дизайном и продуманным UX",
+        "start_date": "2023-09-10",
+        "duration": 1,
+        "price": 6432,
+        "count_lessons": 10,
+        "authors": [
+            27
+        ]
+    }
+},
+{
+    "model": "learning.course",
+    "pk": 24,
+    "fields": {
+        "title": "test",
+        "description": "test",
+        "start_date": "2023-12-01",
+        "duration": 1,
+        "price": 0,
+        "count_lessons": 3,
+        "authors": [
+            15
+        ]
+    }
+},
+{
+    "model": "learning.course",
+    "pk": 25,
+    "fields": {
+        "title": "Django&Django Rest Framework",
+        "description": "Курс «Django - разработка веб-приложений»",
+        "start_date": "2023-09-24",
+        "duration": 3,
+        "price": 10000,
+        "count_lessons": 25,
+        "authors": [
+            15
+        ]
+    }
+},
+{
+    "model": "learning.lesson",
+    "pk": 26,
+    "fields": {
+        "course": 3,
+        "name": "Введение",
+        "preview": "Введение: программы и Python"
+    }
+},
+{
+    "model": "learning.lesson",
+    "pk": 27,
+    "fields": {
+        "course": 3,
+        "name": "Типы данных",
+        "preview": "Типы данных"
+    }
+},
+{
+    "model": "learning.lesson",
+    "pk": 28,
+    "fields": {
+        "course": 3,
+        "name": "Переменные",
+        "preview": "Переменные. Стандартный ввод/вывод"
+    }
+},
+{
+    "model": "learning.lesson",
+    "pk": 29,
+    "fields": {
+        "course": 3,
+        "name": "Условия",
+        "preview": "Условия: if, else, elif. Блоки, отступы"
+    }
+},
+{
+    "model": "learning.lesson",
+    "pk": 30,
+    "fields": {
+        "course": 3,
+        "name": "Строки",
+        "preview": "Строки"
+    }
+},
+{
+    "model": "learning.lesson",
+    "pk": 31,
+    "fields": {
+        "course": 3,
+        "name": "Циклы",
+        "preview": "Цикл while, цикл for"
+    }
+},
+{
+    "model": "learning.lesson",
+    "pk": 32,
+    "fields": {
+        "course": 3,
+        "name": "Операторы break, continue",
+        "preview": "Операторы break, continue"
+    }
+},
+{
+    "model": "learning.lesson",
+    "pk": 33,
+    "fields": {
+        "course": 3,
+        "name": "Функции",
+        "preview": "Функции"
+    }
+},
+{
+    "model": "learning.lesson",
+    "pk": 34,
+    "fields": {
+        "course": 3,
+        "name": "Интерпретатор",
+        "preview": "Интерпретатор: установка, запуск скрипта"
+    }
+},
+{
+    "model": "learning.lesson",
+    "pk": 35,
+    "fields": {
+        "course": 3,
+        "name": "Модули",
+        "preview": "Модули, подключение модулей"
+    }
+},
+{
+    "model": "learning.lesson",
+    "pk": 36,
+    "fields": {
+        "course": 2,
+        "name": "Структура HTML-документа",
+        "preview": "Начинаем готовить разметку страницы блога, разбираемся из каких тегов она состоит и за что эти теги"
+    }
+},
+{
+    "model": "learning.lesson",
+    "pk": 37,
+    "fields": {
+        "course": 2,
+        "name": "Разметка текста",
+        "preview": "Продолжаем верстать страницу блога, изучаем, как правильно размечать текстовое содержание."
+    }
+},
+{
+    "model": "learning.lesson",
+    "pk": 38,
+    "fields": {
+        "course": 2,
+        "name": "Ссылки и изображения",
+        "preview": "Завершаем разметку страницы блога, добавляем навигационные ссылки, а также разбираемся с форматами"
+    }
+},
+{
+    "model": "learning.lesson",
+    "pk": 39,
+    "fields": {
+        "course": 2,
+        "name": "Основы CSS",
+        "preview": "Начинаем оформление страниц блога и заодно разбираем базовые понятия CSS"
+    }
+},
+{
+    "model": "learning.lesson",
+    "pk": 40,
+    "fields": {
+        "course": 2,
+        "name": "Оформление текста",
+        "preview": "Завершаем оформление страниц блога, учимся оформлять тексты с помощью CSS"
+    }
+},
+{
+    "model": "learning.lesson",
+    "pk": 41,
+    "fields": {
+        "course": 3,
+        "name": "test",
+        "preview": "testeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee"
+    }
+},
+{
+    "model": "learning.lesson",
+    "pk": 42,
+    "fields": {
+        "course": 3,
+        "name": "test1",
+        "preview": "eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee"
+    }
+},
+{
+    "model": "learning.lesson",
+    "pk": 57,
+    "fields": {
+        "course": 24,
+        "name": "1",
+        "preview": "1"
+    }
+},
+{
+    "model": "learning.lesson",
+    "pk": 58,
+    "fields": {
+        "course": 24,
+        "name": "2",
+        "preview": "2"
+    }
+},
+{
+    "model": "learning.lesson",
+    "pk": 60,
+    "fields": {
+        "course": 25,
+        "name": "Основные понятия",
+        "preview": "Основные понятия и установка IDE"
+    }
+},
+{
+    "model": "learning.lesson",
+    "pk": 61,
+    "fields": {
+        "course": 25,
+        "name": "Структура и настройка",
+        "preview": "Структура и настройка проекта"
+    }
+},
+{
+    "model": "learning.lesson",
+    "pk": 62,
+    "fields": {
+        "course": 25,
+        "name": "Django ORM",
+        "preview": "Django ORM: создание моделей, миграции"
+    }
+},
+{
+    "model": "learning.lesson",
+    "pk": 63,
+    "fields": {
+        "course": 25,
+        "name": "Административная панель",
+        "preview": "Административная панель"
+    }
+},
+{
+    "model": "learning.lesson",
+    "pk": 64,
+    "fields": {
+        "course": 25,
+        "name": "Маршрутизация",
+        "preview": "Маршрутизация"
+    }
+},
+{
+    "model": "learning.lesson",
+    "pk": 65,
+    "fields": {
+        "course": 25,
+        "name": "Контроллеры-функции",
+        "preview": "Контроллеры-функции"
+    }
+},
+{
+    "model": "learning.lesson",
+    "pk": 66,
+    "fields": {
+        "course": 25,
+        "name": "Контроллеры-классы",
+        "preview": "Контроллеры-классы"
+    }
+},
+{
+    "model": "learning.lesson",
+    "pk": 67,
+    "fields": {
+        "course": 25,
+        "name": "Шаблоны",
+        "preview": "Шаблоны"
+    }
+},
+{
+    "model": "learning.lesson",
+    "pk": 68,
+    "fields": {
+        "course": 25,
+        "name": "Разграничение прав доступ",
+        "preview": "Разграничение прав доступ"
+    }
+},
+{
+    "model": "learning.lesson",
+    "pk": 69,
+    "fields": {
+        "course": 25,
+        "name": "Обработка форм",
+        "preview": "Обработка форм"
+    }
+},
+{
+    "model": "learning.lesson",
+    "pk": 70,
+    "fields": {
+        "course": 25,
+        "name": "Django ORM: связи",
+        "preview": "Django ORM: связи, выборка, транзакции"
+    }
+},
+{
+    "model": "learning.lesson",
+    "pk": 71,
+    "fields": {
+        "course": 25,
+        "name": "Формы",
+        "preview": "Формы"
+    }
+},
+{
+    "model": "learning.lesson",
+    "pk": 72,
+    "fields": {
+        "course": 25,
+        "name": "Работа с cookies, session",
+        "preview": "Работа с cookies, session"
+    }
+},
+{
+    "model": "learning.lesson",
+    "pk": 73,
+    "fields": {
+        "course": 25,
+        "name": "Сигналы модели",
+        "preview": "Сигналы модели"
+    }
+},
+{
+    "model": "learning.lesson",
+    "pk": 74,
+    "fields": {
+        "course": 25,
+        "name": "Email-рассылка",
+        "preview": "Email-рассылка"
+    }
+},
+{
+    "model": "learning.lesson",
+    "pk": 75,
+    "fields": {
+        "course": 25,
+        "name": "Кеширование",
+        "preview": "Кеширование"
+    }
+},
+{
+    "model": "learning.lesson",
+    "pk": 76,
+    "fields": {
+        "course": 25,
+        "name": "Настройка безопасности",
+        "preview": "Настройка безопасности"
+    }
+},
+{
+    "model": "learning.lesson",
+    "pk": 77,
+    "fields": {
+        "course": 25,
+        "name": "Тестирование",
+        "preview": "Тестирование (django test)"
+    }
+},
+{
+    "model": "learning.lesson",
+    "pk": 78,
+    "fields": {
+        "course": 25,
+        "name": "Архитектура REST",
+        "preview": "Архитектура REST"
+    }
+},
+{
+    "model": "learning.lesson",
+    "pk": 79,
+    "fields": {
+        "course": 25,
+        "name": "Введение DRF",
+        "preview": "Введение: установка и настройка DRF"
+    }
+},
+{
+    "model": "learning.lesson",
+    "pk": 80,
+    "fields": {
+        "course": 25,
+        "name": "Serializers",
+        "preview": "Serializers (сериализаторы)"
+    }
+},
+{
+    "model": "learning.lesson",
+    "pk": 81,
+    "fields": {
+        "course": 25,
+        "name": "Вывод данных / JSON",
+        "preview": "Вывод данных / JSON"
+    }
+},
+{
+    "model": "learning.lesson",
+    "pk": 82,
+    "fields": {
+        "course": 25,
+        "name": "Аутентификация",
+        "preview": "Аутентификация и уровни доступа"
+    }
+},
+{
+    "model": "learning.lesson",
+    "pk": 83,
+    "fields": {
+        "course": 25,
+        "name": "Viewset & Routers",
+        "preview": "Viewset & Routers"
+    }
+},
+{
+    "model": "learning.lesson",
+    "pk": 84,
+    "fields": {
+        "course": 25,
+        "name": "Тестирование API с Postma",
+        "preview": "Тестирование API с Postman"
+    }
+},
+{
+    "model": "learning.tracking",
+    "pk": 176,
+    "fields": {
+        "lesson": 36,
+        "user": 15,
+        "passed": true
+    }
+},
+{
+    "model": "learning.tracking",
+    "pk": 177,
+    "fields": {
+        "lesson": 37,
+        "user": 15,
+        "passed": true
+    }
+},
+{
+    "model": "learning.tracking",
+    "pk": 178,
+    "fields": {
+        "lesson": 38,
+        "user": 15,
+        "passed": true
+    }
+},
+{
+    "model": "learning.tracking",
+    "pk": 179,
+    "fields": {
+        "lesson": 39,
+        "user": 15,
+        "passed": true
+    }
+},
+{
+    "model": "learning.tracking",
+    "pk": 180,
+    "fields": {
+        "lesson": 40,
+        "user": 15,
+        "passed": false
+    }
+},
+{
+    "model": "learning.tracking",
+    "pk": 206,
+    "fields": {
+        "lesson": 60,
+        "user": 15,
+        "passed": false
+    }
+},
+{
+    "model": "learning.tracking",
+    "pk": 207,
+    "fields": {
+        "lesson": 61,
+        "user": 15,
+        "passed": false
+    }
+},
+{
+    "model": "learning.tracking",
+    "pk": 208,
+    "fields": {
+        "lesson": 62,
+        "user": 15,
+        "passed": false
+    }
+},
+{
+    "model": "learning.tracking",
+    "pk": 209,
+    "fields": {
+        "lesson": 63,
+        "user": 15,
+        "passed": false
+    }
+},
+{
+    "model": "learning.tracking",
+    "pk": 210,
+    "fields": {
+        "lesson": 64,
+        "user": 15,
+        "passed": false
+    }
+},
+{
+    "model": "learning.tracking",
+    "pk": 211,
+    "fields": {
+        "lesson": 65,
+        "user": 15,
+        "passed": false
+    }
+},
+{
+    "model": "learning.tracking",
+    "pk": 212,
+    "fields": {
+        "lesson": 66,
+        "user": 15,
+        "passed": false
+    }
+},
+{
+    "model": "learning.tracking",
+    "pk": 213,
+    "fields": {
+        "lesson": 67,
+        "user": 15,
+        "passed": false
+    }
+},
+{
+    "model": "learning.tracking",
+    "pk": 214,
+    "fields": {
+        "lesson": 68,
+        "user": 15,
+        "passed": false
+    }
+},
+{
+    "model": "learning.tracking",
+    "pk": 215,
+    "fields": {
+        "lesson": 69,
+        "user": 15,
+        "passed": false
+    }
+},
+{
+    "model": "learning.tracking",
+    "pk": 216,
+    "fields": {
+        "lesson": 70,
+        "user": 15,
+        "passed": false
+    }
+},
+{
+    "model": "learning.tracking",
+    "pk": 217,
+    "fields": {
+        "lesson": 71,
+        "user": 15,
+        "passed": false
+    }
+},
+{
+    "model": "learning.tracking",
+    "pk": 218,
+    "fields": {
+        "lesson": 72,
+        "user": 15,
+        "passed": false
+    }
+},
+{
+    "model": "learning.tracking",
+    "pk": 219,
+    "fields": {
+        "lesson": 73,
+        "user": 15,
+        "passed": false
+    }
+},
+{
+    "model": "learning.tracking",
+    "pk": 220,
+    "fields": {
+        "lesson": 74,
+        "user": 15,
+        "passed": false
+    }
+},
+{
+    "model": "learning.tracking",
+    "pk": 221,
+    "fields": {
+        "lesson": 75,
+        "user": 15,
+        "passed": false
+    }
+},
+{
+    "model": "learning.tracking",
+    "pk": 222,
+    "fields": {
+        "lesson": 76,
+        "user": 15,
+        "passed": false
+    }
+},
+{
+    "model": "learning.tracking",
+    "pk": 223,
+    "fields": {
+        "lesson": 77,
+        "user": 15,
+        "passed": false
+    }
+},
+{
+    "model": "learning.tracking",
+    "pk": 224,
+    "fields": {
+        "lesson": 78,
+        "user": 15,
+        "passed": false
+    }
+},
+{
+    "model": "learning.tracking",
+    "pk": 225,
+    "fields": {
+        "lesson": 79,
+        "user": 15,
+        "passed": false
+    }
+},
+{
+    "model": "learning.tracking",
+    "pk": 226,
+    "fields": {
+        "lesson": 80,
+        "user": 15,
+        "passed": false
+    }
+},
+{
+    "model": "learning.tracking",
+    "pk": 227,
+    "fields": {
+        "lesson": 81,
+        "user": 15,
+        "passed": false
+    }
+},
+{
+    "model": "learning.tracking",
+    "pk": 228,
+    "fields": {
+        "lesson": 82,
+        "user": 15,
+        "passed": false
+    }
+},
+{
+    "model": "learning.tracking",
+    "pk": 229,
+    "fields": {
+        "lesson": 83,
+        "user": 15,
+        "passed": false
+    }
+},
+{
+    "model": "learning.tracking",
+    "pk": 230,
+    "fields": {
+        "lesson": 84,
+        "user": 15,
+        "passed": false
+    }
+},
+{
+    "model": "learning.tracking",
+    "pk": 231,
+    "fields": {
+        "lesson": 36,
+        "user": 16,
+        "passed": false
+    }
+},
+{
+    "model": "learning.tracking",
+    "pk": 232,
+    "fields": {
+        "lesson": 37,
+        "user": 16,
+        "passed": false
+    }
+},
+{
+    "model": "learning.tracking",
+    "pk": 233,
+    "fields": {
+        "lesson": 38,
+        "user": 16,
+        "passed": false
+    }
+},
+{
+    "model": "learning.tracking",
+    "pk": 234,
+    "fields": {
+        "lesson": 39,
+        "user": 16,
+        "passed": false
+    }
+},
+{
+    "model": "learning.tracking",
+    "pk": 235,
+    "fields": {
+        "lesson": 40,
+        "user": 16,
+        "passed": false
+    }
+},
+{
+    "model": "learning.tracking",
+    "pk": 236,
+    "fields": {
+        "lesson": 57,
+        "user": 1,
+        "passed": false
+    }
+},
+{
+    "model": "learning.tracking",
+    "pk": 237,
+    "fields": {
+        "lesson": 58,
+        "user": 1,
+        "passed": false
+    }
+},
+{
+    "model": "learning.review",
+    "pk": 10,
+    "fields": {
+        "user": 27,
+        "course": 25,
+        "content": "Курс очень познавательный, много новой и полезной дял работы информации. Сроки меня устраивают, есть возможность для изучения материала. Курс очень познавательный, много новой и полезной для работы информации. Сроки меня устраивают, есть возможность",
+        "sent_date": "2023-11-09T19:53:49.948Z"
+    }
+},
+{
+    "model": "learning.review",
+    "pk": 11,
+    "fields": {
+        "user": 16,
+        "course": 25,
+        "content": "Проверяющие кураторы-замечательные люди, отвечают быстро-в течение дня и подробно на все твои вопросы, направляют мысли в нужное русло, если ,вдруг ты оказался в тупике",
+        "sent_date": "2023-11-09T19:54:49.958Z"
+    }
+},
+{
+    "model": "learning.review",
+    "pk": 12,
+    "fields": {
+        "user": 15,
+        "course": 25,
+        "content": "Крутой курс)",
+        "sent_date": "2023-11-09T20:01:43.125Z"
+    }
+},
+{
+    "model": "learning.review",
+    "pk": 13,
+    "fields": {
+        "user": 16,
+        "course": 2,
+        "content": "Супер",
+        "sent_date": "2023-11-12T23:06:40.648Z"
+    }
+},
+{
+    "model": "auth_app.user",
+    "pk": 1,
+    "fields": {
+        "password": "pbkdf2_sha256$320000$HuHzYNPu6S0BlB74nqyFTR$RvBFKxrIezgVdB/e5CsWPhuhlQT5QWvW1nt06BAurpo=",
+        "last_login": "2023-11-12T23:39:12.767Z",
+        "is_superuser": true,
+        "first_name": "admin",
+        "last_name": "admin",
+        "is_staff": true,
+        "is_active": true,
+        "date_joined": "2023-09-16T12:22:10Z",
+        "email": "admin@example.com",
+        "username": "admin",
+        "birthday": "2023-09-01",
+        "description": "Привет",
+        "avatar": "",
+        "groups": [
+            1
+        ],
+        "user_permissions": []
+    }
+},
+{
+    "model": "auth_app.user",
+    "pk": 15,
+    "fields": {
+        "password": "pbkdf2_sha256$320000$QenfUT3cyTLpZp5kahn4Me$Fu5RpfTeR+LnEO7O7DGpVuez8dXvrFIOGua0URAACa4=",
+        "last_login": "2023-11-09T20:00:58.910Z",
+        "is_superuser": false,
+        "first_name": "Иван",
+        "last_name": "Иванов",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2023-10-03T17:49:45Z",
+        "email": "test@gmail.com",
+        "username": "author_1",
+        "birthday": "2023-10-01",
+        "description": "I'm an author of some courses",
+        "avatar": "users/1696624049.211233.png",
+        "groups": [
+            2,
+            3
+        ],
+        "user_permissions": []
+    }
+},
+{
+    "model": "auth_app.user",
+    "pk": 16,
+    "fields": {
+        "password": "pbkdf2_sha256$320000$vBixb7BzD0ZA5QnpTGcs61$T8F+11PTM1c2L+C06LVCcCts4b7r9mXNyrlfsZb4FS8=",
+        "last_login": "2023-11-12T23:05:55.135Z",
+        "is_superuser": false,
+        "first_name": "Петр",
+        "last_name": "Петров",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2023-10-03T17:51:48Z",
+        "email": "test_student@gmail.com",
+        "username": "student_1",
+        "birthday": "2023-10-01",
+        "description": "I'm a student",
+        "avatar": "",
+        "groups": [
+            3,
+            4
+        ],
+        "user_permissions": []
+    }
+},
+{
+    "model": "auth_app.user",
+    "pk": 18,
+    "fields": {
+        "password": "pbkdf2_sha256$320000$rJzjDEPm3qg3UpHdtyWq7A$Pl3mXJSIMAmJJg4U4NXYB630BRLjWL1UtsemhfTjL78=",
+        "last_login": "2023-11-09T19:58:30.222Z",
+        "is_superuser": false,
+        "first_name": "Иван",
+        "last_name": "Бунин",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2023-10-03T17:55:17Z",
+        "email": "test2@gmail.com",
+        "username": "moder_2",
+        "birthday": "2023-10-03",
+        "description": "I'm just a moderator 2",
+        "avatar": "",
+        "groups": [
+            4
+        ],
+        "user_permissions": []
+    }
+},
+{
+    "model": "auth_app.user",
+    "pk": 27,
+    "fields": {
+        "password": "pbkdf2_sha256$320000$7FCgdrpOWLlE1OHqKPIUqb$X4xVpuUNEenExHZOMFnIh2d7TFKFjf7gA3x+GWSZJrk=",
+        "last_login": "2023-11-12T23:28:06.811Z",
+        "is_superuser": false,
+        "first_name": "Иван",
+        "last_name": "Крылов",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2023-10-06T23:03:46Z",
+        "email": "shaturnyimax@gmail.com",
+        "username": "te_student",
+        "birthday": "2023-10-01",
+        "description": "I'm a student 2",
+        "avatar": "",
+        "groups": [
+            3
+        ],
+        "user_permissions": []
+    }
+},
+{
+    "model": "auth_app.user",
+    "pk": 31,
+    "fields": {
+        "password": "pbkdf2_sha256$320000$n8Bw5CBe5aQMwJBLWhuL9O$nW/sk4bXjkkHknFr4oenpSC6pOvnNTc7WF7DPUsfRO8=",
+        "last_login": "2023-10-10T00:55:27Z",
+        "is_superuser": false,
+        "first_name": "Анна",
+        "last_name": "Ахматова",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2023-10-10T00:55:27Z",
+        "email": "author_2@gmail.com",
+        "username": "author_2",
+        "birthday": "2023-10-12",
+        "description": "I am an author of some courses",
+        "avatar": "",
+        "groups": [
+            2,
+            3
+        ],
+        "user_permissions": []
+    }
+},
+{
+    "model": "auth_app.user",
+    "pk": 32,
+    "fields": {
+        "password": "pbkdf2_sha256$320000$39bULFTxU7FmkpmJM6Q697$BrSVPmUANGkLwVXBA0E9cowsQRz3ozc9tnuIC/sQrTQ=",
+        "last_login": "2023-10-10T00:56:21Z",
+        "is_superuser": false,
+        "first_name": "Марина",
+        "last_name": "Цветаева",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2023-10-10T00:56:21Z",
+        "email": "author_3@gmail.com",
+        "username": "author_3",
+        "birthday": "2023-10-20",
+        "description": "I am an author of some courses",
+        "avatar": "",
+        "groups": [
+            2,
+            3
+        ],
+        "user_permissions": []
+    }
+},
+{
+    "model": "auth_app.user",
+    "pk": 33,
+    "fields": {
+        "password": "pbkdf2_sha256$320000$3NLkCNHxv83rwjfsl2GmmC$uC6A3OFBYpYzPcQGLRR37M2TDQVw9FreJ9Ait/UOtzY=",
+        "last_login": null,
+        "is_superuser": false,
+        "first_name": "a",
+        "last_name": "a",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2023-10-15T22:35:11Z",
+        "email": "karina.petraytite@gmail.com",
+        "username": "karina",
+        "birthday": "2023-10-01",
+        "description": "a",
+        "avatar": "",
+        "groups": [
+            3
+        ],
+        "user_permissions": []
+    }
+},
+{
+    "model": "auth_app.user",
+    "pk": 34,
+    "fields": {
+        "password": "pbkdf2_sha256$320000$e2tKLM8UnDP3IocBCERrRQ$R4twEwFcZEInjjOHmSYl2uoJckcHGOa+eqLeTSm2zXA=",
+        "last_login": "2023-10-15T22:36:28.946Z",
+        "is_superuser": false,
+        "first_name": "a",
+        "last_name": "a",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2023-10-15T22:36:28.633Z",
+        "email": "aa@example.com",
+        "username": "",
+        "birthday": "2023-10-01",
+        "description": "a",
+        "avatar": "",
+        "groups": [
+            3
+        ],
+        "user_permissions": []
+    }
+},
+{
+    "model": "auth_app.user",
+    "pk": 35,
+    "fields": {
+        "password": "pbkdf2_sha256$320000$sYMZoop5tfw14Mfb5OtaNy$wDl1cwGQAo7rz/nHdbUsekrk+ZpBROA53w41SUR2YOw=",
+        "last_login": "2023-10-20T18:30:23.681Z",
+        "is_superuser": false,
+        "first_name": "Макар",
+        "last_name": "Мочалкин",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2023-10-20T18:30:23.427Z",
+        "email": "test23@gmail.com",
+        "username": "",
+        "birthday": "2023-10-01",
+        "description": "Hi guys",
+        "avatar": "",
+        "groups": [
+            3
+        ],
+        "user_permissions": []
+    }
+}
+]
