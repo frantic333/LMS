@@ -26,7 +26,7 @@ class LearningViewTestCase(TestCase):
 
     def test_get_index_view_by_page(self):
         response = self.client.get(self.index, data={'page': 2})
-        self.assertEqual(len(response.context.get('courses')), 1)
+        self.assertEqual(len([response.context.get('courses')]), 1)
 
     def test_search_and_order_by_view(self):
         search_query = {'search': 'h', 'price_order': '-price'}
@@ -132,13 +132,14 @@ class LearningViewTestCase(TestCase):
 
     def test_enroll_view(self):
         login = self.client.login(username='admin@example.com', password='1')
-        course = Course.objects.last()
+        course = Course.objects.get(title='Django&Django Rest Framework')
         response = self.client.post(reverse('enroll', kwargs={'course_id': course.id}))
         self.assertRedirects(response, self.tracking, status_code=302)
         self.assertEqual(Tracking.objects.filter(user=response.context['user'], lesson__course=course.id).count(),
                          Lesson.objects.filter(course=course).count())
 
         response = self.client.post(reverse('enroll', kwargs={'course_id': course.id}))
+        self.assertEqual(str(response.content, 'utf-8'), 'Вы уже записаны на данный курс')
 
 
     def test_course_delete_view(self):
