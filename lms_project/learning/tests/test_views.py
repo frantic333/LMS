@@ -20,11 +20,13 @@ class LearningViewTestCase(TestCase):
         response = self.client.get(path=self.index)
         self.assertEqual(response.status_code, 200)
         self.assertTemplateUsed(response, 'index.html')
-        self.assertEqual(len(response.context['courses']), 5)
+        print(response.context.get('courses'))
+        self.assertEqual(len(response.context.get('courses')), 5)
+
 
     def test_get_index_view_by_page(self):
         response = self.client.get(self.index, data={'page': 2})
-        self.assertEqual(len(response.context['courses']), 1)
+        self.assertEqual(len(response.context.get('courses')), 1)
 
     def test_search_and_order_by_view(self):
         search_query = {'search': 'h', 'price_order': '-price'}
@@ -185,3 +187,4 @@ class LearningViewTestCase(TestCase):
         Tracking.objects.filter(user=response_1.context['user'], lesson__course=course.id).update(passed=True)
         response_3 = self.client.post(reverse('get_certificate', kwargs={'course_id': course.id}))
         self.assertEqual(str(response_3.content, 'utf-8'), 'Сертификат отправлен на Ваш email')
+
