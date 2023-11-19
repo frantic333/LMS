@@ -160,11 +160,11 @@ class UserSerializer(ModelSerializer):
 
     def save(self, validated_data):
 
-        #convert all values to string (create user with script)
-        #*converted_dict, = map(lambda x: dict(zip(dict(validated_data).keys(), x)),
-        #                      zip(*dict(validated_data).values()))
-        #validated_data = dict(*converted_dict)
-        #print(validated_data)
+        #convert all values to string (to add ava)
+        *converted_dict, = map(lambda x: dict(zip(dict(validated_data).keys(), x)),
+                              zip(*dict(validated_data).values()))
+        validated_data = dict(*converted_dict)
+        print(validated_data)
 
         name = validated_data.pop('name').split()
         validated_data['first_name'] = name[0]
