@@ -56,7 +56,36 @@ class LessonListAPIView(ListAPIView):
     lookup_url_kwarg = 'course_id'
 
     def get_queryset(self):
-        return Lesson.objects.filter(course=lookup_url_kwarg)
+        course_id = self.kwargs.get(self.lookup_url_kwarg)
+        return Lesson.objects.filter(course=course_id)
+
+
+class TrackingListAPIView(ListAPIView):
+    """
+    Получение прогресса по курсам по id user, переданному в URL
+    """
+    name = 'Трэкинги'
+    serializer_class = LessonSerializer
+    lookup_field = 'user'
+    lookup_url_kwarg = 'user_id'
+
+    def get_queryset(self):
+        user_id = self.kwargs.get(self.lookup_url_kwarg)
+        return Lesson.objects.filter(course=user_id)
+
+
+class ReviewsListAPIView(ListAPIView):
+    """
+    Получение отзывов курса по id, переданному в URL
+    """
+    name = 'Отзывы'
+    serializer_class = LessonSerializer
+    lookup_field = 'course'
+    lookup_url_kwarg = 'course_id'
+
+    def get_queryset(self):
+        course_id = self.kwargs.get(self.lookup_url_kwarg)
+        return Lesson.objects.filter(course=course_id)
 
 
 class CourseAPIView(APIView):
