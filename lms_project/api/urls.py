@@ -1,4 +1,4 @@
-from django.urls import path
+from django.urls import path, include
 from .views import *
 
 
@@ -9,5 +9,7 @@ urlpatterns = [
     path('trackings/<int:user_id>', TrackingListAPIView.as_view(), name='trackings'),
     path('reviews/<int:course_id>', ReviewsListAPIView.as_view(), name='reviews'),
     path('analytics/', analytics, name='analytics'),
-    path('users/', users, name='users')
+    path('users/', users, name='users'),
+    # Authrntication urls
+    path('authentication/', include('rest_framework.urls')),
 ]
