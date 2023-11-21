@@ -52,6 +52,11 @@ class LessonListAPIView(ListAPIView):
     """
     name = 'Уроки'
     serializer_class = LessonSerializer
+    pagination_class = PageNumberPagination
+    filter_backends = (SearchFilter, OrderingFilter, )
+    search_fields = ('name', 'preview', )
+    ordering_fields = ('name', 'preview', )
+    ordering = 'name'
     lookup_field = 'course'
     lookup_url_kwarg = 'course_id'
 
@@ -65,13 +70,17 @@ class TrackingListAPIView(ListAPIView):
     Получение прогресса по курсам по id user, переданному в URL
     """
     name = 'Трэкинги'
-    serializer_class = LessonSerializer
+    serializer_class = TrackingSerializer
+    pagination_class = PageNumberPagination
+    filter_backends = (SearchFilter, OrderingFilter, )
+    search_fields = ('lesson__name', )
+    ordering_fields = ('lesson', )
     lookup_field = 'user'
     lookup_url_kwarg = 'user_id'
 
     def get_queryset(self):
         user_id = self.kwargs.get(self.lookup_url_kwarg)
-        return Lesson.objects.filter(course=user_id)
+        return Tracking.objects.filter(user=user_id)
 
 
 class ReviewsListAPIView(ListAPIView):
@@ -79,13 +88,19 @@ class ReviewsListAPIView(ListAPIView):
     Получение отзывов курса по id, переданному в URL
     """
     name = 'Отзывы'
-    serializer_class = LessonSerializer
+    serializer_class = ReviewSerializer
+    pagination_class = PageNumberPagination
+    filter_backends = (SearchFilter, OrderingFilter,)
+    search_fields = ('user__first_name', 'user__last_name', )
+    ordering_fields = ('user', 'sent_date', )
+    ordering = 'sent_date'
     lookup_field = 'course'
     lookup_url_kwarg = 'course_id'
 
     def get_queryset(self):
         course_id = self.kwargs.get(self.lookup_url_kwarg)
-        return Lesson.objects.filter(course=course_id)
+        return Review.objects.filter(course=course_id)
+
 
 
 class CourseAPIView(APIView):
