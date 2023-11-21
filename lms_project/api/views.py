@@ -108,7 +108,7 @@ class CourseAPIView(APIView):
     description = 'Информация о всех курсах, размещенных на платформе codeby'
     http_method_names = ['get', 'options', ]
     parser_classes = (JSONParser, MultiPartParser, FormParser, )
-    renderer_classes = (JSONRenderer, BrowsableAPIRenderer, TemplateHTMLRenderer, AdminRenderer, )
+    renderer_classes = (JSONRenderer, BrowsableAPIRenderer, AdminRenderer, )
 
     def get(self, request):
         courses = Course.objects.all()
