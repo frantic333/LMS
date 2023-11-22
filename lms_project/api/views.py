@@ -1,6 +1,6 @@
 from django.db.models import ObjectDoesNotExist
 from rest_framework.decorators import api_view
-from rest_framework.generics import ListAPIView, RetrieveAPIView, ListCreateAPIView, CreateAPIView
+from rest_framework.generics import ListAPIView, RetrieveAPIView, ListCreateAPIView, CreateAPIView, RetrieveDestroyAPIView
 from rest_framework.authentication import BasicAuthentication, TokenAuthentication
 from rest_framework.filters import SearchFilter, OrderingFilter
 from rest_framework.pagination import PageNumberPagination
@@ -35,11 +35,23 @@ class UserForAdminView(ListCreateAPIView):
 class CourseCreateView(CreateAPIView):
     name = 'Создать курс'
     serializer_class = CourseSerializer
-    permission_classes = IsAuthor
+    permission_classes = (IsAuthor, )
     authentication_classes = (BasicAuthentication, )
 
     def perform_create(self, serializer):
         serializer.save(authors=(self.request.user, ))
+
+
+class CourseDeleteView(RetrieveDestroyAPIView):
+
+    name = 'Удалить курс'
+    serializer_class = CourseSerializer
+    lookup_field = 'id'
+    lookup_url_kwarg = 'course_id'
+    permission_classes = (IsAuthor, )
+
+    def get_queryset(self):
+        return Course.objects.all()
 
 
 
