@@ -35,7 +35,7 @@ class LessonRepresentationSerializer(ModelSerializer):
 
 
 class CourseSerializer(ModelSerializer):
-    authors = UserRepresentationSerializer(many=True)
+    authors = UserRepresentationSerializer(many=True, read_only=True)
 
     class Meta:
         model = Course
@@ -119,6 +119,13 @@ class AnalyticSerializer(Serializer):
 
     def get_data(self, instance):
         return AnalyticCourseSerializer(instance=instance, many=True, context=self.context).data
+
+
+class UserAdminSerializer(ModelSerializer):
+
+    class Meta:
+        model = User
+        fields = '__all__'
 
 
 class UserSerializer(ModelSerializer):

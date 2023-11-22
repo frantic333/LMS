@@ -1,10 +1,12 @@
 from django.db.models import ObjectDoesNotExist
 from rest_framework.decorators import api_view
-from rest_framework.generics import ListAPIView, RetrieveAPIView
+from rest_framework.generics import ListAPIView, RetrieveAPIView, ListCreateAPIView, CreateAPIView
+from rest_framework.authentication import BasicAuthentication, TokenAuthentication
 from rest_framework.filters import SearchFilter, OrderingFilter
 from rest_framework.pagination import PageNumberPagination
 from rest_framework.response import Response
 from rest_framework.parsers import JSONParser, MultiPartParser, FormParser
+from rest_framework.permissions import IsAdminUser
 from rest_framework.renderers import JSONRenderer, BrowsableAPIRenderer, TemplateHTMLRenderer, AdminRenderer
 from rest_framework.serializers import ValidationError
 from rest_framework.views import APIView
@@ -13,8 +15,33 @@ from rest_framework import status
 from .analytics import AnalyticReport
 from learning.models import Course, Lesson, Tracking, Review
 from auth_app.models import User
+from .permissions import IsAuthor
 from .serializers import (CourseSerializer, LessonSerializer, TrackingSerializer, ReviewSerializer,
-                          AnalyticCourseSerializer, AnalyticSerializer, UserSerializer)
+                          AnalyticCourseSerializer, AnalyticSerializer, UserAdminSerializer, UserSerializer)
+
+
+class UserForAdminView(ListCreateAPIView):
+    name = 'Список пользователей LMS Codeby'
+    serializer_class = UserAdminSerializer
+    pagination_class = PageNumberPagination
+    authentication_classes = (BasicAuthentication, )
+    permission_classes = (IsAdminUser, )
+    renderer_classes = (AdminRenderer, )
+
+    def get_queryset(self):
+        return User.objects.all()
+
+
+class CourseCreateView(CreateAPIView):
+    name = 'Создать курс'
+    serializer_class = CourseSerializer
+    permission_classes = IsAuthor
+    authentication_classes = (BasicAuthentication, )
+
+    def perform_create(self, serializer):
+        serializer.save(authors=(self.request.user, ))
+
+
 
 
 class CourseListAPIView(ListAPIView):
@@ -23,6 +50,7 @@ class CourseListAPIView(ListAPIView):
     """
     name = 'Список курсов'
     serializer_class = CourseSerializer
+    authentication_classes = (TokenAuthentication, )
     pagination_class = PageNumberPagination
     filter_backends = (SearchFilter, OrderingFilter, )
     search_fields = ('title', 'description', 'authors__first_name', 'authors__last_name', 'start_date', )
