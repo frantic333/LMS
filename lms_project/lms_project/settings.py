@@ -72,7 +72,7 @@ MIDDLEWARE = [
 SESSION_ENGINE = 'django.contrib.sessions.backends.cache'
 SESSION_CACHE_ALIAS = 'session_store'
 SESSION_EXPIRE_AT_BROWSER_CLOSE = True
-SESSION_COOKIE_AGE = 30
+SESSION_COOKIE_AGE = 300
 SESSION_SAVE_EVERY_REQUEST = False
 SESSION_COOKIE_SECURE = False
 SESSION_COOKIE_SAMESITE = 'Lax'
@@ -166,7 +166,7 @@ USE_TZ = True
 SHORT_DATETIME_FORMAT = 'j.m.Y H:I'
 
 
-LOGIN_URL = 'login'
+LOGIN_URL = 'rest_framework:login'
 #LOGIN_REDIRECT_URL = 'index'
 LOGIN_REDIRECT_URL = 'courses'
 LOGOUT_URL = 'logout'
