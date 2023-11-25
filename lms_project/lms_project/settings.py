@@ -169,7 +169,7 @@ SHORT_DATETIME_FORMAT = 'j.m.Y H:I'
 LOGIN_URL = 'rest_framework:login'
 #LOGIN_REDIRECT_URL = 'index'
 LOGIN_REDIRECT_URL = 'courses'
-LOGOUT_URL = 'logout'
+LOGOUT_URL = 'rest_framework:logout'
 
 # Email settings
 EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
@@ -226,8 +226,9 @@ REST_FRAMEWORK = {
     'DEFAULT_PAGINATION_CLASS': 'rest_framework.pagination.PageNumberPagination',
     'PAGE_SIZE': 3,
     'ORDERING_PARAM': 'order_by',
-#    'DATE_INPUT_FORMATS': [
-#        '%d.%m.%Y',
-#    ],
+    'DATE_INPUT_FORMATS': [
+        'iso-8601',
+        '%d.%m.%Y',
+    ],
     'DATE_FORMAT': '%d.%m.%Y',
 }
