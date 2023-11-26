@@ -15,3 +15,17 @@ class IsAuthor(BasePermission):
         ):
             return True
         return False
+
+
+class IsStudent(BasePermission):
+
+    def has_permission(self, request, view):
+        if not (request.user and request.user.is_authenticated
+                and request.user.groups.filter(name='Автор').exists()):
+            return True
+        return False
+
+    def has_object_permission(self, request, view, obj):
+        if not (request.user and request.user.has_perms(['learning.change_tracking'])):
+            return True
+        return False

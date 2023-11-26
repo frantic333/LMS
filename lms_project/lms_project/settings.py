@@ -212,6 +212,7 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 REST_FRAMEWORK = {
     'URL_FORMAT_OVERRIDE': 'to',
+    'FORMAT_SUFFIX_KWARG': 'to',
     'DEFAULT_RENDERER_CLASSES': [
         'rest_framework.renderers.JSONRenderer',
         'rest_framework.renderers.BrowsableAPIRenderer',
