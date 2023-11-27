@@ -47,7 +47,7 @@ class AnalyticViewSet(ViewSet):
 class TrackingStudentViewSet(ModelViewSet):
     http_method_names = ('get', 'post', 'options', )
     serializer_class = StudentTrackingSerializer
-    permission_classes = (IsAuthenticated, IsStudent )
+    permission_classes = (IsAuthenticated, IsStudent, )
     lookup_field = 'lesson__course'
     lookup_url_kwarg = 'course_id'
 
@@ -80,7 +80,7 @@ class TrackingAuthorViewSet(TrackingStudentViewSet):
     http_method_names = ('get', 'post', 'patch', 'options', )
     serializer_class = AuthorTrackingSerializer
     permission_classes = (IsAuthenticated, IsAuthor, )
-    filter_backends = (SearchFilter, OrderingFilter)
+    filter_backends = (SearchFilter, OrderingFilter, )
     search_fields = ('user__last_name', 'user__first_name', 'lesson__name', )
 
     def get_queryset(self):
