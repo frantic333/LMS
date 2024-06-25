@@ -54,6 +54,7 @@ INSTALLED_APPS = [
     'debug_toolbar',
     'rest_framework',
     'rest_framework.authtoken',
+    'drf_yasg',
 
 ]
 
@@ -167,8 +168,8 @@ SHORT_DATETIME_FORMAT = 'j.m.Y H:I'
 
 
 LOGIN_URL = 'rest_framework:login'
-#LOGIN_REDIRECT_URL = 'index'
-LOGIN_REDIRECT_URL = 'courses'
+LOGIN_REDIRECT_URL = 'index'
+#LOGIN_REDIRECT_URL = 'courses'
 LOGOUT_URL = 'rest_framework:logout'
 
 # Email settings
